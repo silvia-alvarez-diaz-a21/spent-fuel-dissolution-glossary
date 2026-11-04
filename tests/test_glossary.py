@@ -134,6 +134,21 @@ def test_build_outputs_for_apis(gl, tmp_path):
     assert {"@id": "https://w3id.org/snf-glossary/release-fraction"} in concept["skos:broader"]
 
 
+def test_pdf(gl, tmp_path):
+    write(gl, EXAMPLE)
+    out = tmp_path / "g.pdf"
+    assert main(["--glossary", str(gl), "pdf", "--out", str(out)]) == 0
+    data = out.read_bytes()
+    assert data.startswith(b"%PDF") and len(data) > 3000
+    assert main(["--glossary", str(gl), "pdf", "--approved-only", "--out", str(tmp_path / "a.pdf")]) == 0
+
+
+def test_pdf_refuses_invalid_glossary(gl, tmp_path):
+    write(gl, {**EXAMPLE, "status": "approved"})
+    assert main(["--glossary", str(gl), "pdf", "--out", str(tmp_path / "g.pdf")]) == 1
+    assert not (tmp_path / "g.pdf").exists()
+
+
 def test_cli_build_refuses_invalid_glossary(gl, tmp_path, capsys):
     write(gl, {**EXAMPLE, "status": "approved"})
     assert main(["--glossary", str(gl), "build", "--out", str(tmp_path / "d")]) == 1

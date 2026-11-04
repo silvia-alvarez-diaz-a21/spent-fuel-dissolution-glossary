@@ -2,3 +2,4 @@ pyyaml>=6
 jsonschema>=4.18
 pytest>=8
 flake8>=7
+reportlab>=4

@@ -31,6 +31,20 @@ def cmd_build(args) -> int:
     return 0
 
 
+def cmd_pdf(args) -> int:
+    from .pdf import build_pdf
+
+    g = validate(Path(args.glossary), Path(args.db_schema) if args.db_schema else None)
+    if g.errors:
+        for issue in g.errors:
+            print(issue)
+        print(f"\nno PDF: {len(g.errors)} error(s); run 'validate' for details")
+        return 1
+    path = build_pdf(g, Path(args.out), include_drafts=not args.approved_only)
+    print(f"PDF -> {path}")
+    return 0
+
+
 def cmd_new(args) -> int:
     folder = Path(args.glossary) / args.category
     if not (folder / "_category.yaml").exists():
@@ -63,6 +77,10 @@ def main(argv=None) -> int:
     b = sub.add_parser("build", help="compile the glossary to JSON for APIs (dist/)")
     b.add_argument("--out", default=str(ROOT / "dist"))
     b.set_defaults(func=cmd_build)
+    d = sub.add_parser("pdf", help="render the glossary as a PDF (dist/glossary.pdf)")
+    d.add_argument("--out", default=str(ROOT / "dist" / "glossary.pdf"))
+    d.add_argument("--approved-only", action="store_true", help="leave out draft, review and deprecated terms")
+    d.set_defaults(func=cmd_pdf)
     n = sub.add_parser("new", help="create a term file from the template")
     n.add_argument("category", help="folder path, e.g. results/release-fractions")
     n.add_argument("id", help="term id, e.g. fiap")
