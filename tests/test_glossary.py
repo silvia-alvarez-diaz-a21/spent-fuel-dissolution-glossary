@@ -14,9 +14,10 @@ DB = DEFAULT_DB_SCHEMA if DEFAULT_DB_SCHEMA.exists() else None
 
 @pytest.fixture
 def gl(tmp_path):
-    """A copy of the real category tree with the example term inside, ready to break."""
+    """A copy of the real category tree, without its terms, ready to break."""
     root = tmp_path / "glossary"
-    shutil.copytree(GLOSSARY, root)
+    terms_only = lambda d, names: [n for n in names if n.endswith(".yaml") and n != "_category.yaml"]  # noqa: E731
+    shutil.copytree(GLOSSARY, root, ignore=terms_only)
     return root
 
 

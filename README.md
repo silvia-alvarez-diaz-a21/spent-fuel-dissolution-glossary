@@ -10,6 +10,22 @@ references support it.
 - Plain YAML, validated against a JSON Schema and compiled to JSON, so it can be served by an API without
   changes.
 
+## Project context
+
+This glossary is part of the work of **SAREC** (*Release of safety relevant radionuclides from spent nuclear
+fuel under deep disposal conditions*), work package 8 of **EURAD-2**, the European Partnership on Radioactive
+Waste Management. SAREC aims at a better quantification and mechanistic understanding of the release of
+safety-relevant radionuclides from spent fuel, building on the earlier EU projects FIRST-Nuclides and DisCo,
+to support post-closure safety assessments of deep geological repositories. The SNF database that the
+glossary describes is the SAREC WP8 database (Excel template `SAREC_WP8_DataBase_SF-D`).
+
+Created and maintained by **[Amphos 21](https://amphos21.com)** as a partner of EURAD-2 SAREC.
+
+- EURAD-2 SAREC: https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota (D8.1, initial
+  state-of-the-art report) and https://igdtp.eu/activity/sarec/
+
+## Content
+
 The glossary content is written by the team (see [docs/GUIA_BECARIO.md](docs/GUIA_BECARIO.md), in Spanish).
 This repository currently contains the structure, the template and the tools, not the terms.
 
