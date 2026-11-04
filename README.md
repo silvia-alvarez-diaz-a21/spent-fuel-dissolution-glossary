@@ -26,7 +26,7 @@ Created and maintained by **[Amphos 21](https://amphos21.com)** as a partner of 
 
 ## Content
 
-How to write and review terms: [docs/GUIA_REDACCION.md](docs/GUIA_REDACCION.md) (in Spanish).
+How to write and review terms: [docs/WRITING_GUIDE.md](docs/WRITING_GUIDE.md).
 
 ## Layout
 
@@ -39,7 +39,7 @@ schema/term.schema.json      JSON Schema of a term (the contract for APIs)
 schema/category.schema.json  JSON Schema of a category
 glossary_tools/              validate, build and new commands
 tests/                       pytest suite of the tools
-docs/GUIA_REDACCION.md         how to write terms (Spanish)
+docs/WRITING_GUIDE.md          how to write and review terms
 ```
 
 Starting categories (they follow the tables of the SNF database and can be changed):
