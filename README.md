@@ -26,8 +26,7 @@ Created and maintained by **[Amphos 21](https://amphos21.com)** as a partner of 
 
 ## Content
 
-The glossary content is written by the team (see [docs/GUIA_BECARIO.md](docs/GUIA_BECARIO.md), in Spanish).
-This repository currently contains the structure, the template and the tools, not the terms.
+How to write and review terms: [docs/GUIA_REDACCION.md](docs/GUIA_REDACCION.md) (in Spanish).
 
 ## Layout
 
@@ -40,7 +39,7 @@ schema/term.schema.json      JSON Schema of a term (the contract for APIs)
 schema/category.schema.json  JSON Schema of a category
 glossary_tools/              validate, build and new commands
 tests/                       pytest suite of the tools
-docs/GUIA_BECARIO.md         how to write terms (Spanish)
+docs/GUIA_REDACCION.md         how to write terms (Spanish)
 ```
 
 Starting categories (they follow the tables of the SNF database and can be changed):

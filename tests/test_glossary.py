@@ -43,7 +43,7 @@ def test_example_term_is_valid_including_db_mapping(gl):
     g, errors, warnings = messages(gl)
     assert errors == []
     assert "fiap" in g.terms
-    assert any("not a term yet" in w for w in warnings)        # relations to terms the intern will write
+    assert any("not a term yet" in w for w in warnings)        # relations to terms not written yet
 
 
 def test_blank_template_is_rejected_until_filled(gl):
