@@ -1,0 +1,7 @@
+glossary:
+  image: python:3.12-slim
+  script:
+    - pip install -q -r requirements.txt
+    - python -m flake8 glossary_tools tests
+    - python -m glossary_tools --db-schema "" validate
+    - python -m pytest -q

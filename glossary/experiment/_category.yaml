@@ -1,0 +1,6 @@
+id: experiment
+name: Leaching experiment
+description: Design and conditions of spent fuel leaching and dissolution experiments.
+order: 2
+translations:
+  es: Experimento de lixiviación

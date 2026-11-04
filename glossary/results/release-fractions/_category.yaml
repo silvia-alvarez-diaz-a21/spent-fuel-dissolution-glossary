@@ -1,0 +1,6 @@
+id: release-fractions
+name: Release fractions
+description: 'Fractions of inventory released to solution: FIAP, instant release fraction, gap and grain-boundary release.'
+order: 0
+translations:
+  es: Fracciones de liberación

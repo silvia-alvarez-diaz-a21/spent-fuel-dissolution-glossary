@@ -1,0 +1,6 @@
+id: secondary-phases
+name: Secondary phases
+description: Solids formed during leaching (e.g. uranyl peroxides, schoepite) and their identification.
+order: 2
+translations:
+  es: Fases secundarias

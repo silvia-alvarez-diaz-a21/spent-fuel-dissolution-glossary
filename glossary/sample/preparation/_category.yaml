@@ -1,0 +1,6 @@
+id: preparation
+name: Sample preparation
+description: 'How the sample is obtained: segments, fragments, powder, cladded or decladded, region sampled.'
+order: 0
+translations:
+  es: Preparación de la muestra

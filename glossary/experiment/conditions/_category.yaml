@@ -1,0 +1,6 @@
+id: conditions
+name: Conditions
+description: Temperature, contact time, sampling and replicates.
+order: 3
+translations:
+  es: Condiciones

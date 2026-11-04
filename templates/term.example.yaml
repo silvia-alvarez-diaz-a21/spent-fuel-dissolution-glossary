@@ -1,0 +1,103 @@
+# EXAMPLE ONLY — shows how a filled term looks. It is not part of the glossary (it lives in templates/).
+# The reference below is illustrative: verify citation, pages and DOI before reusing it in a real term.
+
+id: fiap
+term: Fraction of Inventory in the Aqueous Phase
+abbreviation: FIAP
+symbol: "F_{IAP,i}"
+category: results/release-fractions
+tags: [leaching, release, radionuclide, inventory]
+status: draft
+replaced_by: ""
+
+definition: >-
+  Amount of a given radionuclide or element measured in the leaching solution divided by the amount of that
+  radionuclide or element initially present in the spent fuel sample.
+description: |
+  The FIAP normalises the measured release by the initial inventory of the sample, so that releases of
+  different nuclides, samples and experiments can be compared. In leaching experiments it is usually
+  reported per sampling time, as a cumulative value over the experiment duration.
+
+  It needs the initial inventory of the sample (from burn-up calculations or measurements) and the
+  concentration measured in solution together with the solution volume.
+notes:
+  - Usually reported as cumulative values versus contact time.
+  - Can be given as a fraction (0-1) or as a percentage; the DB unit says which.
+pitfalls:
+  - Mixing fractions and percentages when entering data.
+  - Using the inventory of the whole rod instead of the inventory of the leached sample.
+
+synonyms:
+  - label: fractional release
+    type: narrower-usage
+    lang: en
+    note: used by some authors for the same normalised quantity
+  - label: fraction of inventory in aqueous phase
+    type: spelling-variant
+    lang: en
+translations:
+  es: Fracción del inventario en la fase acuosa
+
+quantity:
+  kind: numeric
+  unit: "%"
+  si_unit: "1"
+  other_units:
+    - unit: "1 (fraction)"
+      to_db_unit: "x * 100"
+  allowed_values: []
+  typical_range:
+    min: null
+    max: null
+    context: ""
+    reference: ""
+  formula: "F_{IAP,i}(t) = \\frac{C_{i}(t) \\, V(t)}{m_{i,0}}"
+  formula_variables:
+    - {symbol: "C_i(t)", meaning: "concentration of nuclide i in solution at time t", unit: "mol/L"}
+    - {symbol: "V(t)", meaning: "solution volume at time t", unit: "L"}
+    - {symbol: "m_{i,0}", meaning: "initial inventory of nuclide i in the sample", unit: "mol"}
+
+broader: [release-fraction]
+narrower: [instant-release-fraction]
+related:
+  - id: initial-inventory
+    relation: depends-on
+  - id: cumulative-time
+    relation: depends-on
+  - id: matrix-dissolution-rate
+    relation: see-also
+
+db_mapping:
+  - table: results_fiap_v2
+    field: fiap_am241
+    excel_header: ""
+    note: "one column per nuclide (fiap_<element><mass>); rows keyed by experiment, cumulative_time_d and replicate"
+  - table: nuclear_fuel_data_v2
+    field: results_fiap_summary
+    excel_header: ""
+    note: summary text of the FIAP results of the experiment
+
+references:
+  - id: ref1
+    type: article
+    citation: >-
+      Serrano-Purroy, D., Clarens, F., González-Robles, E., Glatz, J.P., Wegen, D.H., de Pablo, J., Casas, I.,
+      Giménez, J., Martínez-Esparza, A. (2012). Instant release fraction and matrix release of high burn-up UO2
+      spent nuclear fuel: effect of high burn-up structure and leaching solution composition. Journal of Nuclear
+      Materials 427, 249-258.
+    doi: ""
+    url: ""
+    pages: ""
+    quote: ""
+    supports: [definition]
+standards: []
+external_ids: {}
+
+examples: []
+
+authors: ["Template example"]
+reviewers: []
+created: "2026-11-04"
+updated: "2026-11-04"
+history:
+  - {date: "2026-11-04", author: "Template example", change: "example created"}

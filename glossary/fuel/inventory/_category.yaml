@@ -1,0 +1,6 @@
+id: inventory
+name: Inventory
+description: Radionuclide inventory of the fuel or sample and its uncertainty (initial_inventory_v2).
+order: 2
+translations:
+  es: Inventario

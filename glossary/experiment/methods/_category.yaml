@@ -1,0 +1,6 @@
+id: methods
+name: Methods
+description: 'Experimental set-ups: static, semi-dynamic, flow-through, autoclave, sequential replacement.'
+order: 0
+translations:
+  es: Métodos
