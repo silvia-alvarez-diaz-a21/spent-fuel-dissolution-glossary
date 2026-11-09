@@ -13,18 +13,18 @@ py -3 -m venv .venv
 
 ## 2. Create a term
 
-1. Choose the category (folder) it belongs to, e.g. `results/release-fractions`. If none fits, create the
+1. Choose the category (folder) it belongs to, e.g. `sf-dissolution`. If none fits, create the
    folder and copy `templates/_category.yaml` into it, filled in.
 2. Choose the `id`: English, lowercase with hyphens, short and stable (`fiap`, `burn-up`,
    `instant-release-fraction`).
 3. Create the file from the template:
    ```
-   .venv\Scripts\python -m glossary_tools new results/release-fractions fiap
+   .venv\Scripts\python -m glossary_tools new sf-dissolution fiap
    ```
-   This creates `glossary/results/release-fractions/fiap.yaml` with the `id`, the category and the dates
+   This creates `glossary/sf-dissolution/fiap.yaml` with the `id`, the category and the dates
    already filled in.
 4. Fill it in following the comments of the template. `templates/term.example.yaml` is a complete example, and
-   `glossary/experiment/leaching.yaml` is a real term.
+   `glossary/sf-dissolution/leaching.yaml` is a real term.
 5. Check it:
    ```
    .venv\Scripts\python -m glossary_tools validate
