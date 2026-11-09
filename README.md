@@ -42,11 +42,9 @@ tests/                       pytest suite of the tools
 docs/WRITING_GUIDE.md          how to write and review terms
 ```
 
-Starting categories (they follow the tables of the SNF database and can be changed):
-`fuel` (fuel-types, irradiation-history, inventory), `sample` (preparation, geometry-and-surface),
-`experiment` (methods, atmosphere, solution-chemistry, conditions), `analysis`,
-`results` (release-fractions, matrix-dissolution, secondary-phases), `radionuclides`,
-`quantities-and-units`, `data-provenance`.
+Categories (one folder each under `glossary/`; `order` in `_category.yaml` sets the listing order):
+`experimental-techniques`, `nuclear-fuel`, `irradiated-fuel`, `sf-dissolution`,
+`fuel-microstructure-and-phases`, `quantities-and-units`, `deep-geological-repository`.
 
 ## What a term contains
 
@@ -70,7 +68,7 @@ also needs a reviewer and at least one reference or standard.
 py -3 -m venv .venv
 .venv\Scripts\pip install -r requirements.txt
 
-.venv\Scripts\python -m glossary_tools new results/release-fractions fiap   # new term from the template
+.venv\Scripts\python -m glossary_tools new sf-dissolution fiap   # new term from the template
 .venv\Scripts\python -m glossary_tools validate                             # check everything
 .venv\Scripts\python -m glossary_tools build                                # compile to dist/
 .venv\Scripts\python -m glossary_tools pdf                                  # dist/glossary.pdf (--approved-only)

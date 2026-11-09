@@ -1,0 +1,4 @@
+id: deep-geological-repository
+name: Deep geological repository
+description: "Repository concept and near-field conditions that frame the experiments (canister, buffer, groundwater)."
+order: 7

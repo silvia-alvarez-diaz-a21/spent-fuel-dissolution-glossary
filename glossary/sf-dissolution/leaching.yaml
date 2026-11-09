@@ -5,7 +5,7 @@ id: leaching
 term: Leaching
 abbreviation: ""
 symbol: ""
-category: experiment
+category: sf-dissolution
 tags: [leaching, dissolution, release, leachant, spent-fuel, experiment]
 status: draft
 replaced_by: ""
