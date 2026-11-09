@@ -1,6 +1,0 @@
-id: quantities-and-units
-name: Quantities and units
-description: General quantities, units and conversions used across the database.
-order: 6
-translations:
-  es: Magnitudes y unidades

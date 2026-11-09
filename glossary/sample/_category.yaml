@@ -1,7 +1,0 @@
-id: sample
-name: Sample
-description: Preparation and characterisation of the leached sample (sample type, cladding, size, surface area, position in
-  rod).
-order: 1
-translations:
-  es: Muestra

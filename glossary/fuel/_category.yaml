@@ -1,7 +1,0 @@
-id: fuel
-name: Fuel and irradiation
-description: 'Spent fuel types, fabrication data and irradiation history (experiment_v2: spent_fuel, enrichment, reactor type,
-  burn-up, power, cycles, cooling time).'
-order: 0
-translations:
-  es: Combustible e irradiación

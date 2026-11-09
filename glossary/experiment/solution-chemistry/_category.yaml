@@ -1,6 +1,0 @@
-id: solution-chemistry
-name: Solution chemistry
-description: 'Leachant composition: bicarbonate, NaCl, borate, groundwater simulants, pH.'
-order: 2
-translations:
-  es: Química de la solución
