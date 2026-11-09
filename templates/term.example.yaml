@@ -5,7 +5,7 @@ id: fiap
 term: Fraction of Inventory in the Aqueous Phase
 abbreviation: FIAP
 symbol: "F_{IAP,i}"
-category: results/release-fractions
+category: sf-dissolution
 tags: [leaching, release, radionuclide, inventory]
 status: draft
 replaced_by: ""

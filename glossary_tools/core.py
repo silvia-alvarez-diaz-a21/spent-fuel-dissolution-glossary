@@ -30,7 +30,7 @@ class Issue:
 @dataclass
 class Glossary:
     root: Path
-    categories: dict[str, dict] = field(default_factory=dict)   # "results/release-fractions" -> data
+    categories: dict[str, dict] = field(default_factory=dict)   # "sf-dissolution" -> data
     terms: dict[str, dict] = field(default_factory=dict)        # id -> data
     files: dict[str, Path] = field(default_factory=dict)        # id or category path -> file
     issues: list[Issue] = field(default_factory=list)
