@@ -1,6 +1,0 @@
-id: data-provenance
-name: Data provenance
-description: 'Where data come from: reference, data origin and procedence, quality flags (reference_v2).'
-order: 7
-translations:
-  es: Procedencia de los datos

@@ -1,6 +1,0 @@
-id: fuel-types
-name: Fuel types
-description: Kinds of nuclear fuel and fuel designs (UO2, MOX, doped fuels, reactor types).
-order: 0
-translations:
-  es: Tipos de combustible

@@ -1,6 +1,0 @@
-id: geometry-and-surface
-name: Geometry and surface
-description: Size, mass, grain size and surface area of the sample.
-order: 1
-translations:
-  es: Geometría y superficie

@@ -1,6 +1,0 @@
-id: matrix-dissolution
-name: Matrix dissolution
-description: UO2 matrix dissolution and alteration rates and their indicators.
-order: 1
-translations:
-  es: Disolución de la matriz

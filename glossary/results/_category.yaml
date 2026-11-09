@@ -1,6 +1,0 @@
-id: results
-name: Results
-description: Quantities reported from leaching experiments (results_fiap_v2, results_m_v2).
-order: 4
-translations:
-  es: Resultados

@@ -1,6 +1,0 @@
-id: atmosphere
-name: Atmosphere and redox
-description: Gas atmosphere and redox conditions (oxidizing, anoxic, reducing, H2 overpressure).
-order: 1
-translations:
-  es: Atmósfera y redox
