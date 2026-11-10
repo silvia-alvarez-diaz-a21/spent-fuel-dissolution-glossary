@@ -1,54 +1,3 @@
-<<<<<<< HEAD
-```yaml
-# TERM TEMPLATE
-# Copy into the appropriate glossary category folder and rename using the term ID.
-# Required fields must be completed; remove optional fields if not applicable.
-# Use clear, concise and scientifically accurate English.
-
-# 1. Basic Information
-id: ""                # Unique ID (e.g. fiap)
-term: ""              # Full scientific name
-abbreviation: ""      # Common abbreviation, if applicable
-category: ""          # Parent category ID
-tags: []               # Search keywords
-
-# 2. Scientific Content
-definition: ""        # Short, self-contained definition
-
-description: |        # Extended explanation, context and applications
-  ""
-
-notes: []              # Additional information or practical remarks
-pitfalls: []            # Common misconceptions or interpretation errors
-
-# 3. Related Terms
-related_terms:
-  - id: ""             # ID of another glossary term
-    relation: ""       # related-to, part-of, depends-on, measured-by, see-also
-
-# 4. Formula and Units
-formula: ""            # LaTeX expression, if applicable
-
-formula_variables:
-  - symbol: ""         # Variable or symbol
-    meaning: ""        # Physical meaning
-    unit: ""           # Unit
-
-units:
-  si: ""               # SI unit
-  other: []            # Other commonly used units
-
-# 5. References and Contributors
-references:
-  - type: ""           # article, book, report, standard, thesis, website, etc.
-    citation: ""       # Full bibliographic reference
-    doi: ""
-    url: ""
-    pages: ""          # Relevant pages, sections or figures
-
-authors: []            # Contributors to the entry
-```
-=======
 # =====================================================================================================
 # TERM TEMPLATE — copy this file into the right category folder under glossary/ and rename it to
 # <id>.yaml (e.g. glossary/sf-dissolution/fiap.yaml). One file = one term.
@@ -143,4 +92,3 @@ reviewers: []               # who approved it (needed for status: approved)
 created: ""                 # (required) YYYY-MM-DD
 updated: ""                 # (required) YYYY-MM-DD, change it on every edit
 history: []                 # each item: {date: "YYYY-MM-DD", author: "", change: ""}
->>>>>>> 2dc55b51ee73b6d66dca74838553a49dc50ad230

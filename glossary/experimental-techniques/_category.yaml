@@ -1,6 +1,5 @@
 id: experimental-techniques
 name: Experimental techniques
-<<<<<<< HEAD
 
 description: >-
   Techniques and methods used to prepare, conduct and analyse spent fuel
@@ -10,7 +9,3 @@ description: >-
 
 order: 1
 source: ""
-=======
-description: "Techniques and methods used to prepare, run and analyse spent fuel leaching and dissolution experiments."
-order: 1
->>>>>>> 2dc55b51ee73b6d66dca74838553a49dc50ad230
