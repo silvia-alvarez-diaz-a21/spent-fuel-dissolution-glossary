@@ -2,7 +2,4 @@ id: nuclear-fuel
 name: Nuclear fuel
 description: "Fresh nuclear fuel: fuel types, materials, fabrication and enrichment."
 order: 2
-<<<<<<< HEAD
 source: ""
-=======
->>>>>>> 2dc55b51ee73b6d66dca74838553a49dc50ad230

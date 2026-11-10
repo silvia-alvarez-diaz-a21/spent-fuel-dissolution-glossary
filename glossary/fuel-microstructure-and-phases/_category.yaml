@@ -2,7 +2,4 @@ id: fuel-microstructure-and-phases
 name: Fuel microstructure and phases
 description: "Microstructure of the fuel (grains, grain boundaries, rim, gaps) and the phases it contains or forms."
 order: 5
-<<<<<<< HEAD
 source: ""
-=======
->>>>>>> 2dc55b51ee73b6d66dca74838553a49dc50ad230

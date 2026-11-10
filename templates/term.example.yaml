@@ -1,44 +1,3 @@
-<<<<<<< HEAD
-```yaml
-# EXAMPLE ONLY — completed glossary term.
-# Use this file as a reference when creating new glossary entries.
-
-# 1. Basic Information
-id: fiap
-term: Fraction of Inventory in the Aqueous Phase
-abbreviation: FIAP
-category: sf-dissolution
-tags: [leaching, release, radionuclide, inventory]
-
-# 2. Scientific Content
-definition: >-
-  Ratio of the amount of a radionuclide or element measured in the leaching
-  solution to its initial amount in the spent fuel sample.
-
-description: |
-  FIAP normalises the measured release by the initial inventory, allowing
-  comparisons between radionuclides, samples and experiments.
-
-  It is commonly reported as a cumulative value over the experiment duration.
-  Its calculation requires the initial sample inventory, solution concentration
-  and corresponding solution volume.
-
-notes:
-  - Usually reported as a cumulative value versus contact time.
-  - Expressed as a fraction (0–1) or a percentage (0–100%).
-
-pitfalls:
-  - Confusing fractions with percentages.
-  - Using the fuel rod inventory instead of the actual leached sample inventory.
-  - Comparing results without considering experimental conditions and sampling times.
-
-# 3. Related Terms
-related_terms:
-  - id: release-fraction
-    relation: related-to
-  - id: instant-release-fraction
-    relation: related-to
-=======
 # EXAMPLE ONLY — shows how a filled term looks. It is not part of the glossary (it lives in templates/).
 # The reference below is illustrative: verify citation, pages and DOI before reusing it in a real term.
 
@@ -101,7 +60,6 @@ quantity:
 broader: [release-fraction]
 narrower: [instant-release-fraction]
 related:
->>>>>>> 2dc55b51ee73b6d66dca74838553a49dc50ad230
   - id: initial-inventory
     relation: depends-on
   - id: cumulative-time
@@ -109,10 +67,6 @@ related:
   - id: matrix-dissolution-rate
     relation: see-also
 
-<<<<<<< HEAD
-# 4. Formula and Units
-formula: "F_{IAP,i}(t) = \\frac{C_i(t) \\, V(t)}{m_{i,0
-=======
 db_mapping:
   - table: results_fiap_v2
     field: fiap_am241
@@ -147,4 +101,3 @@ created: "2026-11-04"
 updated: "2026-11-04"
 history:
   - {date: "2026-11-04", author: "Template example", change: "example created"}
->>>>>>> 2dc55b51ee73b6d66dca74838553a49dc50ad230
