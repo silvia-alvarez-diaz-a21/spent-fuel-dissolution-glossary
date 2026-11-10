@@ -2,3 +2,4 @@ id: irradiated-fuel
 name: Irradiated fuel
 description: "Irradiation history and the resulting spent fuel: burn-up, power, cooling time and radionuclide inventory."
 order: 3
+source: ""
