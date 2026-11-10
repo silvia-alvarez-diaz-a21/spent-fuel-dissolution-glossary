@@ -1,11 +1,9 @@
 id: experimental-techniques
 name: Experimental techniques
-
 description: >-
   Techniques and methods used to prepare, conduct and analyse spent fuel
   leaching and dissolution experiments. This category also includes detection
   and characterisation methods, particularly those used to investigate the
   microstructure of irradiated nuclear fuel.
-
 order: 1
 source: ""

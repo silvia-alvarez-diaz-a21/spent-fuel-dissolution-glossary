@@ -4,4 +4,4 @@ name: ""            # (required) label to display (e.g. "Spent fuel dissolution"
 description: ""     # (required) what kind of terms go in this folder
 order: 0            # position among its sibling folders when listed (0 = first)
 translations: {}    # e.g. {es: "Fracciones de liberación"}
-source: ""          # (recommended) source or sources of the description (papers, studies, sites, etc.)
+source: ""          # (required) source or sources of the description (papers, studies, sites etc)
