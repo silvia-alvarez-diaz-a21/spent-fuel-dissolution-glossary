@@ -1,0 +1,55 @@
+id: cladding
+term: Cladding
+abbreviation: null
+category: nuclear-fuel
+tags:
+  - nuclear-fuel
+  - fuel-fabrication
+  - light-water-reactors
+
+definition: >
+  The metallic material surrounding nuclear fuel pellets, forming the
+  outer protective barrier of a fuel rod.
+
+description: >
+  In most power reactors, particularly Light Water Reactors (LWRs), the
+  cladding consists of a thin-walled metallic tube that encloses the
+  nuclear fuel pellets to form a fuel rod. It provides structural support,
+  maintains the integrity of the fuel rod during reactor operation, and
+  acts as a barrier to prevent the release of radioactive fission products
+  and other fuel materials into the reactor coolant. Cladding materials
+  are selected for their mechanical strength, corrosion resistance and
+  compatibility with the reactor operating environment.
+
+notes: []
+pitfalls: []
+
+related_terms:
+  - id: rod
+    relation: component-of
+  - id: nuclear-fuel
+    relation: surrounds
+  - id: fuel-assembly
+    relation: component-of-assembly
+
+formula: null
+formula_variables: []
+units:
+  si: null
+  other: null
+
+references:
+  - type: training-course
+    citation: >
+      IAEA, Basic Professional Training Course: Fuel Cycle, Spent Fuel
+      Management and Transport of Radioactive Materials.
+    doi: null
+    url: null
+
+  - type: glossary
+    citation: >
+      IAEA, IAEA Safety Glossary, 2007 Edition.
+    doi: null
+    url: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1290_web.pdf
+
+authors: []

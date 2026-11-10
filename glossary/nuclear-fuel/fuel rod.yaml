@@ -1,0 +1,54 @@
+id: rod
+term: Rod
+abbreviation: null
+category: nuclear-fuel
+tags:
+  - nuclear-fuel
+  - fuel-fabrication
+  - light-water-reactors
+
+definition: >
+  A cylindrical fuel unit consisting of nuclear fuel pellets enclosed
+  within a metal cladding tube.
+
+description: >
+  In most power reactors, particularly Light Water Reactors (LWRs), a fuel
+  rod consists of a stack of uranium dioxide (UO2) ceramic pellets enclosed
+  within a metallic cladding tube. The pellets are manufactured to precise
+  dimensions and loaded into the cladding, which provides structural support
+  and retains the fuel and its radioactive contents during reactor operation.
+  Fuel rods are subsequently grouped into fuel assemblies, which form the
+  fuel loading of the reactor core.
+
+notes: []
+pitfalls: []
+
+related_terms:
+  - id: nuclear-fuel
+    relation: broader-context
+  - id: fuel-assembly
+    relation: component-of-assembly
+  - id: fuel-cladding
+    relation: contains-fuel
+
+formula: null
+formula_variables: []
+units:
+  si: null
+  other: null
+
+references:
+  - type: training-course
+    citation: >
+      IAEA, Basic Professional Training Course: Fuel Cycle, Spent Fuel
+      Management and Transport of Radioactive Materials.
+    doi: null
+    url: null
+
+  - type: glossary
+    citation: >
+      IAEA, IAEA Safety Glossary, 2007 Edition.
+    doi: null
+    url: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1290_web.pdf
+
+authors: []
