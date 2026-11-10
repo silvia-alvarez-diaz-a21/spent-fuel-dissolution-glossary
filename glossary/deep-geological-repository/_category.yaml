@@ -1,5 +1,6 @@
 id: deep-geological-repository
 name: Deep geological repository
+<<<<<<< HEAD
 
 description: >-
   An underground facility built hundreds of metres deep within stable rock
@@ -15,3 +16,7 @@ source: >-
   Deep geological repositories — A review of design concepts, near-field
   evolution, and their implications for nuclear waste containment, by
   Ogugua P. Unokiwedi, Jiachen Gao, Tristan Bethune and Adedapo N. Awolayo.
+=======
+description: "Repository concept and near-field conditions that frame the experiments (canister, buffer, groundwater)."
+order: 7
+>>>>>>> 2dc55b51ee73b6d66dca74838553a49dc50ad230

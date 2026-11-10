@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ```yaml
 id: sf-dissolution
 name: Spent fuel dissolution
@@ -21,3 +22,9 @@ source: >-
   Leaching of spent nuclear fuels in aerated conditions: Influences of sample
   preparation on radionuclide release patterns.
 ```
+=======
+id: sf-dissolution
+name: Spent fuel dissolution
+description: "Leaching and dissolution of spent fuel: processes, release fractions and matrix dissolution rates."
+order: 4
+>>>>>>> 2dc55b51ee73b6d66dca74838553a49dc50ad230
