@@ -1,4 +1,23 @@
+```yaml
 id: sf-dissolution
 name: Spent fuel dissolution
-description: "Leaching and dissolution of spent fuel: processes, release fractions and matrix dissolution rates."
+
+description: >-
+  Leaching and dissolution of spent nuclear fuel, including the underlying
+  processes, radionuclide release mechanisms, release fractions and matrix
+  dissolution rates. This category also covers the interaction of spent fuel
+  with groundwater and radiation-induced water radiolysis. Reactive oxidising
+  species produced by radiolysis can oxidise uranium from U(IV) to more soluble
+  U(VI) species, promoting fuel dissolution and potentially enhancing
+  radionuclide release.
 order: 4
+
+source: >-
+  Eriksen, T. E., Shoesmith, D. W., & Jonsson, M. Radiation induced dissolution
+  of UO2 based nuclear fuel – A critical review of predictive modelling
+  approaches, Deliverable 8.1, Work Package 8.
+  
+  Roth, O., Cui, D., Askeljung, C., Puranen, A., Evins, L. Z., & Spahiu, K.
+  Leaching of spent nuclear fuels in aerated conditions: Influences of sample
+  preparation on radionuclide release patterns.
+```
