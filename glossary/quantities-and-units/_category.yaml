@@ -2,4 +2,7 @@ id: quantities-and-units
 name: Quantities and units
 description: "Physical quantities, units and conventions used to report the data."
 order: 6
+<<<<<<< HEAD
 source: ""
+=======
+>>>>>>> 2dc55b51ee73b6d66dca74838553a49dc50ad230
