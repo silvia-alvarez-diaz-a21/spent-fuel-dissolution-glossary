@@ -1,0 +1,61 @@
+id: enrichment
+term: Enrichment
+abbreviation: null
+category: nuclear-fuel
+tags:
+  - nuclear-fuel
+  - nuclear-fuel-cycle
+  - uranium
+  - enrichment
+
+definition: >
+  The process of increasing the proportion of uranium-235 (U-235)
+  relative to uranium-238 (U-238) in uranium.
+
+description: >
+  Uranium enrichment is a stage of the nuclear fuel cycle in which the
+  proportion of the fissile isotope uranium-235 (U-235) is increased
+  relative to uranium-238 (U-238). The process generally uses uranium
+  hexafluoride (UF6) as feed material, which is suitable for gaseous
+  enrichment processes because it can be vaporized at relatively low
+  temperatures. Before enrichment, uranium ore is extracted and processed
+  into a uranium oxide concentrate, commonly known as yellowcake
+  (predominantly U3O8), which is subsequently converted into UF6.
+  The enriched uranium is then further processed into a suitable chemical
+  form for nuclear fuel fabrication.
+
+notes:
+  - >
+    Uranium hexafluoride (UF6) is commonly referred to as "hex" in the
+    nuclear industry.
+  - >
+    Uranium hexafluoride can also be converted into uranium metal for
+    certain reactor types, rather than being sent for enrichment.
+
+pitfalls: []
+
+related_terms:
+  - id: uranium-hexafluoride
+    relation: feed-material-for
+  - id: yellowcake
+    relation: produced-before
+  - id: uranium-conversion
+    relation: follows
+  - id: nuclear-fuel
+    relation: part-of
+
+formula: null
+formula_variables: []
+units:
+  si: null
+  other: null
+
+references:
+  - type: training-course
+    citation: >
+      IAEA, Basic Professional Training Course: Fuel Cycle, Spent Fuel
+      Management and Transport of Radioactive Materials.
+    doi: null
+    url: null
+
+authors: []
