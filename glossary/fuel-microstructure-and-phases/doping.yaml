@@ -1,0 +1,59 @@
+id: doping
+term: Doping
+abbreviation: null
+category: nuclear-fuel
+tags:
+  - nuclear-fuel
+  - fuel-fabrication
+  - uranium-dioxide
+  - microstructure
+
+definition: >
+  The intentional addition of small concentrations of selected elements
+  or compounds to uranium dioxide (UO2) during fuel fabrication to modify
+  its microstructure and material properties.
+
+description: >
+  Doping is employed during UO2 fuel fabrication to influence properties
+  such as grain growth, grain size and fission-gas retention. The selected
+  additives, known as dopants, are incorporated into the uranium dioxide
+  matrix in controlled concentrations to modify its microstructural
+  characteristics and behaviour during reactor operation.
+
+notes:
+  - >
+    Examples of doped uranium dioxide fuels include aluminium-doped UO2
+    (Al-doped UO2), chromium-doped UO2 (Cr-doped UO2), chromium and
+    aluminium co-doped UO2 (Cr+Al-doped UO2), and gadolinium oxide-doped
+    UO2 (Gd2O3-doped UO2).
+  - >
+    Aluminium (Al), chromium (Cr) and gadolinium oxide (Gd2O3) are examples
+    of dopants used in uranium dioxide fuel fabrication.
+
+pitfalls: []
+
+related_terms:
+  - id: nuclear-fuel
+    relation: applied-to
+  - id: pellet
+    relation: applied-to
+  - id: grain-growth
+    relation: influences
+  - id: fission-gas
+    relation: influences-retention
+
+formula: null
+formula_variables: []
+units:
+  si: null
+  other: null
+
+references:
+  - type: journal-article
+    citation: >
+      Cleveland, M. W., Nelson, A., and Jossou, E.,
+      Chromium-doped uranium dioxide fuels: A review.
+    doi: null
+    url: null
+
+authors: []
