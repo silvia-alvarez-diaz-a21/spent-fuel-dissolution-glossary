@@ -42,27 +42,26 @@ tests/                       pytest suite of the tools
 docs/WRITING_GUIDE.md          how to write and review terms
 ```
 
-Starting categories (they follow the tables of the SNF database and can be changed):
-`fuel` (fuel-types, irradiation-history, inventory), `sample` (preparation, geometry-and-surface),
-`experiment` (methods, atmosphere, solution-chemistry, conditions), `analysis`,
-`results` (release-fractions, matrix-dissolution, secondary-phases), `radionuclides`,
-`quantities-and-units`, `data-provenance`.
+Categories (one folder each under `glossary/`; `order` in `_category.yaml` sets the listing order):
+`experimental-techniques`, `nuclear-fuel`, `irradiated-fuel`, `sf-dissolution`,
+`fuel-microstructure-and-phases`, `quantities-and-units`, `deep-geological-repository`.
 
 ## What a term contains
 
-| Block | Fields | Used for |
-|---|---|---|
-| Identity | `id`, `term`, `abbreviation`, `symbol`, `category`, `tags`, `status`, `replaced_by` | stable API key, display, search, review workflow |
-| Meaning | `definition`, `description`, `notes`, `pitfalls` | tooltips (definition), help pages (description) |
-| Other names | `synonyms` (typed: exact, abbreviation, spelling-variant, deprecated…), `translations` | search and matching of free text to a term |
-| Quantity | `kind`, `unit`, `si_unit`, `other_units` with conversion, `allowed_values`, `typical_range`, `formula` | data entry validation, unit conversion, plausibility checks |
-| Relations | `broader`, `narrower`, `related` (typed) | navigation, thesaurus export (SKOS) |
-| Database | `db_mapping`: table, field, Excel header | link from each DB column to its definition and back |
-| Sources | `references` (citation, DOI, pages, quote, what it supports), `standards`, `external_ids` | traceability of every definition |
-| Bookkeeping | `authors`, `reviewers`, `created`, `updated`, `history` | review and versioning |
+The sections follow `templates/term.yaml`:
 
-Required: `id`, `term`, `category`, `status`, `definition`, `authors`, `created`, `updated`. An `approved` term
-also needs a reviewer and at least one reference or standard.
+| Section | Fields | Used for |
+|---|---|---|
+| 1. Basic information | `id`, `term`, `abbreviation`, `symbol`, `category`, `tags`, `status`, `replaced_by` | stable API key, display, search, review workflow |
+| 2. Scientific content | `definition`, `description`, `notes`, `pitfalls` | tooltips (definition), help pages (description) |
+| 3. Related terms | `related_terms`: list of `{id, relation}` (related-to, broader, narrower, part-of, has-part, depends-on, input-of, result-of, measured-by, influences, applied-to, precedes, follows, see-also, opposite-of) | navigation, thesaurus export (SKOS) |
+| 4. Formula and units | `formula`, `formula_variables`, `units` (`si`, `db`, `other`), `typical_range` | data entry validation, unit conversion, plausibility checks |
+| 5. References and contributors | `references` (type, citation, DOI, URL, pages), `standards`, `examples`, `authors`, `reviewers`, `created`, `updated`, `history` | traceability and review |
+| 6. Other names (optional) | `synonyms` (typed: exact, abbreviation, spelling-variant, deprecated…), `translations` | search and matching of free text to a term |
+| 7. Link to the SNF database (optional) | `db_mapping` (table, field, Excel header), `allowed_values` | link from each DB column to its definition and back |
+
+Required: `id`, `term`, `category`, `definition`. An empty `authors` list is reported as a warning. An
+`approved` term also needs a reviewer and at least one reference or standard.
 
 ## Commands
 
@@ -70,7 +69,7 @@ also needs a reviewer and at least one reference or standard.
 py -3 -m venv .venv
 .venv\Scripts\pip install -r requirements.txt
 
-.venv\Scripts\python -m glossary_tools new results/release-fractions fiap   # new term from the template
+.venv\Scripts\python -m glossary_tools new sf-dissolution fiap   # new term from the template
 .venv\Scripts\python -m glossary_tools validate                             # check everything
 .venv\Scripts\python -m glossary_tools build                                # compile to dist/
 .venv\Scripts\python -m glossary_tools pdf                                  # dist/glossary.pdf (--approved-only)
@@ -80,8 +79,8 @@ py -3 -m venv .venv
 `validate` checks each file against the JSON Schema, and also:
 - `id` equals the file name, `category` equals the folder;
 - ids are unique, and every folder has a `_category.yaml`;
-- relations point to existing terms (a warning while those terms are not written yet), and broader/narrower
-  pairs are consistent;
+- related terms point to existing terms (a warning while those terms are not written yet), and
+  broader/narrower and part-of/has-part pairs are listed on both sides (warning);
 - references used in `typical_range` and `examples` exist in the term;
 - approved and deprecated terms follow their rules, and dates and ranges are coherent;
 - labels and synonyms shared by two terms are reported;

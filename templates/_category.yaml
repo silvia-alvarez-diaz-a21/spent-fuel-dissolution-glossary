@@ -1,6 +1,7 @@
 # CATEGORY TEMPLATE — every folder under glossary/ has one _category.yaml describing it.
-id: ""              # (required) folder name, lowercase with hyphens (e.g. "release-fractions")
-name: ""            # (required) label to display (e.g. "Release fractions")
+id: ""              # (required) folder name, lowercase with hyphens (e.g. "sf-dissolution")
+name: ""            # (required) label to display (e.g. "Spent fuel dissolution")
 description: ""     # (required) what kind of terms go in this folder
 order: 0            # position among its sibling folders when listed (0 = first)
 translations: {}    # e.g. {es: "Fracciones de liberación"}
+source: ""          # (recommended) source or sources of the description (papers, studies, sites, etc.)

@@ -1,6 +1,0 @@
-id: irradiation-history
-name: Irradiation history
-description: Burn-up, linear power, irradiation cycles and times, cooling time.
-order: 1
-translations:
-  es: Historia de irradiación

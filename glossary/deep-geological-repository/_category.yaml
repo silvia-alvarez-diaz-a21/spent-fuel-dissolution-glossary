@@ -1,0 +1,17 @@
+id: deep-geological-repository
+name: Deep geological repository
+
+description: >-
+  An underground facility built hundreds of metres deep within stable rock
+  or clay formations to isolate high-level radioactive waste. Waste canisters
+  are placed in excavated tunnels and surrounded by dense clay (buffer material)
+  to limit groundwater movement and radionuclide migration. This multi-barrier
+  system combines engineered containers, buffer materials and natural host
+  geology to provide long-term safety.
+
+order: 7
+
+source: >-
+  Deep geological repositories — A review of design concepts, near-field
+  evolution, and their implications for nuclear waste containment, by
+  Ogugua P. Unokiwedi, Jiachen Gao, Tristan Bethune and Adedapo N. Awolayo.

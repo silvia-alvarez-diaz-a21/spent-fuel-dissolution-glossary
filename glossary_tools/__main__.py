@@ -82,7 +82,7 @@ def main(argv=None) -> int:
     d.add_argument("--approved-only", action="store_true", help="leave out draft, review and deprecated terms")
     d.set_defaults(func=cmd_pdf)
     n = sub.add_parser("new", help="create a term file from the template")
-    n.add_argument("category", help="folder path, e.g. results/release-fractions")
+    n.add_argument("category", help="folder path, e.g. sf-dissolution")
     n.add_argument("id", help="term id, e.g. fiap")
     n.set_defaults(func=cmd_new)
     args = p.parse_args(argv)

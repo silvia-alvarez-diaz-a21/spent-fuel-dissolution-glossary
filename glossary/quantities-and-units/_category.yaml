@@ -1,6 +1,5 @@
 id: quantities-and-units
 name: Quantities and units
-description: General quantities, units and conversions used across the database.
+description: "Physical quantities, units and conventions used to report the data."
 order: 6
-translations:
-  es: Magnitudes y unidades
+source: ""

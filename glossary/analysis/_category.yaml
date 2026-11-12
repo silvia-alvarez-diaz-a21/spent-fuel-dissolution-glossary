@@ -1,6 +1,0 @@
-id: analysis
-name: Analytical techniques
-description: Techniques used to measure concentrations and characterise solids (ICP-MS, gamma spectrometry, SEM, XRD...).
-order: 3
-translations:
-  es: Técnicas analíticas

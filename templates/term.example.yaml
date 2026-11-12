@@ -1,65 +1,43 @@
-# EXAMPLE ONLY — shows how a filled term looks. It is not part of the glossary (it lives in templates/).
-# The reference below is illustrative: verify citation, pages and DOI before reusing it in a real term.
+# EXAMPLE ONLY — completed glossary term. It is not part of the glossary (it lives in templates/).
+# Use this file as a reference when creating new glossary entries.
 
+# 1. Basic Information
 id: fiap
 term: Fraction of Inventory in the Aqueous Phase
 abbreviation: FIAP
 symbol: "F_{IAP,i}"
-category: results/release-fractions
+category: sf-dissolution
 tags: [leaching, release, radionuclide, inventory]
 status: draft
-replaced_by: ""
 
+# 2. Scientific Content
 definition: >-
-  Amount of a given radionuclide or element measured in the leaching solution divided by the amount of that
-  radionuclide or element initially present in the spent fuel sample.
+  Ratio of the amount of a radionuclide or element measured in the leaching
+  solution to its initial amount in the spent fuel sample.
+
 description: |
-  The FIAP normalises the measured release by the initial inventory of the sample, so that releases of
-  different nuclides, samples and experiments can be compared. In leaching experiments it is usually
-  reported per sampling time, as a cumulative value over the experiment duration.
+  FIAP normalises the measured release by the initial inventory, allowing
+  comparisons between radionuclides, samples and experiments.
 
-  It needs the initial inventory of the sample (from burn-up calculations or measurements) and the
-  concentration measured in solution together with the solution volume.
+  It is commonly reported as a cumulative value over the experiment duration.
+  Its calculation requires the initial sample inventory, solution concentration
+  and corresponding solution volume.
+
 notes:
-  - Usually reported as cumulative values versus contact time.
-  - Can be given as a fraction (0-1) or as a percentage; the DB unit says which.
+  - Usually reported as a cumulative value versus contact time.
+  - Expressed as a fraction (0–1) or a percentage (0–100%).
+
 pitfalls:
-  - Mixing fractions and percentages when entering data.
-  - Using the inventory of the whole rod instead of the inventory of the leached sample.
+  - Confusing fractions with percentages.
+  - Using the fuel rod inventory instead of the actual leached sample inventory.
+  - Comparing results without considering experimental conditions and sampling times.
 
-synonyms:
-  - label: fractional release
-    type: narrower-usage
-    lang: en
-    note: used by some authors for the same normalised quantity
-  - label: fraction of inventory in aqueous phase
-    type: spelling-variant
-    lang: en
-translations:
-  es: Fracción del inventario en la fase acuosa
-
-quantity:
-  kind: numeric
-  unit: "%"
-  si_unit: "1"
-  other_units:
-    - unit: "1 (fraction)"
-      to_db_unit: "x * 100"
-  allowed_values: []
-  typical_range:
-    min: null
-    max: null
-    context: ""
-    reference: ""
-  formula: "F_{IAP,i}(t) = \\frac{C_{i}(t) \\, V(t)}{m_{i,0}}"
-  formula_variables:
-    - {symbol: "C_i(t)", meaning: "concentration of nuclide i in solution at time t", unit: "mol/L"}
-    - {symbol: "V(t)", meaning: "solution volume at time t", unit: "L"}
-    - {symbol: "m_{i,0}", meaning: "initial inventory of nuclide i in the sample", unit: "mol"}
-
-broader: [release-fraction]
-narrower: [instant-release-fraction]
-related:
+# 3. Related Terms
+related_terms:
+  - id: release-fraction
+    relation: broader
+  - id: instant-release-fraction
+    relation: related-to
   - id: initial-inventory
     relation: depends-on
   - id: cumulative-time
@@ -67,18 +45,21 @@ related:
   - id: matrix-dissolution-rate
     relation: see-also
 
-db_mapping:
-  - table: results_fiap_v2
-    field: fiap_am241
-    excel_header: ""
-    note: "one column per nuclide (fiap_<element><mass>); rows keyed by experiment, cumulative_time_d and replicate"
-  - table: nuclear_fuel_data_v2
-    field: results_fiap_summary
-    excel_header: ""
-    note: summary text of the FIAP results of the experiment
+# 4. Formula and Units
+formula: "F_{IAP,i}(t) = \\frac{C_i(t) \\, V(t)}{m_{i,0}}"
+formula_variables:
+  - {symbol: "C_i(t)", meaning: "concentration of nuclide i in solution at time t", unit: "mol/L"}
+  - {symbol: "V(t)", meaning: "solution volume at time t", unit: "L"}
+  - {symbol: "m_{i,0}", meaning: "initial inventory of nuclide i in the sample", unit: "mol"}
+units:
+  si: "1"
+  db: "%"
+  other:
+    - {unit: "1 (fraction)", to_db_unit: "x * 100"}
 
+# 5. References and Contributors
 references:
-  - id: ref1
+  - id: serrano-purroy2012
     type: article
     citation: >-
       Serrano-Purroy, D., Clarens, F., González-Robles, E., Glatz, J.P., Wegen, D.H., de Pablo, J., Casas, I.,
@@ -88,16 +69,26 @@ references:
     doi: ""
     url: ""
     pages: ""
-    quote: ""
-    supports: [definition]
-standards: []
-external_ids: {}
-
-examples: []
 
 authors: ["Template example"]
 reviewers: []
 created: "2026-11-04"
-updated: "2026-11-04"
-history:
-  - {date: "2026-11-04", author: "Template example", change: "example created"}
+updated: "2026-11-12"
+
+# 6. Other names (optional)
+synonyms:
+  - {label: fractional release, type: narrower-usage, lang: en, note: used by some authors for the same normalised quantity}
+  - {label: fraction of inventory in aqueous phase, type: spelling-variant, lang: en}
+translations:
+  es: Fracción del inventario en la fase acuosa
+
+# 7. Link to the SNF database (optional)
+db_mapping:
+  - table: results_fiap_v2
+    field: fiap_am241
+    excel_header: ""
+    note: "one column per nuclide (fiap_<element><mass>); rows keyed by experiment, cumulative_time_d and replicate"
+  - table: nuclear_fuel_data_v2
+    field: results_fiap_summary
+    excel_header: ""
+    note: summary text of the FIAP results of the experiment

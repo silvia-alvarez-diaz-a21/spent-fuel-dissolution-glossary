@@ -35,7 +35,7 @@ def messages(root: Path, db=DB):
 def test_real_glossary_is_valid():
     g, errors, _ = messages(GLOSSARY)
     assert errors == []
-    assert len(g.categories) >= 20
+    assert len(g.categories) == 7
 
 
 def test_example_term_is_valid_including_db_mapping(gl):
@@ -47,16 +47,17 @@ def test_example_term_is_valid_including_db_mapping(gl):
 
 
 def test_blank_template_is_rejected_until_filled(gl):
-    assert main(["--glossary", str(gl), "new", "results/release-fractions", "irf"]) == 0
-    g, errors, _ = messages(gl)
-    assert any("definition" in e for e in errors) and any("authors" in e for e in errors)
+    assert main(["--glossary", str(gl), "new", "sf-dissolution", "irf"]) == 0
+    g, errors, warnings = messages(gl)
+    assert any("definition" in e for e in errors) and any("term" in e for e in errors)
+    assert any("authors is empty" in w for w in warnings)
     assert g.terms["irf"]["created"]                             # new fills id, category and dates
 
 
 def test_new_refuses_unknown_category_and_existing_file(gl):
-    assert main(["--glossary", str(gl), "new", "no/such", "x"]) == 1
-    assert main(["--glossary", str(gl), "new", "results", "x"]) == 0
-    assert main(["--glossary", str(gl), "new", "results", "x"]) == 1
+    assert main(["--glossary", str(gl), "new", "no-such", "x"]) == 1
+    assert main(["--glossary", str(gl), "new", "irradiated-fuel", "x"]) == 0
+    assert main(["--glossary", str(gl), "new", "irradiated-fuel", "x"]) == 1
 
 
 @pytest.mark.parametrize("change,expected", [
@@ -66,12 +67,14 @@ def test_new_refuses_unknown_category_and_existing_file(gl):
     ({"status": "finished"}, "status"),
     ({"updated": "2020-01-01"}, "earlier than created"),
     ({"id": "Bad Id"}, "id"),
-    ({"quantity": {**EXAMPLE["quantity"], "typical_range": {"min": 5, "max": 1}}}, "min is greater than max"),
+    ({"typical_range": {"min": 5, "max": 1}}, "min is greater than max"),
     ({"examples": [{"text": "x", "reference": "nope"}]}, "reference 'nope'"),
     ({"references": [{"id": "r", "type": "article", "citation": "c", "doi": "https://doi.org/10.1/x"}]}, "doi"),
     ({"synonyms": [{"label": "x", "type": "kind-of"}]}, "synonyms"),
     ({"unknown_field": 1}, "Additional properties"),
-    ({"broader": ["fiap"]}, "points to itself"),
+    ({"related_terms": [{"id": "fiap", "relation": "broader"}]}, "points to itself"),
+    ({"related_terms": [{"id": "x", "relation": "kind-of"}]}, "related_terms"),
+    ({"references": [{"type": "journal-article", "citation": "c"}]}, "references"),
     ({"status": "deprecated", "replaced_by": "ghost"}, "replaced_by 'ghost'"),
 ])
 def test_rules(gl, change, expected):
@@ -92,20 +95,31 @@ def test_db_mapping_must_exist_in_the_snf_db(gl):
 
 def test_duplicate_ids_and_shared_labels(gl):
     write(gl, EXAMPLE)
-    other = {**EXAMPLE, "id": "fiap", "category": "results"}
+    other = {**EXAMPLE, "id": "fiap", "category": "irradiated-fuel"}
     write(gl, other)
     _, errors, _ = messages(gl)
     assert any("duplicated id" in e for e in errors)
-    (gl / "results" / "fiap.yaml").unlink()
-    write(gl, {**EXAMPLE, "id": "fiap-copy", "category": "results", "broader": [], "narrower": []})
+    (gl / "irradiated-fuel" / "fiap.yaml").unlink()
+    write(gl, {**EXAMPLE, "id": "fiap-copy", "category": "irradiated-fuel", "related_terms": []})
     _, _, warnings = messages(gl)
     assert any("also used by" in w for w in warnings)
 
 
+def test_minimal_term_and_relation_warnings(gl):
+    write(gl, {"id": "pellet", "term": "Pellet", "category": "nuclear-fuel", "definition": "d",
+               "related_terms": [{"id": "fuel-rod", "relation": "part-of"}]})
+    write(gl, {"id": "fuel-rod", "term": "Fuel rod", "category": "nuclear-fuel", "definition": "d",
+               "authors": ["a"]})
+    g, errors, warnings = messages(gl)
+    assert errors == [] and set(g.terms) == {"pellet", "fuel-rod"}
+    assert any("does not list 'pellet' as has-part" in w for w in warnings)
+    assert any("pellet.yaml: authors is empty" in w for w in warnings)
+
+
 def test_structure_errors(gl):
-    (gl / "results" / "orphan").mkdir()
+    (gl / "irradiated-fuel" / "orphan").mkdir()
     (gl / "loose.yaml").write_text("id: loose\n", encoding="utf-8")
-    (gl / "results" / "broken.yaml").write_text("id: [unclosed\n", encoding="utf-8")
+    (gl / "irradiated-fuel" / "broken.yaml").write_text("id: [unclosed\n", encoding="utf-8")
     _, errors, _ = messages(gl)
     assert any("folder without _category.yaml" in e for e in errors)
     assert any("inside a category folder" in e for e in errors)
@@ -115,15 +129,15 @@ def test_structure_errors(gl):
 def test_build_outputs_for_apis(gl, tmp_path):
     write(gl, EXAMPLE)
     write(gl, {**EXAMPLE, "id": "release-fraction", "term": "Release fraction", "abbreviation": "",
-               "category": "results/release-fractions", "synonyms": [], "broader": [], "narrower": ["fiap"],
-               "related": [], "db_mapping": [], "translations": {}})
+               "category": "sf-dissolution", "synonyms": [],
+               "related_terms": [{"id": "fiap", "relation": "narrower"}], "db_mapping": [], "translations": {}})
     g = validate(gl, DB)
     assert g.errors == []
     out = build(g, tmp_path / "dist")
     doc = json.loads(out["glossary"].read_text(encoding="utf-8"))
     assert doc["count"] == 2 and [t["id"] for t in doc["terms"]] == ["fiap", "release-fraction"]
-    results = next(c for c in doc["categories"] if c["id"] == "results")
-    assert results["children"][0]["terms"] == ["fiap", "release-fraction"]
+    results = next(c for c in doc["categories"] if c["id"] == "sf-dissolution")
+    assert results["terms"] == ["fiap", "release-fraction"]
     labels = json.loads(out["labels"].read_text(encoding="utf-8"))
     assert labels["fiap"] == ["fiap"] and labels["fractional release"] == ["fiap"]
     assert json.loads(out["db_fields"].read_text(encoding="utf-8"))["results_fiap_v2.fiap_am241"] == ["fiap"]
