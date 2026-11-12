@@ -1,0 +1,57 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 13; sheet 'Deliverable Eurad2D8.1' row 11; sheet 'Eurad2D8.1' row 111).
+
+# 1. Basic Information
+id: secondary-phase
+term: Secondary phase
+abbreviation: ""
+category: fuel-microstructure-and-phases
+tags: [phases, precipitation, grain-boundary]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  A phase into which some radionuclides of the fuel tend to precipitate, such as metallic
+  particles or grey phases.
+
+description: >-
+  The nucleation of these secondary phases in the grain boundaries increases the grain boundary
+  inventory. Secondary phase is the general term; grey phase refers to specific precipitates.
+
+notes:
+  - >-
+    In leaching experiments the term is also used for material that precipitates from the
+    solution onto the fuel surface and can act as a physical barrier to the dissolution of UO2.
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: grey-phase
+    relation: narrower
+  - id: precipitation
+    relation: related-to
+  - id: grain-boundary
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

@@ -1,0 +1,65 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 8; sheet 'Deliverable Eurad2D8.1' row 2).
+# REVIEW: Check consistency with leaching.yaml, whose pitfall defines dissolution as the breakdown of the solid matrix and transfer of its constituents into solution.
+
+# 1. Basic Information
+id: dissolution
+term: Dissolution
+abbreviation: ""
+category: sf-dissolution
+tags: [dissolution, radiolysis, uranium, groundwater]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The process of release of radioactive products from the fuel when it comes into contact with
+  water underground in a disposal facility.
+
+description: >-
+  Groundwater contacts the spent fuel. Radiation from the spent fuel causes radiolysis of the
+  water, producing reactive oxidising species. These species can oxidise U(IV) in UO2 fuel to more
+  soluble U(VI) species. The oxidised uranium then enters the groundwater through dissolution,
+  potentially facilitating the release of radionuclides from the fuel.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: leaching
+    relation: related-to
+  - id: redox
+    relation: related-to
+  - id: solubility
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+  - id: eriksen
+    type: article
+    citation: >-
+      Eriksen, T.E., Shoesmith, D.W., Jonsson, M. Radiation induced dissolution of UO2 based
+      nuclear fuel - A critical review of predictive modelling approaches.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

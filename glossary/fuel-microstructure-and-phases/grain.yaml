@@ -1,0 +1,62 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 12; sheet 'Eurad2D8.1' row 38).
+
+# 1. Basic Information
+id: grain
+term: Grain
+abbreviation: ""
+category: fuel-microstructure-and-phases
+tags: [microstructure, grain, uranium-dioxide]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  A microscopic UO2 crystal of the bulk ceramic fuel, typically about 10 micrometres in size.
+
+description: >-
+  Grains form the intact fluorite lattice where the fuel exists and holds fission products in
+  solid solution. Their size can vary.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: grain-boundary
+    relation: related-to
+  - id: high-burnup-structure
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+  - id: cleveland
+    type: article
+    citation: >-
+      Cleveland, M.W., Nelson, A., Jossou, E. Chromium-doped uranium dioxide fuels: A review.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"
+
+# 6. Other names
+synonyms:
+  - {label: "grain size", type: narrower-usage, lang: en}

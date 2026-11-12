@@ -2,14 +2,16 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://w3id.org/snf-glossary/schema/term.schema.json",
   "title": "Spent fuel dissolution glossary term",
+  "description": "Sections follow templates/term.yaml: 1 basic information, 2 scientific content, 3 related terms, 4 formula and units, 5 references and contributors, 6 other names, 7 link to the SNF database.",
   "type": "object",
-  "required": ["id", "term", "category", "status", "definition", "authors", "created", "updated"],
+  "required": ["id", "term", "category", "definition"],
   "additionalProperties": false,
   "$defs": {
     "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
     "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
     "text": {"type": ["string", "null"]},
-    "lang": {"type": "string", "pattern": "^[a-z]{2}$"}
+    "lang": {"type": "string", "pattern": "^[a-z]{2}$"},
+    "list": {"type": ["array", "null"], "items": {"type": "string"}}
   },
   "properties": {
     "id": {"$ref": "#/$defs/id"},
@@ -17,17 +19,116 @@
     "abbreviation": {"$ref": "#/$defs/text"},
     "symbol": {"$ref": "#/$defs/text"},
     "category": {"type": "string", "pattern": "^[a-z0-9-]+(/[a-z0-9-]+)*$"},
-    "tags": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "tags": {"type": ["array", "null"], "items": {"type": "string"}, "uniqueItems": true},
     "status": {"enum": ["draft", "review", "approved", "deprecated"]},
     "replaced_by": {"$ref": "#/$defs/text"},
 
     "definition": {"type": "string", "minLength": 1},
     "description": {"$ref": "#/$defs/text"},
-    "notes": {"type": "array", "items": {"type": "string"}},
-    "pitfalls": {"type": "array", "items": {"type": "string"}},
+    "notes": {"$ref": "#/$defs/list"},
+    "pitfalls": {"$ref": "#/$defs/list"},
+
+    "related_terms": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "required": ["id", "relation"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/$defs/id"},
+          "relation": {"enum": ["related-to", "broader", "narrower", "part-of", "has-part", "depends-on",
+                                "input-of", "result-of", "measured-by", "influences", "applied-to",
+                                "precedes", "follows", "see-also", "opposite-of"]},
+          "note": {"$ref": "#/$defs/text"}
+        }
+      }
+    },
+
+    "formula": {"$ref": "#/$defs/text"},
+    "formula_variables": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "required": ["symbol", "meaning"],
+        "additionalProperties": false,
+        "properties": {"symbol": {"type": "string"}, "meaning": {"type": "string"}, "unit": {"$ref": "#/$defs/text"}}
+      }
+    },
+    "units": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "si": {"$ref": "#/$defs/text"},
+        "db": {"$ref": "#/$defs/text"},
+        "other": {
+          "type": ["array", "null"],
+          "items": {
+            "anyOf": [
+              {"type": "string"},
+              {"type": "object", "required": ["unit"], "additionalProperties": false,
+               "properties": {"unit": {"type": "string"}, "to_db_unit": {"$ref": "#/$defs/text"}}}
+            ]
+          }
+        }
+      }
+    },
+    "typical_range": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "min": {"type": ["number", "null"]},
+        "max": {"type": ["number", "null"]},
+        "context": {"$ref": "#/$defs/text"},
+        "reference": {"$ref": "#/$defs/text"}
+      }
+    },
+
+    "references": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "required": ["type", "citation"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "#/$defs/text"},
+          "type": {"enum": ["article", "report", "book", "standard", "thesis", "website", "database",
+                            "glossary", "training-course", "other"]},
+          "citation": {"type": "string", "minLength": 1},
+          "doi": {"anyOf": [{"type": "null"}, {"const": ""}, {"type": "string", "pattern": "^10\\.\\S+/\\S+$"}]},
+          "url": {"$ref": "#/$defs/text"},
+          "pages": {"$ref": "#/$defs/text"},
+          "quote": {"$ref": "#/$defs/text"},
+          "supports": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "standards": {"$ref": "#/$defs/list"},
+    "external_ids": {"type": ["object", "null"], "additionalProperties": {"type": ["string", "null"]}},
+    "examples": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "additionalProperties": false,
+        "properties": {"text": {"type": "string"}, "reference": {"$ref": "#/$defs/text"}}
+      }
+    },
+    "authors": {"type": ["array", "null"], "items": {"type": "string", "minLength": 1}},
+    "reviewers": {"$ref": "#/$defs/list"},
+    "created": {"$ref": "#/$defs/date"},
+    "updated": {"$ref": "#/$defs/date"},
+    "history": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "required": ["date", "change"],
+        "additionalProperties": false,
+        "properties": {"date": {"$ref": "#/$defs/date"}, "author": {"$ref": "#/$defs/text"}, "change": {"type": "string"}}
+      }
+    },
 
     "synonyms": {
-      "type": "array",
+      "type": ["array", "null"],
       "items": {
         "type": "object",
         "required": ["label", "type"],
@@ -46,71 +147,8 @@
       "additionalProperties": {"type": ["string", "null"]}
     },
 
-    "quantity": {
-      "type": ["object", "null"],
-      "additionalProperties": false,
-      "properties": {
-        "kind": {"enum": ["", "numeric", "categorical", "text", "boolean", "date", null]},
-        "unit": {"$ref": "#/$defs/text"},
-        "si_unit": {"$ref": "#/$defs/text"},
-        "other_units": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": ["unit"],
-            "additionalProperties": false,
-            "properties": {"unit": {"type": "string"}, "to_db_unit": {"$ref": "#/$defs/text"}}
-          }
-        },
-        "allowed_values": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": ["value"],
-            "additionalProperties": false,
-            "properties": {"value": {"type": "string"}, "definition": {"$ref": "#/$defs/text"}}
-          }
-        },
-        "typical_range": {
-          "type": ["object", "null"],
-          "additionalProperties": false,
-          "properties": {
-            "min": {"type": ["number", "null"]},
-            "max": {"type": ["number", "null"]},
-            "context": {"$ref": "#/$defs/text"},
-            "reference": {"$ref": "#/$defs/text"}
-          }
-        },
-        "formula": {"$ref": "#/$defs/text"},
-        "formula_variables": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": ["symbol", "meaning"],
-            "additionalProperties": false,
-            "properties": {"symbol": {"type": "string"}, "meaning": {"type": "string"}, "unit": {"$ref": "#/$defs/text"}}
-          }
-        }
-      }
-    },
-
-    "broader": {"type": "array", "items": {"$ref": "#/$defs/id"}, "uniqueItems": true},
-    "narrower": {"type": "array", "items": {"$ref": "#/$defs/id"}, "uniqueItems": true},
-    "related": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["id"],
-        "additionalProperties": false,
-        "properties": {
-          "id": {"$ref": "#/$defs/id"},
-          "relation": {"enum": ["related", "depends-on", "measured-by", "input-of", "result-of", "opposite-of", "see-also"]}
-        }
-      }
-    },
-
     "db_mapping": {
-      "type": "array",
+      "type": ["array", "null"],
       "items": {
         "type": "object",
         "required": ["table", "field"],
@@ -123,49 +161,13 @@
         }
       }
     },
-
-    "references": {
-      "type": "array",
+    "allowed_values": {
+      "type": ["array", "null"],
       "items": {
         "type": "object",
-        "required": ["id", "type", "citation"],
+        "required": ["value"],
         "additionalProperties": false,
-        "properties": {
-          "id": {"type": "string", "minLength": 1},
-          "type": {"enum": ["article", "report", "book", "standard", "thesis", "website", "database", "other"]},
-          "citation": {"type": "string", "minLength": 1},
-          "doi": {"anyOf": [{"type": "null"}, {"const": ""}, {"type": "string", "pattern": "^10\\.\\S+/\\S+$"}]},
-          "url": {"$ref": "#/$defs/text"},
-          "pages": {"$ref": "#/$defs/text"},
-          "quote": {"$ref": "#/$defs/text"},
-          "supports": {"type": "array", "items": {"type": "string"}}
-        }
-      }
-    },
-    "standards": {"type": "array", "items": {"type": "string"}},
-    "external_ids": {"type": ["object", "null"], "additionalProperties": {"type": ["string", "null"]}},
-
-    "examples": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["text"],
-        "additionalProperties": false,
-        "properties": {"text": {"type": "string"}, "reference": {"$ref": "#/$defs/text"}}
-      }
-    },
-
-    "authors": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
-    "reviewers": {"type": "array", "items": {"type": "string"}},
-    "created": {"$ref": "#/$defs/date"},
-    "updated": {"$ref": "#/$defs/date"},
-    "history": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["date", "change"],
-        "additionalProperties": false,
-        "properties": {"date": {"$ref": "#/$defs/date"}, "author": {"$ref": "#/$defs/text"}, "change": {"type": "string"}}
+        "properties": {"value": {"type": "string"}, "definition": {"$ref": "#/$defs/text"}}
       }
     }
   }

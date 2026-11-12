@@ -1,0 +1,46 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet 'Deliverable Eurad2D8.1' row 18).
+# REVIEW: Spreadsheet note: 'Nice manufacturer for SEM: Hitachi TM3030 SEM'.
+
+# 1. Basic Information
+id: electron-backscatter-diffraction
+term: Electron backscatter diffraction
+abbreviation: EBSD
+category: experimental-techniques
+tags: [microscopy, crystallography, grain, characterisation]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  SEM-based technique used to determine the crystallographic orientation of individual grains and
+  the misorientation between neighbouring grains.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: grain
+    relation: measured-by
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: corkhill
+    type: article
+    citation: >-
+      Corkhill, C.L. et al. Contribution of energetically reactive surface features to the
+      dissolution of CeO2 and ThO2 analogues for spent nuclear fuel microstructures.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

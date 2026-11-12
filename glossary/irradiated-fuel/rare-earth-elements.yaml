@@ -1,0 +1,49 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 27; sheet 'Eurad2D8.1' row 32).
+
+# 1. Basic Information
+id: rare-earth-elements
+term: Rare earth elements
+abbreviation: REE
+category: irradiated-fuel
+tags: [fission-products, lanthanides, chemistry]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The lanthanides (Z = 57-71) together with scandium (Z = 21) and yttrium (Z = 39), which have
+  related chemical properties.
+
+description: >-
+  The lanthanide group predominates as trivalent cations, REE(III).
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: lanthanides
+    relation: narrower
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

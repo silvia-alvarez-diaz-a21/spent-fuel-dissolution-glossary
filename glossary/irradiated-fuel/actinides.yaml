@@ -1,0 +1,51 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 2).
+
+# 1. Basic Information
+id: actinides
+term: Actinides
+abbreviation: ""
+category: irradiated-fuel
+tags: [actinides, inventory, solubility]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Elements with atomic number 89 to 103.
+
+description: |
+  In spent nuclear fuel dissolution, specific interest is given to U, Np, Pu, Am and Cm. Actinides
+  are present in the fuel as products of neutron absorption or of decay chains.
+
+  Actinide solubility refers to their ability to pass into a solution, mostly aqueous. The amount
+  of actinides in solution gives information on the oxidative dissolution of the uranium matrix.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: solubility
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: evins2025
+    type: article
+    citation: >-
+      Evins, L.Z. et al. (2025). Radionuclide release from spent nuclear fuel in sealed glass
+      ampoules.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

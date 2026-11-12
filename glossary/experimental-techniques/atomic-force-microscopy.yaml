@@ -1,0 +1,43 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet 'Deliverable Eurad2D8.1' row 17).
+
+# 1. Basic Information
+id: atomic-force-microscopy
+term: Atomic force microscopy
+abbreviation: AFM
+category: experimental-techniques
+tags: [microscopy, surface, characterisation]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  High-resolution surface characterisation technique that uses a nanoscale tip to scan the surface
+  of a material and produce a three-dimensional map of its topography.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms: []
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: corkhill
+    type: article
+    citation: >-
+      Corkhill, C.L. et al. Contribution of energetically reactive surface features to the
+      dissolution of CeO2 and ThO2 analogues for spent nuclear fuel microstructures.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

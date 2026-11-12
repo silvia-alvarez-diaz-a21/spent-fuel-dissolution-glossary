@@ -1,0 +1,66 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 15; sheet 'Eurad2D8.1' row 46).
+
+# 1. Basic Information
+id: instant-release-fraction
+term: Instant release fraction
+abbreviation: IRF
+category: sf-dissolution
+tags: [release, radionuclide, inventory, repository]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The radionuclides that are expected to be released rapidly when water comes into contact with
+  UO2 or MOX fuel following container breaching in geological repository conditions.
+
+description: >-
+  These radionuclides are located in the more accessible parts of the spent fuel structure, where
+  they are loosely bound (gap, grain boundaries, cracks), and are released faster than the spent
+  fuel matrix during leaching. Examples: C-14, Cl-36, Se-79, and I and Cs isotopes, whose IRF can
+  be estimated from the fission gas release.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: fission-gas-release
+    relation: related-to
+  - id: grain-boundary
+    relation: related-to
+  - id: leaching
+    relation: related-to
+  - id: fiap
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: source-term-irf
+    type: article
+    citation: >-
+      Spent fuel radionuclide source-term model for assessing spent fuel performance in
+      geological disposal. Part I: Assessment of the instant release fraction.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

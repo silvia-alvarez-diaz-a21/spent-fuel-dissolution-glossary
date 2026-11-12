@@ -2,6 +2,10 @@ id: pellet
 term: Pellet
 abbreviation: null
 category: nuclear-fuel
+<<<<<<< HEAD
+=======
+status: draft
+>>>>>>> github/main
 tags:
   - nuclear-fuel
   - fuel-fabrication
@@ -26,12 +30,21 @@ notes: []
 pitfalls: []
 
 related_terms:
+<<<<<<< HEAD
   - id: rod
     relation: contained-within
   - id: cladding
     relation: enclosed-by
   - id: nuclear-fuel
     relation: form-of
+=======
+  - id: fuel-rod
+    relation: part-of
+  - id: cladding
+    relation: related-to
+  - id: nuclear-fuel
+    relation: broader
+>>>>>>> github/main
 
 formula: null
 formula_variables: []
@@ -53,4 +66,8 @@ references:
     doi: null
     url: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1290_web.pdf
 
+<<<<<<< HEAD
 authors: []
+=======
+authors: []
+>>>>>>> github/main

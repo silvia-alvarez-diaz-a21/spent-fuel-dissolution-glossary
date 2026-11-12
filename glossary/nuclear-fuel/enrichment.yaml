@@ -2,6 +2,10 @@ id: enrichment
 term: Enrichment
 abbreviation: null
 category: nuclear-fuel
+<<<<<<< HEAD
+=======
+status: draft
+>>>>>>> github/main
 tags:
   - nuclear-fuel
   - nuclear-fuel-cycle
@@ -36,9 +40,15 @@ pitfalls: []
 
 related_terms:
   - id: uranium-hexafluoride
+<<<<<<< HEAD
     relation: feed-material-for
   - id: yellowcake
     relation: produced-before
+=======
+    relation: depends-on
+  - id: yellowcake
+    relation: follows
+>>>>>>> github/main
   - id: uranium-conversion
     relation: follows
   - id: nuclear-fuel
@@ -58,4 +68,8 @@ references:
     doi: null
     url: null
 
+<<<<<<< HEAD
 authors: []
+=======
+authors: []
+>>>>>>> github/main

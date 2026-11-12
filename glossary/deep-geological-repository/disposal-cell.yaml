@@ -1,0 +1,48 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 7).
+
+# 1. Basic Information
+id: disposal-cell
+term: Disposal cell
+abbreviation: ""
+category: deep-geological-repository
+tags: [repository, canister]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  A designated space in a geological repository in which the canister that encloses the
+  radioactive waste is placed.
+
+description: >-
+  Disposal cells are designed to hold the containers with mechanical stability.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: deep-geological-repository
+    relation: part-of
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: ans-hanford
+    type: website
+    citation: >-
+      American Nuclear Society. Hanford places first vitrified waste containers in disposal
+      cell.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

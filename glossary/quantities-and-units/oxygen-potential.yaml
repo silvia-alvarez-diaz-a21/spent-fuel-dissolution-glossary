@@ -1,0 +1,51 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 19; sheet 'Disco' rows 20, 40, 67).
+
+# 1. Basic Information
+id: oxygen-potential
+term: Oxygen potential
+abbreviation: ""
+category: quantities-and-units
+tags: [thermodynamics, oxygen, fuel-chemistry]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The thermodynamic driving force for oxygen diffusion in a multicomponent system, expressed as
+  the partial molar Gibbs free energy of oxygen.
+
+description: >-
+  It determines oxygen redistribution, influencing local chemical reactions, fuel decomposition
+  and dissolution rates.
+
+notes:
+  - >-
+    Example: a sintering atmosphere of Ar/4% H2 with an oxygen potential of -510 kJ/mol O2.
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: sintering
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: "J/mol"
+  other: ["kJ/mol O2"]
+
+# 5. References and Contributors
+references:
+  - id: piro
+    type: article
+    citation: >-
+      Piro, M.H.A. Thermodynamically Informed Nuclear Fuel Codes - A Review and Perspectives.
+      Faculty of Energy Systems and Nuclear Science, Ontario Tech University.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

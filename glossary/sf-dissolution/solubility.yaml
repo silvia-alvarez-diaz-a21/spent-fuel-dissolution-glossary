@@ -1,0 +1,75 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 22; sheet 'Eurad2D8.1' row 60).
+# REVIEW: The spreadsheet said 'the solvants are radionucleids'; written here as solutes. Check.
+
+# 1. Basic Information
+id: solubility
+term: Solubility
+abbreviation: ""
+category: sf-dissolution
+tags: [solubility, solution, chemistry]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The ability of one substance to dissolve in another, forming a solution, which is a homogeneous
+  mixture where the individual components are evenly distributed.
+
+description: |
+  Solubility has a limit: the maximum amount of a substance that can be dissolved in a given
+  volume of solvent. A solution that has not reached this limit is unsaturated, and more solute
+  can still dissolve in it.
+
+  In the case of spent nuclear fuel, the solutes are radionuclides or oxidation products of the
+  fuel, so solubility is linked to the dissolution process.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: dissolution
+    relation: related-to
+  - id: precipitation
+    relation: opposite-of
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+  - id: ch104
+    type: website
+    citation: >-
+      Western Oregon University. CH104: Chemistry and the Environment, Chapter 7: Solutions.
+    doi: ""
+    url: "https://wou.edu/chemistry/courses/online-chemistry-textbooks/3890-2/ch104-chapter-7-solutions/"
+    pages: ""
+  - id: ebsco
+    type: website
+    citation: >-
+      EBSCO Research Starters: Solubility.
+    doi: ""
+    url: "https://www.ebsco.com"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"
+
+# 6. Other names
+synonyms:
+  - {label: "solubility limit", type: narrower-usage, lang: en}

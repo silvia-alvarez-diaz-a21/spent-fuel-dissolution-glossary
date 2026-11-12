@@ -2,6 +2,10 @@ id: cladding
 term: Cladding
 abbreviation: null
 category: nuclear-fuel
+<<<<<<< HEAD
+=======
+status: draft
+>>>>>>> github/main
 tags:
   - nuclear-fuel
   - fuel-fabrication
@@ -25,12 +29,21 @@ notes: []
 pitfalls: []
 
 related_terms:
+<<<<<<< HEAD
   - id: rod
     relation: component-of
   - id: nuclear-fuel
     relation: surrounds
   - id: fuel-assembly
     relation: component-of-assembly
+=======
+  - id: fuel-rod
+    relation: part-of
+  - id: nuclear-fuel
+    relation: related-to
+  - id: fuel-assembly
+    relation: part-of
+>>>>>>> github/main
 
 formula: null
 formula_variables: []
@@ -52,4 +65,8 @@ references:
     doi: null
     url: https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1290_web.pdf
 
+<<<<<<< HEAD
 authors: []
+=======
+authors: []
+>>>>>>> github/main

@@ -1,0 +1,53 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 24).
+
+# 1. Basic Information
+id: bentonite
+term: Bentonite
+abbreviation: ""
+category: deep-geological-repository
+tags: [buffer, clay, engineered-barrier]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  A clay material composed mainly of minerals of the smectite group (calcium, sodium or aluminium
+  montmorillonite) that expands significantly when hydrated.
+
+description: |
+  In engineering projects, bentonite is valued for its high porosity and strong moisture
+  absorption, which makes it expand when hydrated; the expansion fills the surrounding voids and
+  provides mechanical support.
+
+  In spent nuclear fuel disposal, bentonite is placed around the underground canisters as an
+  engineered barrier. When exposed to groundwater it swells and seals fractures, limiting the
+  water that reaches the canisters while keeping them mechanically stable.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: deep-geological-repository
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: murray
+    type: book
+    citation: >-
+      Murray, H.H. Applied Clay Mineralogy. Chapter 6: Bentonite applications.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"
