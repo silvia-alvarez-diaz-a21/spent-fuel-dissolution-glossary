@@ -1,0 +1,76 @@
+# 1. Basic Information
+id: "adopt-fuel"
+term: "ADOPT Fuel"
+abbreviation: "ADOPT"
+category: "nuclear-fuel, fuel type"  
+tags:
+  - UO2
+  - doping
+  - chromia
+  - alumina
+  - grain growth
+  - fission gas release
+  - accident-tolerant fuel
+
+# 2. Scientific Content
+definition: "An advanced uranium dioxide (UO2) nuclear fuel pellet doped with small amounts of chromia (Cr2O3) and alumina (Al2O3), developed as part of Westinghouse's EnCore® fuel programme to improve fuel performance and fuel-cycle economics."
+
+description: |
+  ADOPT fuel is an enhanced UO2 fuel pellet developed by Westinghouse. Its
+  composition includes small additions of chromia (Cr2O3) and alumina (Al2O3),
+  which promote grain growth during pellet sintering.
+
+  Compared with conventional UO2 fuel, the resulting larger grain structure
+  can reduce fission gas release (FGR) by increasing the distance that
+  intragranular gas atoms must diffuse before reaching grain boundaries.
+  The modified microstructure can also influence pellet density and other
+  fuel-performance properties.
+
+  ADOPT fuel is associated with the EnCore® fuel programme and is intended
+  to improve fuel-cycle economics and fuel performance, including aspects
+  relevant to accident tolerance.
+
+notes:
+  - "Chromia and alumina are added in relatively small concentrations."
+  - "Larger grains can reduce fission gas release by increasing the effective diffusion path within the grains."
+  - "The effects on density and microstructure depend on dopant concentrations and fabrication conditions."
+  - "ADOPT is a doped UO2 fuel design; it should not be confused with entirely different accident-tolerant fuel concepts."
+
+pitfalls:
+
+
+# 3. Related Terms
+related_terms:
+  - id: "u02-fuel"
+    relation: "related-to"
+  - id: "grain"
+    relation: "related-to"
+  - id: "fission-gas-release"
+    relation: "related-to"
+  - id: "sintering"
+    relation: "depends-on"
+
+# 4. Formula and Units
+formula: ""
+
+formula_variables: []
+
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: "website"
+    citation: "Westinghouse Nuclear. ADOPT fuel."
+    doi: ""
+    url: ""
+    pages: ""
+
+  - type: "article"
+    citation: "Aqueous leaching of ADOPT and standard UO2 spent nuclear fuel under H2 atmosphere. MRS Advances, 2020."
+    doi: "10.1557/adv.2020.69"
+    url: "https://doi.org/10.1557/adv.2020.69"
+    pages: ""
+
+authors: []
