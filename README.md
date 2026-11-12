@@ -40,12 +40,15 @@ schema/term.schema.json      JSON Schema of a term (the contract for APIs)
 schema/category.schema.json  JSON Schema of a category
 glossary_tools/              validate, build, pdf, word and new commands
 tests/                       pytest suite of the tools
-docs/WRITING_GUIDE.md          how to write and review terms
+docs/WRITING_GUIDE.md        how to write and review terms
+docs/TERM_BACKLOG.md         candidate terms not written yet (from first Glossary.xlsx)
 ```
 
 Categories (one folder each under `glossary/`; `order` in `_category.yaml` sets the listing order):
 `experimental-techniques`, `nuclear-fuel`, `irradiated-fuel`, `sf-dissolution`,
 `fuel-microstructure-and-phases`, `quantities-and-units`, `deep-geological-repository`.
+Each `_category.yaml` has `id` (the folder name), `name`, `description`, `order`, `translations` and `source`
+(the references behind the description).
 
 ## What a term contains
 
@@ -70,7 +73,7 @@ Required: `id`, `term`, `category`, `definition`. An empty `authors` list is rep
 py -3 -m venv .venv
 .venv\Scripts\pip install -r requirements.txt
 
-.venv\Scripts\python -m glossary_tools new sf-dissolution fiap   # new term from the template
+.venv\Scripts\python -m glossary_tools new sf-dissolution leachant      # new term from the template
 .venv\Scripts\python -m glossary_tools validate                             # check everything
 .venv\Scripts\python -m glossary_tools build                                # compile to dist/
 .venv\Scripts\python -m glossary_tools pdf                                  # dist/glossary.pdf (--approved-only)

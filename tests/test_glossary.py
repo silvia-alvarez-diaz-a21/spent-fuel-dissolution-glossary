@@ -54,6 +54,25 @@ def test_blank_template_is_rejected_until_filled(gl):
     assert g.terms["irf"]["created"]                             # new fills id, category and dates
 
 
+def test_template_matches_the_schema():
+    """Every field of the blank template and of the example is in the schema, so they cannot drift apart."""
+    schema = json.loads((ROOT / "schema" / "term.schema.json").read_text(encoding="utf-8"))
+    fields = set(schema["properties"])
+    template = yaml.safe_load((ROOT / "templates" / "term.yaml").read_text(encoding="utf-8"))
+    assert set(template) <= fields, set(template) - fields
+    assert set(EXAMPLE) <= fields, set(EXAMPLE) - fields
+    assert set(schema["required"]) <= set(template)
+
+
+def test_category_source_is_accepted(gl):
+    cat = gl / "sf-dissolution" / "_category.yaml"
+    data = yaml.safe_load(cat.read_text(encoding="utf-8"))
+    cat.write_text(yaml.safe_dump({**data, "source": "Some reference."}), encoding="utf-8")
+    assert messages(gl)[1] == []
+    cat.write_text(yaml.safe_dump({**data, "sources": "typo"}), encoding="utf-8")
+    assert any("Additional properties" in e for e in messages(gl)[1])
+
+
 def test_new_refuses_unknown_category_and_existing_file(gl):
     assert main(["--glossary", str(gl), "new", "no-such", "x"]) == 1
     assert main(["--glossary", str(gl), "new", "irradiated-fuel", "x"]) == 0
@@ -146,6 +165,9 @@ def test_build_outputs_for_apis(gl, tmp_path):
     concept = next(n for n in skos["@graph"] if n["@id"].endswith("/fiap"))
     assert concept["@type"] == "skos:Concept" and concept["skos:notation"] == "FIAP"
     assert {"@id": "https://w3id.org/snf-glossary/release-fraction"} in concept["skos:broader"]
+    assert {"@id": "https://w3id.org/snf-glossary/initial-inventory"} in concept["skos:related"]
+    other = next(n for n in skos["@graph"] if n["@id"].endswith("/release-fraction"))
+    assert other["skos:narrower"] == [{"@id": "https://w3id.org/snf-glossary/fiap"}]
 
 
 def test_pdf(gl, tmp_path):

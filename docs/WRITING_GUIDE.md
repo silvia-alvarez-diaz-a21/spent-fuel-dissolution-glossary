@@ -14,14 +14,16 @@ py -3 -m venv .venv
 ## 2. Create a term
 
 1. Choose the category (folder) it belongs to, e.g. `sf-dissolution`. If none fits, create the
-   folder and copy `templates/_category.yaml` into it, filled in.
-2. Choose the `id`: English, lowercase with hyphens, short and stable (`fiap`, `burn-up`,
+   folder and copy `templates/_category.yaml` into it, filled in (with the references of its
+   description in `source`).
+   Before writing a term, check `docs/TERM_BACKLOG.md`: it may already have notes and sources for it.
+2. Choose the `id`: English, lowercase with hyphens, short and stable (`fiap`, `burnup`,
    `instant-release-fraction`).
 3. Create the file from the template:
    ```
-   .venv\Scripts\python -m glossary_tools new sf-dissolution fiap
+   .venv\Scripts\python -m glossary_tools new sf-dissolution leachant
    ```
-   This creates `glossary/sf-dissolution/fiap.yaml` with the `id`, the category and the dates
+   This creates `glossary/sf-dissolution/leachant.yaml` with the `id`, the category and the dates
    already filled in.
 4. Fill it in following the comments of the template. `templates/term.example.yaml` is a complete example, and
    `glossary/sf-dissolution/leaching.yaml` is a real term.
@@ -30,7 +32,7 @@ py -3 -m venv .venv
    .venv\Scripts\python -m glossary_tools validate
    ```
    **Errors** must be fixed. **Warnings** are normal while terms are missing: for example,
-   "related 'x' is not a term yet" disappears once the term `x` is written.
+   "related term 'x' is not a term yet" disappears once the term `x` is written.
 
 ## 3. Content rules
 
@@ -68,7 +70,16 @@ py -3 -m venv .venv
 On every edit, update `updated` and add a line to `history`. The `id` of an approved term never changes,
 because the APIs use it as the key.
 
-## 5. Commit the changes
+## 5. Share the glossary
+
+```
+.venv\Scripts\python -m glossary_tools pdf     # dist/glossary.pdf
+.venv\Scripts\python -m glossary_tools word    # dist/glossary.docx (editable; update the contents when Word asks)
+```
+
+Add `--approved-only` to leave out the terms that are not approved yet.
+
+## 6. Commit the changes
 
 Before each commit, `validate` without errors and `pytest` passing:
 
