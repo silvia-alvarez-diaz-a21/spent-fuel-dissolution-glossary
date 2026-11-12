@@ -3,11 +3,11 @@ id: "sintering"
 term: "Sintering"
 abbreviation: ""
 category: nuclear-fuel
+status: draft
 tags:
   - UO2
-  - nuclear fuel
-  - fuel pellet
-
+  - nuclear-fuel
+  - fuel-pellet
 
 # 2. Scientific Content
 definition: "Sintering is the thermal process by which compacted UO2 powder particles bond and coalesce at high temperatures, resulting in pellet shrinkage, reduced porosity and increased density."
@@ -28,7 +28,6 @@ notes:
 
 pitfalls:
   - "Sintering does not involve complete melting of the UO2 powder."
- 
 
 # 3. Related Terms
 related_terms:
@@ -36,8 +35,10 @@ related_terms:
     relation: "related-to"
   - id: "grain-growth"
     relation: "related-to"
-  - id: "u02-fuel-pellet"
+  - id: "uo2-fuel-pellet"
     relation: "part-of"
+  - id: "oxygen-potential"
+    relation: "related-to"
 
 # 4. Formula and Units
 formula: ""
@@ -56,4 +57,7 @@ references:
     url: ""
     pages: ""
 
-authors: []
+authors: ["Stefanos Koutris"]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"
