@@ -1,0 +1,62 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 10).
+
+# 1. Basic Information
+id: failed-fuel-container
+term: Failed fuel container
+abbreviation: ""
+category: deep-geological-repository
+tags: [damaged-fuel, container, repository]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  A container designed to hold damaged spent nuclear fuel, that is, fuel that has lost its
+  original technical and functional design capabilities with regard to handling and confinement.
+
+description: >-
+  Fuel can be damaged by incidents during packaging, handling and transportation, or by
+  degradation during storage. Examples of damage include failed cladding, failed fuel meat,
+  sectioned test specimens, partially reprocessed fuel, over-heated elements, dismantled
+  assemblies and assemblies with lifting fixtures removed.
+
+notes:
+  - >-
+    The DisCo document uses the term for the failure of the canister or container that encases
+    the spent fuel, which allows groundwater to penetrate and causes radioactive contamination.
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: deep-geological-repository
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: carlsen
+    type: report
+    citation: >-
+      Carlsen, B.W. et al. Damaged Spent Nuclear Fuel at U.S. DOE Facilities: Experience and
+      Lessons Learned.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: disco-epj
+    type: article
+    citation: >-
+      Spent nuclear fuel management, characterisation, and dissolution behaviour: progress and
+      achievement from SFC and DisCo. EPJ Nuclear Sciences & Technologies 9, 13.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

@@ -1,0 +1,50 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet 'Deliverable Eurad2D8.1' row 15).
+
+# 1. Basic Information
+id: single-pass-flow-through
+term: Single-pass flow-through
+abbreviation: SPFT
+category: experimental-techniques
+tags: [leaching, dissolution-rate, flow-through, experiment]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  A continuous-flow experimental set-up in which fresh solution is passed once through a reactor
+  containing a solid material, and the effluent is analysed to determine the dissolution or
+  release rate of the material.
+
+description: >-
+  SPFT is used to study UO2 dissolution under controlled aqueous conditions by continuously
+  flowing solution over the fuel and measuring the dissolved uranium in the outlet solution.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: leaching
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: garcia-gomez
+    type: other
+    citation: >-
+      García-Gómez, S. Oxidative dissolution mechanism of both undoped and Gd2O3-doped UO2(s)
+      at alkaline to hyperalkaline pH.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

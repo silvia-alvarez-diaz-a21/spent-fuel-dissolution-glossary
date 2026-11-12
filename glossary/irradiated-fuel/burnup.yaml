@@ -1,0 +1,55 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 4; sheet 'Eurad2D8.1' row 26).
+
+# 1. Basic Information
+id: burnup
+term: Burnup
+abbreviation: ""
+category: irradiated-fuel
+tags: [irradiation, burnup, inventory]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The fission energy produced per unit mass of fuel, most often expressed in MWd/kgU.
+
+description: >-
+  Burnup describes how extensive the fuel irradiation has been and, as a consequence, it is an
+  indirect characterisation of the spent fuel composition, which is known not to be uniform across
+  the fuel pellet.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: high-burnup-structure
+    relation: related-to
+  - id: linear-heat-generation-rate
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: "J/kg"
+  other: ["MWd/kgU", "GWd/tHM"]
+
+# 5. References and Contributors
+references:
+  - id: sciencedirect-burnup
+    type: website
+    citation: >-
+      ScienceDirect (n.d.). Burnup - an overview.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"
+
+# 6. Other names
+synonyms:
+  - {label: "burn-up", type: spelling-variant, lang: en}
+  - {label: "BU", type: abbreviation, lang: en}

@@ -1,0 +1,56 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 21; sheet 'Disco' rows 20, 66).
+
+# 1. Basic Information
+id: sintering
+term: Sintering
+abbreviation: ""
+category: nuclear-fuel
+tags: [fuel-fabrication, pellet, uranium-dioxide]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Manufacturing process of UO2 fuel pellets in which compacted UO2 powder is heated to high
+  temperature until the original particles coalesce, so that the volume of the pellet decreases
+  and its density increases.
+
+description: >-
+  UO2 powder is first compacted into a highly porous pellet. This powder compact is then heated to
+  high temperature until the particles coalesce, creating a dense pellet with some residual
+  porosity.
+
+notes:
+  - >-
+    The sintering atmosphere sets the oxygen potential, e.g. Ar/4% H2 with an oxygen potential
+    of -510 kJ/mol O2.
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: pellet
+    relation: related-to
+  - id: oxygen-potential
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: greenquist
+    type: article
+    citation: >-
+      Greenquist, I., Tonks, M.R., Zhang, Y. Review of sintering and densification in nuclear
+      fuels: Physical mechanisms, experimental results, and computational models.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

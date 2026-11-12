@@ -1,0 +1,59 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 26; sheet 'Eurad2D8.1' row 29).
+
+# 1. Basic Information
+id: volatile-products
+term: Volatile products
+abbreviation: ""
+category: irradiated-fuel
+tags: [fission-products, release, gap]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Fission products (Kr, Xe, Br, I) with high intrinsic mobility, which migrate out of the fuel
+  matrix and accumulate in gaps, cracks and the plenum.
+
+notes:
+  - >-
+    Some are naturally volatile (e.g. Xe and I); others become volatile at high temperatures
+    (Cs).
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: fission-gas-release
+    relation: related-to
+  - id: fission-product-segregation
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: nda-dssc-451-01
+    type: report
+    citation: >-
+      NDA. Geological Disposal: Waste Package Evolution Status Report. NDA Report no.
+      DSSC/451/01.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

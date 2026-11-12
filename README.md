@@ -27,6 +27,7 @@ Created and maintained by **[Amphos 21](https://amphos21.com)** as a partner of 
 ## Content
 
 How to write and review terms: [docs/WRITING_GUIDE.md](docs/WRITING_GUIDE.md).
+Candidate terms not written yet, with working notes and sources: [docs/TERM_BACKLOG.md](docs/TERM_BACKLOG.md).
 
 ## Layout
 

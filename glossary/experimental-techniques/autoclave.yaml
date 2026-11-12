@@ -1,0 +1,65 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 3; sheet 'Disco' rows 8, 16).
+
+# 1. Basic Information
+id: autoclave
+term: Autoclave
+abbreviation: ""
+category: experimental-techniques
+tags: [autoclave, leaching, experiment, vessel]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  A vessel resistant to pressure and to chemical attack, made of a resistant metal such as
+  titanium or other alloys, used in spent fuel studies to hold the leaching solution and the
+  sample in leaching and dissolution experiments.
+
+description: >-
+  Autoclaves are used in many scientific fields and their size depends on the use. In spent fuel
+  studies they range from a few millilitres to a few litres. They are usually installed in hot
+  cells.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: leaching
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: roth-skb
+    type: report
+    citation: >-
+      Roth, O. et al. Autoclave experiments on spent fuel dissolution under hydrogen
+      atmospheres. SKB Technical Report Series.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: miele
+    type: website
+    citation: >-
+      Miele Professional.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: phc
+    type: website
+    citation: >-
+      PHC Europe BV.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

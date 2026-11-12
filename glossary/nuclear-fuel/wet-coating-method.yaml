@@ -1,0 +1,57 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 23; sheet 'Disco' rows 22, 30).
+
+# 1. Basic Information
+id: wet-coating-method
+term: Wet coating method
+abbreviation: WCM
+category: nuclear-fuel
+tags: [fuel-fabrication, doping, model-materials]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Wet chemical route for the preparation of doped UO2-based model ceramic pellets, used as model
+  materials for modern nuclear fuels.
+
+description: >-
+  It is also described as a powder coating technique used to protect nuclear fuel additives (UN
+  spheres) in accident tolerant fuel compositions.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: doping
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: costa2023
+    type: thesis
+    citation: >-
+      Costa, D.R. (2023). Development of Encapsulated UN-UO2 Accident Tolerant Fuel. KTH Royal
+      Institute of Technology.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: kegler
+    type: article
+    citation: >-
+      Kegler, P. et al. Chromium Doped UO2-Based Ceramics: Synthesis and Characterization of
+      Model Materials for Modern Nuclear Fuels.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

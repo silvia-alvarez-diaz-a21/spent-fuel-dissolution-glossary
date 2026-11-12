@@ -1,0 +1,69 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 28; sheet 'Eurad2D8.1' rows 76, 77).
+
+# 1. Basic Information
+id: lanthanides
+term: Lanthanides
+abbreviation: Ln
+category: irradiated-fuel
+tags: [fission-products, lanthanides, doping]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The group of elements with atomic number 57 to 71, which predominate as trivalent cations.
+
+description: >-
+  As Ln ions tend to form oxides, they interact with UO2 and alter its chemical and physical
+  properties. Ln-doped UO2 is used as a model material.
+
+notes: []
+pitfalls:
+  - >-
+    Lanthanides (the elements) are not lanthanites, which are a group of isostructural rare
+    earth element carbonate minerals.
+
+# 3. Related Terms
+related_terms:
+  - id: rare-earth-elements
+    relation: broader
+  - id: doping
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: vazhappilly
+    type: article
+    citation: >-
+      Vazhappilly, T., Pathak, A.K. Structure, mechanical and thermo-physical properties of
+      lanthanide fission product doped UO2 in U(V) state: A density functional study.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: wikipedia-lanthanide
+    type: website
+    citation: >-
+      Wikipedia. Lanthanide.
+    doi: ""
+    url: "https://en.wikipedia.org/wiki/Lanthanide"
+    pages: ""
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

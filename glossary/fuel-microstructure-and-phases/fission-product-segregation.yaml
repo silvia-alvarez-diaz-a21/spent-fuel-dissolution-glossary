@@ -1,0 +1,62 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet 'Deliverable Eurad2D8.1' row 8; sheet 'Eurad2D8.1' row 30).
+
+# 1. Basic Information
+id: fission-product-segregation
+term: Fission product segregation
+abbreviation: ""
+category: fuel-microstructure-and-phases
+tags: [fission-products, migration, microstructure]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Relocation of fission products away from their original positions in the bulk of the pellet, so
+  that they separate from the primary solid solution of the fuel matrix.
+
+description: >-
+  During reactor operation, fission products in the UO2 matrix undergo transport and phase
+  separation driven by thermal gradients and by mechanical degradation such as fuel cracking and
+  swelling. Mobile species such as the volatile products migrate to gaps, cracks and the plenum;
+  non-volatile elements that exceed their solubility limits form precipitates.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: volatile-products
+    relation: related-to
+  - id: precipitation
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: nda-dssc-451-01
+    type: report
+    citation: >-
+      NDA. Geological Disposal: Waste Package Evolution Status Report. NDA Report no.
+      DSSC/451/01.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

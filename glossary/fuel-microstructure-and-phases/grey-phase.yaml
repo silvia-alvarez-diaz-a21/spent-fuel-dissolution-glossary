@@ -1,0 +1,67 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 13; sheet 'Deliverable Eurad2D8.1' row 11; sheet 'Eurad2D8.1' rows 69, 82).
+# REVIEW: Spreadsheet note: see also Kleykamp et al. (1985).
+
+# 1. Basic Information
+id: grey-phase
+term: Grey phase
+abbreviation: ""
+category: fuel-microstructure-and-phases
+tags: [phases, precipitates, fission-products, perovskite]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Perovskite-structured oxide precipitates of specific fission products (e.g. BaZrO3) that form
+  inside the irradiated UO2 or MOX fuel matrix at high burnup, in the grains or at the grain
+  boundaries.
+
+description: >-
+  Apart from Ba and Zr, the grey phases may contain a fraction of the Sr, Cs and Mo inventory of
+  the fuel, so that their structural formula is more accurately described as
+  (Cs,Ba,Sr)(U,Mo,Zr)O3.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: secondary-phase
+    relation: broader
+  - id: precipitation
+    relation: result-of
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: shirokiy
+    type: article
+    citation: >-
+      Shirokiy, D. et al. Speciation and radiation stability of Cr and Ln grey-phases within
+      Cr-doped (Ln,U)O2 spent fuel model materials.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"
+
+# 6. Other names
+synonyms:
+  - {label: "gray phase", type: spelling-variant, lang: en}

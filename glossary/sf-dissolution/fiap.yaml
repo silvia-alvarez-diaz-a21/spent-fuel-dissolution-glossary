@@ -1,0 +1,65 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet 'Deliverable Eurad2D8.1' row 12; sheet 'Eurad2D8.1' row 64).
+# REVIEW: The definition of A_f,X was cut in the spreadsheet; check it in Ekeroth et al.
+
+# 1. Basic Information
+id: fiap
+term: Fraction of Inventory in the Aqueous Phase
+abbreviation: FIAP
+category: sf-dissolution
+tags: [leaching, release, radionuclide, inventory]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Ratio of the inventory of a given nuclide in the aqueous phase to the inventory of the same
+  nuclide in the solid fuel sample.
+
+description: |
+  It is reported for fission products such as Cs, Sr, I and Mo. The FIAP of an element is
+  calculated by dividing the mass of the element present in the aqueous phase by the mass of the
+  element in the spent nuclear fuel.
+
+  It is most valuable for radionuclides that do not reach the solubility limit with regard to a
+  solid phase in the experiments.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: instant-release-fraction
+    relation: related-to
+  - id: solubility
+    relation: related-to
+
+# 4. Formula and Units
+formula: "FIAP(X) = \\frac{C_X \\, AM_X \\, V_{soln}}{m_{fuel} \\, f_{HM} \\, X_{f,X}} = \\frac{A_X \\, V_{soln}}{m_{fuel} \\, f_{HM} \\, A_{f,X}}"
+formula_variables:
+  - {symbol: "C_X", meaning: "concentration of the radionuclide X in solution", unit: "mol/L"}
+  - {symbol: "AM_X", meaning: "atomic mass of X", unit: "g/mol"}
+  - {symbol: "V_{soln}", meaning: "volume of the solution, including the volume of the sample taken for analysis", unit: "L"}
+  - {symbol: "m_{fuel}", meaning: "mass of the fuel sample in contact with the solution", unit: "g"}
+  - {symbol: "f_{HM}", meaning: "fractional mass of heavy metal in the fuel", unit: ""}
+  - {symbol: "X_{f,X}", meaning: "specific inventory of radionuclide X in the solid fuel", unit: "g/(g HM)"}
+  - {symbol: "A_X", meaning: "specific activity of the radionuclide X in solution", unit: "Bq/L"}
+  - {symbol: "A_{f,X}", meaning: "specific activity of the radionuclide X in the solid fuel", unit: "Bq/(g HM)"}
+units:
+  si: "1"
+  db: "%"
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: ekeroth
+    type: article
+    citation: >-
+      Ekeroth, E., Granfors, M., Schild, D., Spahiu, K. The effect of temperature and fuel
+      surface area on spent nuclear fuel dissolution kinetics under H2 atmosphere.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

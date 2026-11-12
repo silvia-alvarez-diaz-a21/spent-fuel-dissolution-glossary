@@ -1,0 +1,70 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 18; sheet 'Eurad2D8.1' rows 67, 74; sheet 'Disco' row 65).
+
+# 1. Basic Information
+id: redox
+term: Oxidation, reduction and redox conditions
+abbreviation: ""
+category: sf-dissolution
+tags: [redox, oxidation, reduction, chemistry]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Redox (reduction-oxidation) reactions involve changes in the oxidation state of one or more
+  elements: oxidation is the loss of electrons and reduction the gain of electrons.
+
+description: >-
+  In the context of spent fuel dissolution, oxidising species produced by water radiolysis are
+  expected to oxidise the fuel or the steel canister. A reduction happens at the same time, since
+  both processes are part of the same reaction. Redox conditions describe the environment and
+  whether it favours oxidation or reduction.
+
+notes:
+  - >-
+    Oxidation products of uranium caused by radiolysis can easily dissolve in water and be
+    transferred.
+  - >-
+    Mnemonic: OIL RIG (oxidation is loss, reduction is gain of electrons).
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: dissolution
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+  - id: wikipedia-redox
+    type: website
+    citation: >-
+      Wikipedia. Redox.
+    doi: ""
+    url: "https://en.wikipedia.org/wiki/Redox"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"
+
+# 6. Other names
+synonyms:
+  - {label: "redox conditions", type: narrower-usage, lang: en}
+  - {label: "oxidation", type: narrower-usage, lang: en}
+  - {label: "reduction", type: narrower-usage, lang: en}

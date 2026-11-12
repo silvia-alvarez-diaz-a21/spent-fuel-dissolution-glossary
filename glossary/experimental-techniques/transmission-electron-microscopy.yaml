@@ -1,0 +1,50 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet 'Deliverable Eurad2D8.1' row 16).
+
+# 1. Basic Information
+id: transmission-electron-microscopy
+term: Transmission electron microscopy
+abbreviation: TEM
+category: experimental-techniques
+tags: [microscopy, microstructure, characterisation]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Electron microscopy technique in which a high-energy electron beam passes through an ultrathin
+  specimen, allowing its internal microstructure, crystal structure, defects and local composition
+  to be examined at very high spatial resolution.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms: []
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: thomas1992
+    type: article
+    citation: >-
+      Thomas, L.E. et al. (1992). Microstructural analysis of LWR spent fuels at high burnup.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: nlr
+    type: website
+    citation: >-
+      National Laboratory of the Rockies.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

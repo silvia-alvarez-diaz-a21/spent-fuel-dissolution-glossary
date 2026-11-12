@@ -1,0 +1,62 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet 'Deliverable Eurad2D8.1' row 19).
+
+# 1. Basic Information
+id: adopt
+term: Advanced Doped Pellet Technology
+abbreviation: ADOPT
+category: nuclear-fuel
+tags: [doping, nuclear-fuel, accident-tolerant-fuel]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  An improved UO2 fuel pellet doped with small amounts of chromia (Cr2O3) and alumina (Al2O3),
+  developed by Westinghouse to improve fuel cycle economics and the accident tolerance of
+  conventional UO2 fuel pellets.
+
+description: >-
+  It was developed in conjunction with Westinghouse's EnCore fuel programme. Its main
+  characteristic is an enlarged grain size, which results in lower fission gas release and
+  increased density.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: doping
+    relation: related-to
+  - id: fission-gas-release
+    relation: influences
+  - id: grain
+    relation: influences
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: westinghouse
+    type: website
+    citation: >-
+      Westinghouse Electric Company.
+    doi: ""
+    url: "https://www.westinghousenuclear.com"
+    pages: ""
+  - id: adopt-mrs2020
+    type: article
+    citation: >-
+      Aqueous leaching of ADOPT and standard UO2 spent nuclear fuel under H2 atmosphere. MRS
+      Advances (2020).
+    doi: "10.1557/adv.2020.69"
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

@@ -1,0 +1,65 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 20; sheet 'Eurad2D8.1' row 71).
+
+# 1. Basic Information
+id: precipitation
+term: Precipitation
+abbreviation: ""
+category: fuel-microstructure-and-phases
+tags: [precipitates, fission-products, phases]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Formation of precipitates when segregated non-volatile elements exceed their solubility limits
+  in the UO2 lattice.
+
+description: >-
+  The precipitates are either distinct metallic clusters (Mo, Tc, Ru, Rh, Pd, etc.) or separate
+  oxide phases (Rb, Cs, Ba, Zr, etc.). They reinforce the fuel material through a process called
+  precipitation hardening, much like steel rebar inside a concrete column.
+
+notes:
+  - >-
+    Precipitation can be thought of as the opposite process of dissolution.
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: fission-product-segregation
+    relation: depends-on
+  - id: secondary-phase
+    relation: related-to
+  - id: solubility
+    relation: opposite-of
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: nda-dssc-451-01
+    type: report
+    citation: >-
+      NDA. Geological Disposal: Waste Package Evolution Status Report. NDA Report no.
+      DSSC/451/01.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

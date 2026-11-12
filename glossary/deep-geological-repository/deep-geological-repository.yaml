@@ -1,0 +1,60 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 6; sheet 'Eurad2D8.1' rows 7, 9).
+
+# 1. Basic Information
+id: deep-geological-repository
+term: Deep geological repository
+abbreviation: DGR
+category: deep-geological-repository
+tags: [repository, disposal, multi-barrier]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  An underground facility built hundreds of metres deep within stable rock or clay formations to
+  isolate high-level radioactive waste.
+
+description: >-
+  Sealed waste canisters are placed in excavated tunnels and backfilled with dense clay to prevent
+  leakage and movement. This design creates a multi-barrier system combining engineered containers
+  with the natural host geology for long-term safety. By delaying any potential radionuclide
+  migration, it ensures that the radioactive materials decay before reaching the surface.
+
+notes:
+  - >-
+    A repository does not need to be geological or deep; 'repository' is the more general term.
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: disposal-cell
+    relation: has-part
+  - id: bentonite
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: unokiwedi
+    type: article
+    citation: >-
+      Unokiwedi, O.P., Gao, J., Bethune, T., Awolayo, A.N. Deep geological repositories - A
+      review of design concepts, near-field evolution, and their implications for nuclear
+      waste containment.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"
+
+# 6. Other names
+synonyms:
+  - {label: "geological disposal", type: broader-usage, lang: en}

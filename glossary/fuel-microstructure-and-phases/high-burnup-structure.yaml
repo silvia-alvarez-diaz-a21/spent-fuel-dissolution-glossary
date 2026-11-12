@@ -1,0 +1,80 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 4; sheet 'Deliverable Eurad2D8.1' row 10; sheet 'Eurad2D8.1' row 35).
+# REVIEW: Spreadsheet comments: 'AI', 'mostly AI, check Rondinella and Wiss (2010) for a more defined definition; fine-grained structure needs to be explained'.
+
+# 1. Basic Information
+id: high-burnup-structure
+term: High burnup structure
+abbreviation: HBS
+category: fuel-microstructure-and-phases
+tags: [microstructure, burnup, rim]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Fine-grained structure formed at the relatively cold outer rim of high burnup fuel pellets,
+  where the original fuel grains subdivide into new sub-micron grains.
+
+description: |
+  The HBS forms where the local burnup is 2-3 times higher than the average pellet burnup. The
+  main features of the transformation are the subdivision of the original fuel grains into new
+  sub-micron grains, the relocation of the fission gas into newly formed intergranular pores, and
+  the absence of large concentrations of extended defects in the fuel matrix inside the subdivided
+  grains.
+
+  The characterisation of this structure and of its impact on thermo-physical and mechanical
+  properties is a key requirement to ensure that high burnup fuel operates within the safety
+  margins.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: burnup
+    relation: related-to
+  - id: grain
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: wiss
+    type: article
+    citation: >-
+      Wiss, T. et al. Properties of the high burnup structure in nuclear light water reactor
+      fuel.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: rondinella2010
+    type: article
+    citation: >-
+      Rondinella, V.V., Wiss, T. (2010).
+    doi: ""
+    url: ""
+    pages: ""
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"
+
+# 6. Other names
+synonyms:
+  - {label: "rim structure", type: exact, lang: en}
+  - {label: "rim", type: narrower-usage, lang: en}

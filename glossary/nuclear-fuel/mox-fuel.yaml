@@ -1,0 +1,51 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 14; sheet 'Eurad2D8.1' row 18).
+
+# 1. Basic Information
+id: mox-fuel
+term: Mixed oxide fuel
+abbreviation: MOX
+category: nuclear-fuel
+tags: [nuclear-fuel, plutonium, uranium, fuel-type]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Nuclear fuel made of a mixture of uranium and plutonium oxides (UO2 + PuO2), used in certain
+  types of reactors.
+
+description: >-
+  Plutonium (with uranium) recovered from spent fuel can be used to produce MOX fuel. Recovered
+  uranium can be converted to UF6 and re-enriched.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: enrichment
+    relation: see-also
+  - id: pellet
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: iaea-course
+    type: training-course
+    citation: >-
+      IAEA. Basic Professional Training Course: Fuel Cycle, Spent Fuel Management and
+      Transport of Radioactive Materials.
+    doi: ""
+    url: ""
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"

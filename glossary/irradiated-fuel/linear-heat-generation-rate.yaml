@@ -1,0 +1,64 @@
+# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 17; sheet 'Eurad2D8.1' row 55).
+
+# 1. Basic Information
+id: linear-heat-generation-rate
+term: Linear heat generation rate
+abbreviation: LHGR
+category: irradiated-fuel
+tags: [irradiation, power, temperature]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The power produced by a fuel rod per unit length.
+
+description: >-
+  The LHGR is correlated with the fuel temperature and with the burnup, so information on
+  inventory or release fractions can be correlated with it. Spent LWR fuels commonly had a linear
+  power of 15-25 kW/m, meaning about 800 to 1200 °C in the fuel.
+
+notes:
+  - >-
+    Often noted as heat flux or q; the units give the best definition.
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: burnup
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: "W/m"
+  other: ["W/cm", "kW/m"]
+
+# 5. References and Contributors
+references:
+  - id: mariani
+    type: article
+    citation: >-
+      Mariani, R.D. Novel accident-tolerant fuel meat and cladding.
+    doi: ""
+    url: ""
+    pages: ""
+  - id: eurad2-d8.1
+    type: report
+    citation: >-
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep disposal
+      conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-12"
+updated: "2026-11-12"
+
+# 6. Other names
+synonyms:
+  - {label: "linear power rating", type: exact, lang: en}
+  - {label: "linear power", type: exact, lang: en}
