@@ -38,7 +38,7 @@ templates/term.example.yaml  a filled example (FIAP), not part of the glossary
 templates/_category.yaml     blank category template
 schema/term.schema.json      JSON Schema of a term (the contract for APIs)
 schema/category.schema.json  JSON Schema of a category
-glossary_tools/              validate, build, pdf and new commands
+glossary_tools/              validate, build, pdf, word and new commands
 tests/                       pytest suite of the tools
 docs/WRITING_GUIDE.md          how to write and review terms
 ```
@@ -74,6 +74,7 @@ py -3 -m venv .venv
 .venv\Scripts\python -m glossary_tools validate                             # check everything
 .venv\Scripts\python -m glossary_tools build                                # compile to dist/
 .venv\Scripts\python -m glossary_tools pdf                                  # dist/glossary.pdf (--approved-only)
+.venv\Scripts\python -m glossary_tools word                                 # dist/glossary.docx (--approved-only)
 .venv\Scripts\python -m pytest                                              # tests of the tools
 ```
 

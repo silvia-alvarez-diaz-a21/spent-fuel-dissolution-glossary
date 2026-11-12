@@ -157,6 +157,27 @@ def test_pdf(gl, tmp_path):
     assert main(["--glossary", str(gl), "pdf", "--approved-only", "--out", str(tmp_path / "a.pdf")]) == 0
 
 
+def test_word(gl, tmp_path):
+    from docx import Document
+
+    write(gl, EXAMPLE)
+    out = tmp_path / "g.docx"
+    assert main(["--glossary", str(gl), "word", "--out", str(out)]) == 0
+    doc = Document(str(out))
+    text = "\n".join(p.text for p in doc.paragraphs)
+    assert "Spent Fuel Dissolution Glossary" in text and "Fraction of Inventory in the Aqueous Phase" in text
+    assert any(p.style.name == "Heading 1" and p.text == "Spent fuel dissolution" for p in doc.paragraphs)
+    cells = [c.text for t in doc.tables for row in t.rows for c in row.cells]
+    assert "Related terms" in cells and any("results_fiap_v2.fiap_am241" in c for c in cells)
+    assert main(["--glossary", str(gl), "word", "--approved-only", "--out", str(tmp_path / "a.docx")]) == 0
+
+
+def test_word_refuses_invalid_glossary(gl, tmp_path):
+    write(gl, {**EXAMPLE, "status": "approved"})
+    assert main(["--glossary", str(gl), "word", "--out", str(tmp_path / "g.docx")]) == 1
+    assert not (tmp_path / "g.docx").exists()
+
+
 def test_pdf_refuses_invalid_glossary(gl, tmp_path):
     write(gl, {**EXAMPLE, "status": "approved"})
     assert main(["--glossary", str(gl), "pdf", "--out", str(tmp_path / "g.pdf")]) == 1

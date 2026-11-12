@@ -1,4 +1,4 @@
-"""python -m glossary_tools validate | build | new <category> <id>"""
+"""python -m glossary_tools validate | build | pdf | word | new <category> <id>"""
 
 import argparse
 import sys
@@ -45,6 +45,20 @@ def cmd_pdf(args) -> int:
     return 0
 
 
+def cmd_word(args) -> int:
+    from .word import build_word
+
+    g = validate(Path(args.glossary), Path(args.db_schema) if args.db_schema else None)
+    if g.errors:
+        for issue in g.errors:
+            print(issue)
+        print(f"\nno Word document: {len(g.errors)} error(s); run 'validate' for details")
+        return 1
+    path = build_word(g, Path(args.out), include_drafts=not args.approved_only)
+    print(f"Word -> {path}")
+    return 0
+
+
 def cmd_new(args) -> int:
     folder = Path(args.glossary) / args.category
     if not (folder / "_category.yaml").exists():
@@ -81,6 +95,10 @@ def main(argv=None) -> int:
     d.add_argument("--out", default=str(ROOT / "dist" / "glossary.pdf"))
     d.add_argument("--approved-only", action="store_true", help="leave out draft, review and deprecated terms")
     d.set_defaults(func=cmd_pdf)
+    w = sub.add_parser("word", help="render the glossary as a Word document (dist/glossary.docx)")
+    w.add_argument("--out", default=str(ROOT / "dist" / "glossary.docx"))
+    w.add_argument("--approved-only", action="store_true", help="leave out draft, review and deprecated terms")
+    w.set_defaults(func=cmd_word)
     n = sub.add_parser("new", help="create a term file from the template")
     n.add_argument("category", help="folder path, e.g. sf-dissolution")
     n.add_argument("id", help="term id, e.g. fiap")
