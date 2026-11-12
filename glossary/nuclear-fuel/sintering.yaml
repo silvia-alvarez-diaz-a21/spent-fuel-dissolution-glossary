@@ -1,56 +1,63 @@
-# Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 21; sheet 'Disco' rows 20, 66).
-
 # 1. Basic Information
-id: sintering
-term: Sintering
+id: "sintering"
+term: "Sintering"
 abbreviation: ""
 category: nuclear-fuel
-tags: [fuel-fabrication, pellet, uranium-dioxide]
 status: draft
+tags:
+  - UO2
+  - nuclear-fuel
+  - fuel-pellet
 
 # 2. Scientific Content
-definition: >-
-  Manufacturing process of UO2 fuel pellets in which compacted UO2 powder is heated to high
-  temperature until the original particles coalesce, so that the volume of the pellet decreases
-  and its density increases.
+definition: "Sintering is the thermal process by which compacted UO2 powder particles bond and coalesce at high temperatures, resulting in pellet shrinkage, reduced porosity and increased density."
 
-description: >-
-  UO2 powder is first compacted into a highly porous pellet. This powder compact is then heated to
-  high temperature until the particles coalesce, creating a dense pellet with some residual
-  porosity.
+description: |
+  In nuclear fuel fabrication, UO2 powder is first compacted into a
+  porous green pellet. The compact is subsequently heated to high
+  temperatures, typically below the melting point of UO2. During
+  sintering, solid-state diffusion mechanisms promote particle bonding,
+  grain growth and pore elimination. These processes cause the pellet
+  to shrink and increase in density, producing a mechanically stable
+  fuel pellet with a controlled residual porosity.
 
 notes:
-  - >-
-    The sintering atmosphere sets the oxygen potential, e.g. Ar/4% H2 with an oxygen potential
-    of -510 kJ/mol O2.
-pitfalls: []
+  - "Sintering is typically performed in a controlled atmosphere."
+  - "The final pellet retains some residual porosity."
+  - "Sintering temperature, duration and atmosphere influence the final microstructure and density."
+
+pitfalls:
+  - "Sintering does not involve complete melting of the UO2 powder."
 
 # 3. Related Terms
 related_terms:
-  - id: pellet
-    relation: related-to
-  - id: oxygen-potential
-    relation: related-to
+  - id: "densification"
+    relation: "related-to"
+  - id: "grain-growth"
+    relation: "related-to"
+  - id: "uo2-fuel-pellet"
+    relation: "part-of"
+  - id: "oxygen-potential"
+    relation: "related-to"
 
 # 4. Formula and Units
 formula: ""
+
 formula_variables: []
+
 units:
   si: ""
   other: []
 
 # 5. References and Contributors
 references:
-  - id: greenquist
-    type: article
-    citation: >-
-      Greenquist, I., Tonks, M.R., Zhang, Y. Review of sintering and densification in nuclear
-      fuels: Physical mechanisms, experimental results, and computational models.
+  - type: "article"
+    citation: "Greenquist, I., Tonks, M. R., & Zhang, Y. Review of sintering and densification in nuclear fuels: Physical mechanisms, experimental results, and computational models."
     doi: ""
     url: ""
     pages: ""
 
-authors: [Stefanos Koutris]
+authors: ["Stefanos Koutris"]
 reviewers: []
 created: "2026-11-12"
 updated: "2026-11-12"
