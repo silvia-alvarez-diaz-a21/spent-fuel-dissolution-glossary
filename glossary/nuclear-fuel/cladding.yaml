@@ -2,6 +2,7 @@ id: cladding
 term: Cladding
 abbreviation: null
 category: nuclear-fuel
+status: draft
 tags:
   - nuclear-fuel
   - fuel-fabrication
@@ -25,12 +26,12 @@ notes: []
 pitfalls: []
 
 related_terms:
-  - id: rod
-    relation: component-of
+  - id: fuel-rod
+    relation: part-of
   - id: nuclear-fuel
-    relation: surrounds
+    relation: related-to
   - id: fuel-assembly
-    relation: component-of-assembly
+    relation: part-of
 
 formula: null
 formula_variables: []

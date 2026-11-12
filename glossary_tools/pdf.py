@@ -64,25 +64,27 @@ def _rows(term: dict, names: dict[str, str]) -> list[list]:
     add("Synonyms", "; ".join(f"{escape(s['label'])} <i>({s['type']}{', ' + s['lang'] if s.get('lang') else ''})</i>"
                               for s in term.get("synonyms") or []))
     add("Translations", "; ".join(f"<b>{k}</b>: {escape(v)}" for k, v in (term.get("translations") or {}).items() if v))
-    q = term.get("quantity") or {}
-    add("Unit", escape(" / ".join(filter(None, [q.get("unit"), q.get("si_unit") and f"SI: {q['si_unit']}"]))))
-    add("Other units", "; ".join(f"{escape(u['unit'])} → {escape(u.get('to_db_unit') or '')}"
-                                 for u in q.get("other_units") or []))
+    u = term.get("units") or {}
+    add("Unit", escape(" / ".join(filter(None, [u.get("si") and f"SI: {u['si']}", u.get("db") and f"DB: {u['db']}"]))))
+    add("Other units", "; ".join(escape(o) if isinstance(o, str)
+                                 else f"{escape(o['unit'])} → {escape(o.get('to_db_unit') or '')}"
+                                 for o in u.get("other") or []))
     add("Allowed values", "<br/>".join(f"<b>{escape(v['value'])}</b>: {escape(v.get('definition') or '')}"
-                                       for v in q.get("allowed_values") or []))
-    rng = q.get("typical_range") or {}
+                                       for v in term.get("allowed_values") or []))
+    rng = term.get("typical_range") or {}
     if rng.get("min") is not None or rng.get("max") is not None:
-        span = f"{rng.get('min')} – {rng.get('max')} {q.get('unit') or ''} {rng.get('context') or ''}"
+        span = f"{rng.get('min')} – {rng.get('max')} {u.get('db') or u.get('si') or ''} {rng.get('context') or ''}"
         add("Typical range", escape(span))
-    add("Formula", f"<font face='Courier'>{escape(q.get('formula') or '')}</font>" if q.get("formula") else "")
+    add("Formula", f"<font face='Courier'>{escape(term['formula'])}</font>" if term.get("formula") else "")
+    add("Variables", "<br/>".join(f"<font face='Courier'>{escape(v['symbol'])}</font>: {escape(v['meaning'])}"
+                                  + (f" [{escape(v['unit'])}]" if v.get("unit") else "")
+                                  for v in term.get("formula_variables") or []))
 
     def ref(tid):
         return f"{escape(names.get(tid, tid))}" + ("" if tid in names else " <i>(not written yet)</i>")
 
-    add("Broader", ", ".join(ref(t) for t in term.get("broader") or []))
-    add("Narrower", ", ".join(ref(t) for t in term.get("narrower") or []))
-    add("Related", ", ".join(f"{ref(r['id'])} <i>({r.get('relation', 'related')})</i>"
-                             for r in term.get("related") or []))
+    add("Related terms", "<br/>".join(f"<i>{escape(r['relation'])}</i>: {ref(r['id'])}"
+                                      for r in term.get("related_terms") or []))
     add("Database", "<br/>".join(
         f"<font face='Courier'>{escape(m['table'])}.{escape(m['field'])}</font>"
         + (f" — “{escape(m['excel_header'])}”" if m.get("excel_header") else "")
@@ -95,7 +97,7 @@ def _rows(term: dict, names: dict[str, str]) -> list[list]:
         + (f" {escape(r['url'])}" if r.get("url") else "") + (f" ({escape(r['pages'])})" if r.get("pages") else "")
         for r in term.get("references") or []))
     add("Standards", "; ".join(escape(s) for s in term.get("standards") or []))
-    add("Record", escape(f"status {term.get('status')} · updated {term.get('updated')} · "
+    add("Record", escape(f"status {term.get('status') or 'draft'} · updated {term.get('updated') or '-'} · "
                          f"authors: {', '.join(term.get('authors') or [])}"
                          + (f" · reviewers: {', '.join(term['reviewers'])}" if term.get("reviewers") else "")))
     return rows

@@ -1,49 +1,58 @@
-```yaml
 # TERM TEMPLATE
-# Copy into the appropriate glossary category folder and rename using the term ID.
-# Required fields must be completed; remove optional fields if not applicable.
-# Use clear, concise and scientifically accurate English.
+# Copy into the appropriate glossary category folder and rename it to <id>.yaml (e.g.
+# glossary/sf-dissolution/fiap.yaml), or create it with: python -m glossary_tools new <category> <id>
+# Required fields: id, term, category, definition. Leave optional fields empty or remove them if not
+# applicable. Use clear, concise and scientifically accurate English.
+# Complete example: templates/term.example.yaml
 
 # 1. Basic Information
-id: ""                # Unique ID (e.g. fiap)
-term: ""              # Full scientific name
-abbreviation: ""      # Common abbreviation, if applicable
-category: ""          # Parent category ID
-tags: []               # Search keywords
+id: ""                # (required) unique ID, lowercase with hyphens, equal to the file name (e.g. fiap)
+term: ""              # (required) full scientific name
+abbreviation: ""      # common abbreviation, if applicable
+symbol: ""            # symbol used in formulas, if applicable
+category: ""          # (required) category folder, e.g. sf-dissolution
+tags: []              # search keywords
+status: draft         # draft | review | approved | deprecated
 
 # 2. Scientific Content
-definition: ""        # Short, self-contained definition
+definition: ""        # (required) short, self-contained definition, no citations
 
-description: |        # Extended explanation, context and applications
-  ""
+description: ""       # extended explanation, context and applications (use | for several paragraphs)
 
-notes: []              # Additional information or practical remarks
-pitfalls: []            # Common misconceptions or interpretation errors
+notes: []             # additional information or practical remarks
+pitfalls: []          # common misconceptions or interpretation errors
 
 # 3. Related Terms
-related_terms:
-  - id: ""             # ID of another glossary term
-    relation: ""       # related-to, part-of, depends-on, measured-by, see-also
+related_terms: []     # each item: {id: <term id>, relation: <relation>}
+# relations: related-to, broader, narrower, part-of, has-part, depends-on, input-of, result-of,
+#            measured-by, influences, applied-to, precedes, follows, see-also, opposite-of
 
 # 4. Formula and Units
-formula: ""            # LaTeX expression, if applicable
-
-formula_variables:
-  - symbol: ""         # Variable or symbol
-    meaning: ""        # Physical meaning
-    unit: ""           # Unit
-
+formula: ""           # LaTeX expression, if applicable
+formula_variables: [] # each item: {symbol: "", meaning: "", unit: ""}
 units:
-  si: ""               # SI unit
-  other: []            # Other commonly used units
+  si: ""              # SI unit
+  db: ""              # unit used in the SNF database, if different
+  other: []           # other commonly used units
 
 # 5. References and Contributors
-references:
-  - type: ""           # article, book, report, standard, thesis, website, etc.
-    citation: ""       # Full bibliographic reference
-    doi: ""
-    url: ""
-    pages: ""          # Relevant pages, sections or figures
+references: []
+# each item:
+#   - type: ""        # article, report, book, standard, thesis, website, database, glossary, training-course, other
+#     citation: ""    # full bibliographic reference (authors, year, title, journal/publisher, volume, pages)
+#     doi: ""         # e.g. 10.1016/S0022-3115(00)00392-5
+#     url: ""
+#     pages: ""       # relevant pages, sections or figures
 
-authors: []            # Contributors to the entry
-```
+authors: []           # contributors to the entry
+reviewers: []         # who approved it (needed for status: approved)
+created: ""           # YYYY-MM-DD
+updated: ""           # YYYY-MM-DD, change it on every edit
+
+# 6. Other names (optional)
+synonyms: []          # each item: {label: "", type: exact|abbreviation|spelling-variant|deprecated|narrower-usage|broader-usage}
+translations: {}      # e.g. {es: "Lixiviación", fr: "Lixiviation"}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []        # each item: {table: "", field: "", excel_header: "", note: ""} (snf-db-app backend/schema_v2.json)
+allowed_values: []    # controlled values, each item: {value: "", definition: ""}

@@ -2,6 +2,7 @@ id: enrichment
 term: Enrichment
 abbreviation: null
 category: nuclear-fuel
+status: draft
 tags:
   - nuclear-fuel
   - nuclear-fuel-cycle
@@ -36,9 +37,9 @@ pitfalls: []
 
 related_terms:
   - id: uranium-hexafluoride
-    relation: feed-material-for
+    relation: depends-on
   - id: yellowcake
-    relation: produced-before
+    relation: follows
   - id: uranium-conversion
     relation: follows
   - id: nuclear-fuel

@@ -4,6 +4,7 @@ term: Leaching
 abbreviation: ""
 category: sf-dissolution
 tags: [spent-fuel, radionuclide-release, aqueous-solution, experiments, modelling]
+status: draft
 
 # 2. Scientific Content
 definition: >-
@@ -67,4 +68,11 @@ references:
 
   - type: report
     citation: >-
-      EURAD-2 (2025). Deliverable D8.1: S
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
+      Release of safety relevant radionuclides from spent nuclear fuel under deep
+      disposal conditions (SAREC).
+    doi: ""
+    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
+    pages: ""
+
+authors: []

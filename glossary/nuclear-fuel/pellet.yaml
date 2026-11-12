@@ -2,6 +2,7 @@ id: pellet
 term: Pellet
 abbreviation: null
 category: nuclear-fuel
+status: draft
 tags:
   - nuclear-fuel
   - fuel-fabrication
@@ -26,12 +27,12 @@ notes: []
 pitfalls: []
 
 related_terms:
-  - id: rod
-    relation: contained-within
+  - id: fuel-rod
+    relation: part-of
   - id: cladding
-    relation: enclosed-by
+    relation: related-to
   - id: nuclear-fuel
-    relation: form-of
+    relation: broader
 
 formula: null
 formula_variables: []

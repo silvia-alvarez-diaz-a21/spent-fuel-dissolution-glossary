@@ -138,6 +138,10 @@ def db_fields(db_schema: Path | None) -> dict[str, set[str]] | None:
     return out
 
 
+# relation -> the relation the other term should list back (only for hierarchical pairs)
+INVERSE = {"broader": "narrower", "narrower": "broader", "part-of": "has-part", "has-part": "part-of"}
+
+
 def check(g: Glossary, db_schema: Path | None = DEFAULT_DB_SCHEMA) -> Glossary:
     """Cross-file rules that a JSON schema cannot express."""
     known = set(g.terms)
@@ -145,18 +149,17 @@ def check(g: Glossary, db_schema: Path | None = DEFAULT_DB_SCHEMA) -> Glossary:
     seen_labels: dict[str, str] = {}
     for tid, t in g.terms.items():
         path = g.files[tid]
-        for rel in ("broader", "narrower"):
-            for other in t.get(rel) or []:
-                if other not in known:
-                    g.add("warning", path, f"{rel} '{other}' is not a term yet")
-                elif other == tid:
-                    g.add("error", path, f"{rel} points to itself")
-        for r in t.get("related") or []:
-            if r.get("id") not in known:
-                g.add("warning", path, f"related '{r.get('id')}' is not a term yet")
-        for other in t.get("broader") or []:
-            if other in known and tid not in (g.terms[other].get("narrower") or []):
-                g.add("warning", path, f"'{other}' is broader but does not list '{tid}' as narrower")
+        for r in t.get("related_terms") or []:
+            other, rel = r.get("id"), r.get("relation")
+            if other == tid:
+                g.add("error", path, f"related term '{other}' points to itself")
+            elif other not in known:
+                g.add("warning", path, f"related term '{other}' is not a term yet")
+            elif rel in INVERSE and not any(x.get("id") == tid and x.get("relation") == INVERSE[rel]
+                                            for x in g.terms[other].get("related_terms") or []):
+                g.add("warning", path, f"'{other}' is {rel} but does not list '{tid}' as {INVERSE[rel]}")
+        if not t.get("authors"):
+            g.add("warning", path, "authors is empty: add who wrote the entry")
 
         status = t.get("status")
         if status == "deprecated" and t.get("replaced_by") and t["replaced_by"] not in known:
@@ -169,22 +172,18 @@ def check(g: Glossary, db_schema: Path | None = DEFAULT_DB_SCHEMA) -> Glossary:
         if status != "deprecated" and t.get("replaced_by"):
             g.add("warning", path, "replaced_by is only used when status is deprecated")
 
-        if str(t.get("updated", "")) < str(t.get("created", "")):
+        if t.get("created") and t.get("updated") and str(t["updated"]) < str(t["created"]):
             g.add("error", path, "updated is earlier than created")
-        ref_ids = [r.get("id") for r in t.get("references") or []]
+        ref_ids = [r.get("id") for r in t.get("references") or [] if r.get("id")]
         if len(ref_ids) != len(set(ref_ids)):
             g.add("error", path, "two references share the same id")
-        q = t.get("quantity") or {}
-        rng = q.get("typical_range") or {}
+        rng = t.get("typical_range") or {}
         if rng.get("min") is not None and rng.get("max") is not None and rng["min"] > rng["max"]:
             g.add("error", path, "typical_range min is greater than max")
         cited = [rng.get("reference")] + [e.get("reference") for e in t.get("examples") or []]
         for ref in filter(None, cited):
             if ref not in ref_ids:
                 g.add("error", path, f"reference '{ref}' is not in this term's references")
-        if q.get("kind") == "categorical" and not q.get("allowed_values"):
-            g.add("warning", path, "categorical quantity without allowed_values")
-
         for m in t.get("db_mapping") or []:
             if tables is None:
                 break
@@ -273,10 +272,10 @@ def skos(g: Glossary, base: str = "https://w3id.org/snf-glossary/") -> dict:
             + ([{"@value": t["abbreviation"], "@language": "en"}] if t.get("abbreviation") else []),
             "skos:hiddenLabel": [s["label"] for s in t.get("synonyms") or [] if s.get("type") == "deprecated"],
             "skos:definition": t["definition"],
-            "skos:related": [{"@id": base + r["id"]} for r in t.get("related") or []],
         }
-        for key, prop in SKOS_RELATIONS.items():
-            node[prop] = [{"@id": base + x} for x in t.get(key) or []]
+        for r in t.get("related_terms") or []:
+            prop = SKOS_RELATIONS.get(r.get("relation"), "skos:related")
+            node.setdefault(prop, []).append({"@id": base + r["id"]})
         if t.get("abbreviation"):
             node["skos:notation"] = t["abbreviation"]
         graph.append({k: v for k, v in node.items() if v not in ([], "", None)})

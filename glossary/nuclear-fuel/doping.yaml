@@ -2,6 +2,7 @@ id: doping
 term: Doping
 abbreviation: null
 category: nuclear-fuel
+status: draft
 tags:
   - nuclear-fuel
   - fuel-fabrication
@@ -40,7 +41,7 @@ related_terms:
   - id: grain-growth
     relation: influences
   - id: fission-gas
-    relation: influences-retention
+    relation: influences
 
 formula: null
 formula_variables: []
@@ -49,7 +50,7 @@ units:
   other: null
 
 references:
-  - type: journal-article
+  - type: article
     citation: >
       Cleveland, M. W., Nelson, A., and Jossou, E.,
       Chromium-doped uranium dioxide fuels: A review.

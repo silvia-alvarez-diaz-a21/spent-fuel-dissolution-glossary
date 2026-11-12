@@ -1,7 +1,8 @@
-id: rod
+id: fuel-rod
 term: Rod
 abbreviation: null
 category: nuclear-fuel
+status: draft
 tags:
   - nuclear-fuel
   - fuel-fabrication
@@ -25,11 +26,11 @@ pitfalls: []
 
 related_terms:
   - id: nuclear-fuel
-    relation: broader-context
+    relation: broader
   - id: fuel-assembly
-    relation: component-of-assembly
-  - id: fuel-cladding
-    relation: contains-fuel
+    relation: part-of
+  - id: cladding
+    relation: has-part
 
 formula: null
 formula_variables: []
