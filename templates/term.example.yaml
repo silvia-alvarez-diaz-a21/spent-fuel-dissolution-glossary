@@ -46,11 +46,12 @@ related_terms:
     relation: see-also
 
 # 4. Formula and Units
-formula: "F_{IAP,i}(t) = \\frac{C_i(t) \\, V(t)}{m_{i,0}}"
+formula: "FIAPi(t) = {C_i(t)*V(t)}/{H{i,0}*m{SNF}}"
 formula_variables:
-  - {symbol: "C_i(t)", meaning: "concentration of nuclide i in solution at time t", unit: "mol/L"}
+  - {symbol: "C_i(t)", meaning: "concentration of nuclide i in solution at time t", unit: "g/L"}
   - {symbol: "V(t)", meaning: "solution volume at time t", unit: "L"}
-  - {symbol: "m_{i,0}", meaning: "initial inventory of nuclide i in the sample", unit: "mol"}
+  - {symbol: "H{i,0}", meaning: "fraction of inventory for the nuclide i", unit: "g/g"}
+  - {symbol: "m{SNF}", meaning: "mass of SNF used in the experimente", unit: "g"}
 units:
   si: "1"
   db: "%"
