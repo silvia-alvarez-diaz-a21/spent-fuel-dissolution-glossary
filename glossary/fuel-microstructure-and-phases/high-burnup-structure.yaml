@@ -74,7 +74,4 @@ reviewers: []
 created: "2026-11-12"
 updated: "2026-11-12"
 
-# 6. Other names
-synonyms:
-  - {label: "rim structure", type: exact, lang: en}
-  - {label: "rim", type: narrower-usage, lang: en}
+

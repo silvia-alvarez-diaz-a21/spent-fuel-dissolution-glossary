@@ -1,27 +1,59 @@
 # Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 7).
 
+
+# Imported from first Glossary.xlsx by Stefanos Koutris.
+
 # 1. Basic Information
 id: disposal-cell
-term: Disposal cell
+term: Disposal Cell
 abbreviation: ""
 category: deep-geological-repository
-tags: [repository, canister]
+tags: [repository, disposal-hole, bentonite, canister, engineered-barrier]
 status: draft
 
 # 2. Scientific Content
 definition: >-
-  A designated space in a geological repository in which the canister that encloses the
-  radioactive waste is placed.
+  A designated underground emplacement space, also known as a disposal hole,
+  in a deep geological repository where a disposal canister containing
+  radioactive waste is placed and surrounded by sealing materials, typically
+  bentonite.
 
-description: >-
-  Disposal cells are designed to hold the containers with mechanical stability.
+description: |
+  Disposal cells are constructed within disposal tunnels and are designed to
+  accommodate disposal canisters while providing mechanical stability and
+  contributing to the isolation of radioactive waste from the surrounding
+  geological environment.
 
-notes: []
-pitfalls: []
+  In repository designs that use bentonite as a buffer material, bentonite
+  blocks or other pre-installed bentonite components are placed inside the
+  disposal hole before the disposal canister is emplaced. After the canister
+  is positioned, the remaining space around it is filled with additional
+  bentonite. Upon hydration, the bentonite swells and helps seal the space
+  around the canister, limiting groundwater flow and contributing to the
+  engineered barrier system.
+
+  A deep geological repository may consist of multiple underground galleries
+  and disposal tunnels, each containing multiple disposal cells. Their
+  arrangement and design depend on the repository concept and the geological
+  conditions of the host formation.
+
+notes:
+  - Also referred to as a disposal hole in repository designs using vertical emplacement.
+  - Bentonite is commonly used as a buffer and sealing material around the disposal canister.
+  - Multiple disposal cells can be arranged along a disposal tunnel.
+  - The disposal cell is distinct from the disposal tunnel, which provides access to and connects multiple emplacement locations.
+
+pitfalls:
+  - Confusing a disposal cell (or disposal hole) with a disposal tunnel.
+  - Treating the disposal canister and the surrounding bentonite as components of the same barrier.
 
 # 3. Related Terms
 related_terms:
   - id: deep-geological-repository
+    relation: part-of
+  - id: bentonite
+    relation: has-part
+  - id: engineered-barrier-system !! 
     relation: part-of
 
 # 4. Formula and Units
@@ -36,10 +68,19 @@ references:
   - id: ans-hanford
     type: website
     citation: >-
-      American Nuclear Society. Hanford places first vitrified waste containers in disposal
-      cell.
+      American Nuclear Society. Hanford places first vitrified waste containers
+      in disposal cell.
     doi: ""
     url: ""
+    pages: ""
+
+  - id: alonso2026-dgr
+    type: website
+    citation: >-
+      Alonso, A.L. (2026, April 8). The ongoing progress of deep geological
+      repositories. Foro Nuclear.
+    doi: ""
+    url: "https://www.foronuclear.org/en/updates/in-depth/the-ongoing-progress-of-deep-geological-repositories/"
     pages: ""
 
 authors: [Stefanos Koutris]

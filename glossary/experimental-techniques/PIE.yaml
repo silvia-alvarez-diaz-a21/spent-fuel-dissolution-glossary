@@ -1,0 +1,68 @@
+
+# 1. Basic Information
+id: post-irradiation-examination
+term: Post-Irradiation Examination
+abbreviation: PIE
+category: experimental-techniques
+tags: [irradiated-fuel, fuel-characterization, non-destructive-testing, destructive-testing, microscopy, nuclear-materials]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The examination and characterisation of nuclear fuel and structural materials
+  after irradiation in a nuclear reactor, using destructive and non-destructive
+  techniques to investigate their physical, mechanical and microstructural properties.
+
+description: >-
+  Post-irradiation examination (PIE) involves the investigation of irradiated
+  nuclear fuel and structural materials to evaluate their condition and
+  characterise changes resulting from reactor irradiation. It is performed
+  in specialised facilities equipped to handle highly radioactive materials,
+  such as shielded hot cells and radiological materials laboratories.
+
+ 
+
+notes:
+  pitfalls:
+ 
+
+# 3. Related Terms
+related_terms:
+  - id: hot-cell
+    relation: applied-to
+  - id: neutron-radiography
+    relation: includes
+  - id: gamma-spectrometry
+    relation: includes
+  - id: metallography
+    relation: includes
+  - id: scanning-electron-microscopy
+    relation: includes
+  - id: transmission-electron-microscopy
+    relation: includes
+  - id: microhardness
+    relation: includes
+  - id: fission-gas-analysis
+    relation: includes
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - id: inl-pie-guide
+    type: report
+    citation: "Idaho National Laboratory, Post-Irradiation Examination Guide, INL/MIS-15-35828."
+    doi: ""
+    url: ""
+    pages: "pp. 4–53"
+
+authors: []
+reviewers: []
+created: "2026-11-16"
+updated: "2026-11-16"

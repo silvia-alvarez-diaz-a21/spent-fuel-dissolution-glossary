@@ -1,3 +1,4 @@
+
 # 1. Basic Information
 id: leaching
 term: Leaching
@@ -31,8 +32,8 @@ notes:
 
 pitfalls:
   - Using leaching and dissolution interchangeably. Leaching describes the
-    release into solution, whereas dissolution refers to the breakdown of
-    the solid matrix and transfer of its constituents into solution.
+    release into solution, whereas dissolution refers to the breakdown of the
+    solid matrix and transfer of its constituents into solution.
 
 # 3. Related Terms
 related_terms:
@@ -58,7 +59,8 @@ units:
 
 # 5. References and Contributors
 references:
-  - type: article
+  - id: shoesmith-2000
+    type: article
     citation: >-
       Shoesmith, D. W. (2000). Fuel corrosion processes under waste disposal
       conditions. Journal of Nuclear Materials, 282(1), 1–31.
@@ -66,13 +68,17 @@ references:
     url: ""
     pages: "1–31"
 
-  - type: report
+  - id: eurad2-sarec-d81
+    type: report
     citation: >-
-      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report. Work package 8,
-      Release of safety relevant radionuclides from spent nuclear fuel under deep
-      disposal conditions (SAREC).
+      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report.
+      Work package 8, Release of safety relevant radionuclides from spent
+      nuclear fuel under deep disposal conditions (SAREC).
     doi: ""
     url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
     pages: ""
 
-authors: []
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-16"
+updated: "2026-11-16"

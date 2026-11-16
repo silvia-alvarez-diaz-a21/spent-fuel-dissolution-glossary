@@ -14,7 +14,7 @@ tags:
   - accident-tolerant-fuel
 
 # 2. Scientific Content
-definition: "An advanced uranium dioxide (UO2) nuclear fuel pellet doped with small amounts of chromia (Cr2O3) and alumina (Al2O3), developed as part of Westinghouse's EnCore® fuel programme to improve fuel performance and fuel-cycle economics."
+definition: "Advanced Doped Pellet Technology. An advanced uranium dioxide (UO2) nuclear fuel pellet doped with small amounts of chromia (Cr2O3) and alumina (Al2O3), developed as part of Westinghouse's EnCore® fuel programme to improve fuel performance and fuel-cycle economics."
 
 description: |
   ADOPT fuel is an enhanced UO2 fuel pellet developed by Westinghouse. Its
@@ -78,6 +78,4 @@ reviewers: []
 created: "2026-11-12"
 updated: "2026-11-12"
 
-# 6. Other names (optional)
-synonyms:
-  - {label: "Advanced Doped Pellet Technology", type: exact, lang: en}
+

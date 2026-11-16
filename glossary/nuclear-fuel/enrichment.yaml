@@ -1,14 +1,16 @@
+# 1. Basic Information
 id: enrichment
 term: Enrichment
-abbreviation: null
+abbreviation: ""
 category: nuclear-fuel
-status: draft
 tags:
   - nuclear-fuel
   - nuclear-fuel-cycle
   - uranium
   - enrichment
+status: draft
 
+# 2. Scientific Content
 definition: >
   The process of increasing the proportion of uranium-235 (U-235)
   relative to uranium-238 (U-238) in uranium.
@@ -35,6 +37,7 @@ notes:
 
 pitfalls: []
 
+# 3. Related Terms
 related_terms:
   - id: uranium-hexafluoride
     relation: depends-on
@@ -45,18 +48,26 @@ related_terms:
   - id: nuclear-fuel
     relation: part-of
 
-formula: null
+# 4. Formula and Units
+formula: ""
 formula_variables: []
-units:
-  si: null
-  other: null
 
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
 references:
-  - type: training-course
+  - id: iaea-fuel-cycle-course
+    type: training-course
     citation: >
       IAEA, Basic Professional Training Course: Fuel Cycle, Spent Fuel
       Management and Transport of Radioactive Materials.
-    doi: null
-    url: null
+    doi: ""
+    url: ""
+    pages: ""
 
 authors: []
+reviewers: []
+created: "2026-11-16"
+updated: "2026-11-16"
