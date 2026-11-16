@@ -3,7 +3,7 @@
 # 1. Basic Information
 id: burnup
 term: Burnup
-abbreviation: ""
+abbreviation: "BU"
 category: irradiated-fuel
 tags: [irradiation, burnup, inventory]
 status: draft
@@ -52,4 +52,3 @@ updated: "2026-11-12"
 # 6. Other names
 synonyms:
   - {label: "burn-up", type: spelling-variant, lang: en}
-  - {label: "BU", type: abbreviation, lang: en}

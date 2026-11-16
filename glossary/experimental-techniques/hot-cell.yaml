@@ -1,0 +1,60 @@
+# 1. Basic Information
+id: hot-cell
+term: Hot cell
+abbreviation: ""
+category: experimental-techniques
+tags: [hot-cell, radioactive-materials, remote-handling, shielding, post-irradiation-examination]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  A heavily shielded enclosure that allows the safe handling and examination
+  of highly radioactive materials using specialised equipment operated remotely
+  by personnel from outside the enclosure.
+
+description: |
+  Hot cells are specialised facilities designed to protect personnel from
+  ionising radiation and prevent the spread of radioactive contamination
+  during the handling of radioactive materials. They incorporate radiation
+  shielding, viewing windows, remote manipulators and controlled ventilation
+  systems to enable operations without direct contact with the materials.
+
+  In nuclear engineering, hot cells play an important role in post-irradiation
+  examination (PIE), allowing researchers to investigate the properties,
+  microstructure and behaviour of nuclear fuel after irradiation in a reactor.
+  They are also used for sample preparation, radiochemical analysis and
+  experiments involving spent nuclear fuel dissolution.
+
+notes: []
+
+pitfalls:
+  - A hot cell is not the autoclave or other equipment used for experiments; it is the shielded enclosure that houses such equipment.
+
+# 3. Related Terms
+related_terms:
+  - id: post-irradiation-examination
+    relation: applied-to
+  - id: remote-manipulator
+    relation: has-part
+  - id: shielding
+    relation: has-part
+  - id: spent-fuel
+    relation: applied-to
+  - id: autoclave
+    relation: has-part
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
+references: []
+
+authors: [Stefanos Koutris]
+reviewers: []
+created: "2026-11-16"
+updated: "2026-11-16"

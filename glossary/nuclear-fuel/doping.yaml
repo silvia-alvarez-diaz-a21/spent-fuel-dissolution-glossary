@@ -1,14 +1,16 @@
+# 1. Basic Information
 id: doping
 term: Doping
-abbreviation: null
+abbreviation: ""
 category: nuclear-fuel
-status: draft
 tags:
   - nuclear-fuel
   - fuel-fabrication
   - uranium-dioxide
   - microstructure
+status: draft
 
+# 2. Scientific Content
 definition: >
   The intentional addition of small concentrations of selected elements
   or compounds to uranium dioxide (UO2) during fuel fabrication to modify
@@ -33,6 +35,7 @@ notes:
 
 pitfalls: []
 
+# 3. Related Terms
 related_terms:
   - id: nuclear-fuel
     relation: applied-to
@@ -43,18 +46,26 @@ related_terms:
   - id: fission-gas
     relation: influences
 
-formula: null
+# 4. Formula and Units
+formula: ""
 formula_variables: []
-units:
-  si: null
-  other: null
 
+units:
+  si: ""
+  other: []
+
+# 5. References and Contributors
 references:
-  - type: article
+  - id: cleveland-chromium-doped-uo2-review
+    type: article
     citation: >
       Cleveland, M. W., Nelson, A., and Jossou, E.,
       Chromium-doped uranium dioxide fuels: A review.
-    doi: null
-    url: null
+    doi: ""
+    url: ""
+    pages: ""
 
 authors: []
+reviewers: []
+created: "2026-11-16"
+updated: "2026-11-16"
