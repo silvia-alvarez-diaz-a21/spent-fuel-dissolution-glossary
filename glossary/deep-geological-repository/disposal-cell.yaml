@@ -2,7 +2,7 @@
 
 # 1. Basic Information
 id: disposal-cell
-term: Disposal Cell
+term: Disposal cell
 abbreviation: ""
 category: deep-geological-repository
 tags: [repository, disposal-hole, bentonite, canister, engineered-barrier]
@@ -42,7 +42,8 @@ notes:
 
 pitfalls:
   - Confusing a disposal cell (or disposal hole) with a disposal tunnel.
-  - Treating the disposal canister and the surrounding bentonite as components of the same barrier.
+  - Treating the disposal canister and the surrounding bentonite buffer as a single barrier; they are
+    distinct components of the engineered barrier system.
 
 # 3. Related Terms
 related_terms:
