@@ -1,8 +1,5 @@
 # Imported from first Glossary.xlsx by Stefanos Koutris (sheet '2nd Deliverable' row 7).
 
-
-# Imported from first Glossary.xlsx by Stefanos Koutris.
-
 # 1. Basic Information
 id: disposal-cell
 term: Disposal Cell
@@ -53,7 +50,7 @@ related_terms:
     relation: part-of
   - id: bentonite
     relation: has-part
-  - id: engineered-barrier-system !! 
+  - id: engineered-barrier-system
     relation: part-of
 
 # 4. Formula and Units
@@ -86,4 +83,4 @@ references:
 authors: [Stefanos Koutris]
 reviewers: []
 created: "2026-11-12"
-updated: "2026-11-12"
+updated: "2026-11-16"

@@ -1,4 +1,3 @@
-
 # 1. Basic Information
 id: post-irradiation-examination
 term: Post-Irradiation Examination
@@ -20,30 +19,27 @@ description: >-
   in specialised facilities equipped to handle highly radioactive materials,
   such as shielded hot cells and radiological materials laboratories.
 
- 
-
-notes:
-  pitfalls:
- 
+notes: []
+pitfalls: []
 
 # 3. Related Terms
 related_terms:
   - id: hot-cell
     relation: applied-to
   - id: neutron-radiography
-    relation: includes
+    relation: has-part
   - id: gamma-spectrometry
-    relation: includes
+    relation: has-part
   - id: metallography
-    relation: includes
+    relation: has-part
   - id: scanning-electron-microscopy
-    relation: includes
+    relation: has-part
   - id: transmission-electron-microscopy
-    relation: includes
+    relation: has-part
   - id: microhardness
-    relation: includes
+    relation: has-part
   - id: fission-gas-analysis
-    relation: includes
+    relation: has-part
 
 # 4. Formula and Units
 formula: ""
@@ -62,7 +58,7 @@ references:
     url: ""
     pages: "pp. 4–53"
 
-authors: []
+authors: [Stefanos Koutris]
 reviewers: []
 created: "2026-11-16"
 updated: "2026-11-16"
