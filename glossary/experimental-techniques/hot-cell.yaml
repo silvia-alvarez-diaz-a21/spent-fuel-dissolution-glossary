@@ -1,4 +1,3 @@
-
 # 1. Basic Information
 id: hot-cell
 term: Hot cell
@@ -13,7 +12,7 @@ definition: >-
   of highly radioactive materials using specialised equipment operated remotely
   by personnel from outside the enclosure.
 
-description: >-
+description: |
   Hot cells are specialised facilities designed to protect personnel from
   ionising radiation and prevent the spread of radioactive contamination
   during the handling of radioactive materials. They incorporate radiation
@@ -26,11 +25,11 @@ description: >-
   They are also used for sample preparation, radiochemical analysis and
   experiments involving spent nuclear fuel dissolution.
 
-notes:
- 
+notes: []
 
 pitfalls:
   - A hot cell is not the autoclave or other equipment used for experiments; it is the shielded enclosure that houses such equipment.
+
 # 3. Related Terms
 related_terms:
   - id: post-irradiation-examination
@@ -42,7 +41,7 @@ related_terms:
   - id: spent-fuel
     relation: applied-to
   - id: autoclave
-    relation: contains
+    relation: has-part
 
 # 4. Formula and Units
 formula: ""

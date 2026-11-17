@@ -84,4 +84,7 @@ reviewers: []
 created: "2026-11-12"
 updated: "2026-11-12"
 
-
+# 6. Other names (optional)
+synonyms:
+  - {label: "linear power rating", type: exact, lang: en}
+  - {label: "linear power", type: exact, lang: en}

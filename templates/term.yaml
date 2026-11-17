@@ -1,89 +1,58 @@
-
+# TERM TEMPLATE
+# Copy into the appropriate glossary category folder and rename it to <id>.yaml (e.g.
+# glossary/sf-dissolution/fiap.yaml), or create it with: python -m glossary_tools new <category> <id>
+# Required fields: id, term, category, definition. Leave optional fields empty or remove them if not
+# applicable. Use clear, concise and scientifically accurate English.
+# Complete example: templates/term.example.yaml
 
 # 1. Basic Information
-id: leaching
-term: Leaching
-abbreviation: ""
-category: sf-dissolution
-tags: [spent-fuel, radionuclide-release, aqueous-solution, experiments, modelling]
-status: draft
+id: ""                # (required) unique ID, lowercase with hyphens, equal to the file name (e.g. fiap)
+term: ""              # (required) full scientific name
+abbreviation: ""      # common abbreviation, if applicable
+symbol: ""            # symbol used in formulas, if applicable
+category: ""          # (required) category folder, e.g. sf-dissolution
+tags: []              # search keywords
+status: draft         # draft | review | approved | deprecated
 
 # 2. Scientific Content
-definition: >-
-  Release of radionuclides and other constituents from spent nuclear fuel
-  into an aqueous solution through interaction with the surrounding liquid.
-  Leaching is a broad process that can occur through the release of readily
-  accessible inventory or through dissolution of the fuel matrix.
+definition: ""        # (required) short, self-contained definition, no citations
 
-description: |
-  In spent fuel research, leaching is studied through laboratory experiments
-  in which fuel samples interact with aqueous solutions (leachants) under
-  controlled conditions. The release of radionuclides is measured over time
-  to investigate their behaviour and assess their potential migration into
-  groundwater in a deep geological repository.
+description: ""       # extended explanation, context and applications (use | for several paragraphs)
 
-  Leaching processes can also be simulated using numerical models to predict
-  radionuclide release under different chemical and environmental conditions.
-
-notes:
-  - Leaching is closely related to dissolution but does not necessarily require
-    dissolution of the entire fuel matrix.
-  - Experimental conditions include solution composition, temperature,
-    atmosphere, redox conditions and contact time.
-
-pitfalls:
-  - Using leaching and dissolution interchangeably. Leaching describes the
-    release into solution, whereas dissolution refers to the breakdown of the
-    solid matrix and transfer of its constituents into solution.
+notes: []             # additional information or practical remarks
+pitfalls: []          # common misconceptions or interpretation errors
 
 # 3. Related Terms
-related_terms:
-  - id: dissolution
-    relation: related-to
-  - id: leachant
-    relation: depends-on
-  - id: instant-release-fraction
-    relation: related-to
-  - id: matrix-dissolution-rate
-    relation: related-to
-  - id: deep-geological-repository
-    relation: related-to
+related_terms: []     # each item: {id: <term id>, relation: <relation>}
+# relations: related-to, broader, narrower, part-of, has-part, depends-on, input-of, result-of,
+#            measured-by, influences, applied-to, precedes, follows, see-also, opposite-of
 
 # 4. Formula and Units
-formula: ""
-
-formula_variables: []
-
+formula: ""           # LaTeX expression, if applicable
+formula_variables: [] # each item: {symbol: "", meaning: "", unit: ""}
 units:
-  si: ""
-  other: []
+  si: ""              # SI unit
+  db: ""              # unit used in the SNF database, if different
+  other: []           # other commonly used units
 
 # 5. References and Contributors
-references:
-  - id: shoesmith-2000
-    type: article
-    citation: >-
-      Shoesmith, D. W. (2000). Fuel corrosion processes under waste disposal
-      conditions. Journal of Nuclear Materials, 282(1), 1–31.
-    doi: "10.1016/S0022-3115(00)00392-5"
-    url: ""
-    pages: "1–31"
+references: []
+# each item:
+#   - type: ""        # article, report, book, standard, thesis, website, database, glossary, training-course, other
+#     citation: ""    # full bibliographic reference (authors, year, title, journal/publisher, volume, pages)
+#     doi: ""         # e.g. 10.1016/S0022-3115(00)00392-5
+#     url: ""
+#     pages: ""       # relevant pages, sections or figures
 
-  - id: eurad2-sarec-d81
-    type: report
-    citation: >-
-      EURAD-2 (2025). Deliverable D8.1: SAREC initial state-of-the-art report.
-      Work package 8, Release of safety relevant radionuclides from spent
-      nuclear fuel under deep disposal conditions (SAREC).
-    doi: ""
-    url: "https://www.ejp-eurad.eu/publications/eurad-2-d81-sarec-initial-sota"
-    pages: ""
+authors: []           # contributors to the entry
+reviewers: []         # who approved it (needed for status: approved)
+created: ""           # YYYY-MM-DD
+updated: ""           # YYYY-MM-DD, change it on every edit
 
-authors:
-  - Stefanos Koutris
+# 6. Other names (optional)
+synonyms: []          # each item: {label: "", type: exact|abbreviation|spelling-variant|deprecated|narrower-usage|broader-usage}
+translations: {}      # e.g. {es: "Lixiviación", fr: "Lixiviation"}
 
-reviewers: []
-
-created: "2026-11-16"
-updated: "2026-11-16"
-
+# 7. Link to the SNF database (optional)
+db_mapping: []        # each item: {table: "", field: "", excel_header: "", note: ""} (snf-db-app backend/schema_v2.json)
+allowed_values: []    # controlled values, each item: {value: "", definition: ""}

@@ -49,4 +49,6 @@ reviewers: []
 created: "2026-11-12"
 updated: "2026-11-12"
 
-
+# 6. Other names
+synonyms:
+  - {label: "burn-up", type: spelling-variant, lang: en}
