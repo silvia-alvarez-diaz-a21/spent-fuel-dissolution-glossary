@@ -17,11 +17,24 @@ description: >-
   indirect characterisation of the spent fuel composition, which is known not to be uniform across
   the fuel pellet.
 
-notes: []
+notes:
+  - "Fresh fuel: fuel that has not been irradiated in a reactor."
+  - "0 MWd/kgU: the burnup of fresh fuel."
+  - "Fuel cycle: the period of time during which a fuel assembly is irradiated in a reactor core, from the time it is loaded into the core until it is discharged."
+  - "High-burnup fuel: fuel that has been irradiated to a burnup of 45 MWd/kgU or higher."
+
+
+ 
 pitfalls: []
 
 # 3. Related Terms
 related_terms:
+  - id: fresh-fuel
+    relation: related-to
+  - id: fuel-cycle
+    relation: related-to
+  - id: high-burnup-fuel
+    relation: related-to
   - id: high-burnup-structure
     relation: related-to
   - id: linear-heat-generation-rate
