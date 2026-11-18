@@ -1,0 +1,67 @@
+
+# 1. Basic Information
+id: performance-assessment
+term: Performance assessment
+abbreviation: PA
+symbol: ""
+category: deep-geological-repository
+tags: [long-term-safety, safety-assessment, radionuclide-transport, engineered-barriers, uncertainty]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  A quantitative evaluation of the long-term safety and effectiveness of a
+  geological repository in containing and isolating radioactive waste.
+
+description: >-
+  Performance assessment evaluates the expected behaviour of the repository
+  system over the long term, taking into account identified uncertainties.
+  It considers radionuclide release rates, transport mechanisms, radiological
+  doses, and the performance of engineered barriers and geological formations.
+  The analysis of radionuclide flow and transport through the engineered barrier
+  system and the geosphere is central to the assessment. Its purpose is to provide
+  reasonable assurance that the repository will meet applicable safety standards.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: safety-assessment
+    relation: related-to
+  - id: radionuclide-transport
+    relation: related-to
+  - id: multiple-barrier-system
+    relation: applied-to
+  - id: deep-geological-repository
+    relation: applied-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: article
+    citation: "Leone, R. C., Mariner, P. E., Stein, E. R., Hyman, J. D., Thiedau, J., Guevara Morel, C. R., Li, Z., Nguyen, S., Kim, Y.-M., Kim, J.-W., Chang, C.-C., Mikláš, O., Osuji, N. I., and Niemi, A. Comparison of performance assessment models and methods in crystalline rock: Task F1 DECOVALEX-2023."
+    doi: ""
+    url: "https://www.sciencedirect.com/science/article/abs/pii/S2352380824000960"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-18"
+updated: "2026-11-18"
+
+# 6. Other names
+synonyms: []
+translations: {}
+
+# 7. Link to the SNF database
+db_mapping: []
+allowed_values: []

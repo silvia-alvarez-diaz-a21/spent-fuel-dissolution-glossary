@@ -1,0 +1,75 @@
+
+# 1. Basic Information
+id: post-closure-safety-assessment
+term: Post-closure safety assessment
+abbreviation: PCSA
+symbol: ""
+category: deep-geological-repository
+tags: [post-closure, safety-assessment, long-term-safety, radionuclide-transport, geological-disposal]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  A systematic evaluation of the long-term safety of a deep geological repository
+  after closure, assessing its ability to contain and isolate radioactive waste
+  and protect people and the environment.
+
+description: >-
+  Post-closure safety assessment evaluates the evolution and long-term performance
+  of the disposal system over extended timescales, taking into account identified
+  uncertainties and potential scenarios. It considers radionuclide release and
+  transport, groundwater movement, degradation of engineered barriers and the
+  geological characteristics of the host formation. The assessment demonstrates
+  that the repository can meet applicable safety requirements, including those
+  established in the IAEA Specific Safety Requirements SSR-5, as implemented
+  through national regulatory frameworks.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: performance-assessment
+    relation: broader
+  - id: safety-assessment
+    relation: related-to
+  - id: post-closure-safety-case
+    relation: related-to
+  - id: radionuclide-transport
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: standard
+    citation: "International Atomic Energy Agency (IAEA). (2011). Disposal of Radioactive Waste. Specific Safety Requirements No. SSR-5. IAEA, Vienna. STI/PUB/1449."
+    doi: ""
+    url: "https://www-pub.iaea.org/mtcd/publications/pdf/pub1449_web.pdf"
+    pages: ""
+
+  - type: report
+    citation: "Wittel, M., Alvestad, A., Baldwin, T., Buday, P., Feuerle, A., Juutilainen, P., Kilger, R., Payne, L., Rochman, D., Solans, V., Zeleznik, N., and Horvat, B. (2024). Initial SotA in demonstrating post-closure criticality safety. EURAD-2 Deliverable D17.1, Work Package 17: Criticality Safety for Final Disposal (CSFD). Final version, September 2025."
+    doi: ""
+    url: "https://www.ejp-eurad.eu/sites/default/files/2026-01/EURAD2_WP17_CSFD_T02_01_D17_01_SOTA.pdf"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-18"
+updated: "2026-11-18"
+
+# 6. Other names
+synonyms: []
+translations: {}
+
+# 7. Link to the SNF database
+db_mapping: []
+allowed_values: []
