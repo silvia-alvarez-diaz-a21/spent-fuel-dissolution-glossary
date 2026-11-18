@@ -1,0 +1,72 @@
+# 1. Basic Information
+id: pellet-cladding-interaction
+term: Pellet-cladding interaction
+abbreviation: PCI
+symbol: ""
+category: nuclear-fuel
+tags: [fuel-pellet, fuel-cladding, fuel-failure, power-ramp, fuel-performance]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  An interaction between nuclear fuel pellets and their surrounding cladding,
+  which can lead to fuel cladding failure during changes in reactor power.
+
+description: >-
+  Pellet-cladding interaction (PCI) is a potential cause of fuel failure
+  associated with changes in reactor power, control rod movement and plant
+  startup. Failures typically occur within a few hours or days following a
+  power ramp or control rod movement. These events can lead to restrictions
+  on reactor startup ramp rates to reduce the risk of fuel failure.
+
+notes:
+  - "PCI-related failures are particularly associated with changes in reactor power."
+  - "Fuel cladding acts as a barrier that prevents radioactive fission products from escaping into the reactor coolant."
+  - "Cladding failure can result in the release of fission products into the primary circuit and increased radiation levels."
+  - "Fuel failures can lead to premature fuel discharge, shorter subsequent operating cycles, unscheduled outages and increased spent fuel volumes."
+
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: pellet
+    relation: related-to
+  - id: cladding
+    relation: related-to
+  - id: fuel-failure
+    relation: related-to
+  - id: power-ramp
+    relation: related-to
+  - id: nuclear-fuel
+    relation: broader
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: website
+    citation: "Nuclear Power. Pellet-Cladding Interaction (PCI)."
+    doi: ""
+    url: "https://www.nuclear-power.com/nuclear-power-plant/nuclear-fuel/fuel-assembly/fuel-cladding-cladding-tube/pellet-cladding-interaction-pci/"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-18"
+updated: "2026-11-18"
+
+# 6. Other names (optional)
+synonyms: []
+
+translations: {}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []
+allowed_values: []
