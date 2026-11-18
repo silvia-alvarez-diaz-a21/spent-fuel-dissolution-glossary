@@ -1,0 +1,72 @@
+# 1. Basic Information
+id: plenum
+term: Plenum
+abbreviation: ""
+symbol: ""
+category: nuclear-fuel
+tags: [fuel-rod, fuel-cladding, fission-gases, fuel-geometry]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  An internal gas-filled space within a nuclear fuel rod, located above or
+  below the fuel pellet stack.
+
+description: >-
+  The plenum is the unoccupied space inside the fuel cladding at either end
+  of the fuel pellet stack. It is divided into the upper plenum, above the
+  fuel pellets, and the lower plenum, below them. These spaces accommodate
+  fission gases released during irradiation and allow for gas expansion.
+
+notes:
+  - "Upper plenum: the space inside the fuel rod above the fuel pellet stack."
+  - "Lower plenum: the space inside the fuel rod below the fuel pellet stack."
+
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: fuel-rod
+    relation: part-of
+  - id: fuel-cladding
+    relation: part-of
+  - id: fuel-pellet
+    relation: related-to
+  - id: fission-gas-release
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: report
+    citation: "EURAD. Spent Fuel Characterisation and Evolution Until Disposal (SFC), Deliverable D8.1."
+    doi: ""
+    url: "https://www.ejp-eurad.eu/sites/default/files/2022-03/EURAD%20-%20D8.1%20SFC%20SotA.pdf"
+    pages: "56"
+
+  - type: website
+    citation: "Nuclear Power. Plenum – Search Results."
+    doi: ""
+    url: "https://www.nuclear-power.com/?s=plenum"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-18"
+updated: "2026-11-18"
+
+# 6. Other names (optional)
+synonyms: []
+translations: {}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []
+allowed_values: []
