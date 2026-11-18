@@ -25,7 +25,7 @@ description: >
   in which fission reactions take place, generating heat for energy
   production.
 
-notes: []
+notes: [ Pellet density :Pure, fully dense UO₂ has a theoretical density of 10.97 g/cm³, while sintered pellets used in reactors are manufactured to around 90–97% of that theoretical value (~10–10.6 g/cm³) to leave microscopic pores that accommodate fission gases.There is a differnce between the theoretical density and the actual density of sintered UO₂ pellets.]
 pitfalls: []
 
 # 3. Related Terms
