@@ -1,0 +1,77 @@
+# 1. Basic Information
+id: bulk-diffusivity
+term: Bulk diffusivity
+abbreviation: ""
+symbol: D
+category: quantities-and-units
+tags: [diffusion, diffusivity, lattice-diffusion, fission-gas, nuclear-fuel]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The diffusion coefficient describing the migration of atoms or point defects
+  through the interior of a crystalline material by lattice diffusion.
+
+description: >-
+  Bulk diffusivity describes the migration of atoms or point defects through
+  a crystal lattice by individual jumps. It depends on temperature,
+  composition gradient and pressure. In nuclear fuel, it influences
+  the diffusion of fission gases.
+
+notes: []
+
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: diffusion
+    relation: broader
+  - id: diffusivity
+    relation: related-to
+  - id: grain-boundary-diffusion
+    relation: related-to
+  - id: fission-gas-release
+    relation: influences
+  - id: high-burnup-structure
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: "m²/s"
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: article
+    citation: "Rest, J., Cooper, M. W. D., Spino, J., Turnbull, J. A., Van Uffelen, P. and Walker, C. T. (2018). Fission gas release from UO2 nuclear fuel: A review. Journal of Nuclear Materials, 513, 310–345."
+    doi: "10.1016/j.jnucmat.2018.08.019"
+    url: "https://publications.jrc.ec.europa.eu/repository/handle/JRC112318"
+    pages: "310–345"
+
+  - type: other
+    citation: "Campbell, C. E. Diffusivity and Mobility Data. National Institute of Standards and Technology (NIST)."
+    doi: ""
+    url: "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=854444"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-18"
+updated: "2026-11-18"
+
+# 6. Other names (optional)
+synonyms:
+  - label: Lattice diffusivity
+    type: exact
+  - label: Volume diffusivity
+    type: exact
+
+translations: {}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []
+allowed_values: []
