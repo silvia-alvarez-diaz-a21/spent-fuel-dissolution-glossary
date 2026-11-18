@@ -1,0 +1,74 @@
+
+# 1. Basic Information
+id: final-disposal
+term: Final disposal
+abbreviation: ""
+symbol: ""
+category: deep-geological-repository
+tags: [radioactive-waste, spent-nuclear-fuel, permanent-disposal, geological-disposal]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The final stage of radioactive waste management, involving the emplacement of
+  radioactive waste in a disposal facility with no intention of retrieving it.
+
+description: >-
+  Final disposal is the last stage of the back end of the nuclear fuel cycle.
+  For spent nuclear fuel that is not intended for reprocessing or recycling,
+  it involves the permanent emplacement of the waste in a designated disposal
+  facility. This stage is preceded by predisposal activities, which may include
+  treatment, conditioning, packaging, transport and storage. However, not all
+  predisposal activities or management strategies necessarily lead to final disposal.
+  Final disposal is required for radioactive waste regardless of the fuel cycle
+  strategy, even when reprocessing reduces the volume and radiotoxicity of the waste.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: spent-nuclear-fuel
+    relation: applied-to
+  - id: geological-disposal
+    relation: related-to
+  - id: predisposal
+    relation: follows
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: report
+    citation: "Riba, O. and Evins, L. (2025). Initial State-of-the-Art Report, Deliverable 8.1, Work Package 8, EURAD-2."
+    doi: ""
+    url: "https://www.ejp-eurad.eu/sites/default/files/2025-03/EURAD2_WP08_SARE_T01_01_D08_01_SOTA.pdf"
+    pages: ""
+
+  - type: website
+    citation: "Nuclear-Power.com. Final Disposal – Permanent Disposal."
+    doi: ""
+    url: "https://www.nuclear-power.com/nuclear-power-plant/radioactive-waste/final-disposal-permanent-disposal/"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-18"
+updated: "2026-11-18"
+
+# 6. Other names
+synonyms:
+  - label: Permanent disposal
+    type: exact
+translations: {}
+
+# 7. Link to the SNF database
+db_mapping: []
+allowed_values: []
