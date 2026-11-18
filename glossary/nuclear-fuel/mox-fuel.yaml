@@ -17,7 +17,10 @@ description: >-
   Plutonium (with uranium) recovered from spent fuel can be used to produce MOX fuel. Recovered
   uranium can be converted to UF6 and re-enriched.
 
-notes: []
+notes: 
+  >-
+  heterogeneous MOX fuel: MOX fuel with a heterogeneous distribution of PuO2 and UO2 in the pellet, e.g. PuO2 in the centre and UO2 in the outer part of the pellet; homogeneous MOX fuel: MOX fuel with a homogeneous distribution of PuO2 and UO2 in the pellet.
+
 pitfalls: []
 
 # 3. Related Terms
