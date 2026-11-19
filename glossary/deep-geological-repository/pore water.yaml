@@ -1,0 +1,63 @@
+
+# 1. Basic Information
+id: pore-water
+term: Pore water
+abbreviation: ""
+symbol: ""
+category: deep-geological-repository
+tags: [pore-water, clay, bentonite, geochemistry, groundwater]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Water present within the pore spaces of a geological formation, whose chemical
+  composition influences the geochemical conditions of a deep geological repository.
+
+description: >-
+  In geological disposal of radioactive waste, characterizing pore water is essential
+  for evaluating the short- and long-term evolution of the disposal system. Its chemical
+  composition affects the degradation of cementitious components, corrosion of steel
+  components, and the solubility and speciation of radionuclides released from the waste.
+  Obtaining representative pore water samples from clay formations can be challenging
+  due to their low hydraulic conductivity and the fraction of water bound as hydration
+  shells to cations associated with negatively charged clay minerals. Exposure to
+  atmospheric conditions can also induce oxidation and re-equilibration, disturbing
+  the pore water composition.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: bentonite
+    relation: related-to
+  - id: clay-minerals
+    relation: related-to
+  - id: redox-potential
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: article
+    citation: "De Craen, M., Moors, H., Honty, M., and Van Geet, M. M. The role of the HADES URL in better understanding of the Boom Clay pore water geochemistry."
+    doi: ""
+    url: "https://www.lyellcollection.org/doi/full/10.1144/SP536-2022-93"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-18"
+updated: "2026-11-18"
+
+# 6. Other names
+synonyms: []
+translations: {}

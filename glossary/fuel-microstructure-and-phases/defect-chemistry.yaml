@@ -1,0 +1,70 @@
+
+# 1. Basic Information
+id: defect-chemistry
+term: Defect chemistry
+abbreviation: ""
+symbol: ""
+category: fuel-microstructure-and-phases
+tags: [defects, point-defects, defect-reactions, charge-compensation, chemical-equilibrium]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The study of the concentrations and chemical behaviour of point defects
+  in solids as a function of chemical conditions and charge neutrality.
+
+description: >-
+  Defect chemistry evaluates point-defect concentrations using defect
+  reactions and mass action laws while conserving chemical species,
+  lattice sites and electrical charge. It describes how chemical
+  potentials and doping influence the formation and compensation
+  of defects.
+
+notes: []
+
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: point-defect
+    relation: related-to
+  - id: oxygen-vacancy
+    relation: related-to
+  - id: defect-formation-energy
+    relation: related-to
+  - id: charge-compensation
+    relation: related-to
+  - id: doping
+    relation: related-to
+  - id: mass-action-law
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: article
+    citation: "Klein, A. and Sudarikov, D. The physics of defect chemistry and the chemistry of defect physics."
+    doi: ""
+    url: ""
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-19"
+updated: "2026-11-19"
+
+# 6. Other names (optional)
+synonyms: []
+translations: {}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []
+allowed_values: []

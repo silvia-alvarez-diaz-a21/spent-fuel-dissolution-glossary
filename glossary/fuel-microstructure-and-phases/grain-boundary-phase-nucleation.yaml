@@ -1,0 +1,65 @@
+# 1. Basic Information
+id: grain-boundary-phase-nucleation
+term: Grain boundary phase nucleation
+abbreviation: ""
+symbol: ""
+category: fuel-microstructure-and-phases
+tags: [grain-boundary, phase-transformation, nucleation, microstructure]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The formation of a new grain boundary phase within an existing grain
+  boundary phase through the development of a distinct nucleus.
+
+description: >-
+  Grain boundary phase nucleation occurs when a new phase forms within
+  a parent grain boundary phase. The two phases are separated by a
+  grain boundary phase junction, which is a one-dimensional interface.
+  The formation of the nucleus involves an energy barrier influenced
+  by the grain boundary energy and elastic interactions.
+
+notes: []
+
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: grain-boundary
+    relation: applied-to
+  - id: nucleation
+    relation: broader
+  - id: grain-boundary-phase-junction
+    relation: related-to
+  - id: phase-transformation
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: article
+    citation: "Winter, I. S., Rudd, R. E., Oppelstrup, T. and Frolov, T. (2021). Nucleation of Grain Boundary Phases. arXiv:2108.06675."
+    doi: ""
+    url: "https://arxiv.org/html/2108.06675v1"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-19"
+updated: "2026-11-19"
+
+# 6. Other names (optional)
+synonyms: []
+translations: {}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []
+allowed_values: []

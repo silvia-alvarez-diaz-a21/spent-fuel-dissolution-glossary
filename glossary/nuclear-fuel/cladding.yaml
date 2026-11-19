@@ -24,7 +24,9 @@ description: >
   are selected for their mechanical strength, corrosion resistance and
   compatibility with the reactor operating environment.
 
-notes: []
+notes: 
+ >-
+ closed fuel gap: occurs when the space between the cylindrical fuel pellets and the surrounding metal cladding tube disappears, bringing them into direct physical contact.
 pitfalls: []
 
 # 3. Related Terms

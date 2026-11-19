@@ -1,0 +1,61 @@
+
+# 1. Basic Information
+id: young-cement-water
+term: Young cement water
+abbreviation: YCW
+symbol: ""
+category: deep-geological-repository
+tags: [cement, pore-water, alkaline-solution, cementitious-materials, experiments]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Highly alkaline liquid present within the pores of freshly hydrated cement or
+  concrete, which can also be synthetically prepared to simulate early-stage cement
+  pore water in laboratory experiments.
+
+description: >-
+  When cement or other porous clay-based materials come into contact with water,
+  a highly alkaline solution may develop within their pores, referred to as young
+  cement water. Synthetic young cement water can also be formulated for laboratory
+  experiments to investigate its interaction with materials relevant to geological
+  disposal of radioactive waste, including the corrosion of glass and other waste
+  forms.
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: pore-water
+    relation: related-to
+  - id: cementitious-materials
+    relation: related-to
+  - id: alkaline-solution
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: article
+    citation: "Mann, C., Ferrand, K., Liu, S., and Eskelsen, J. R. (2019). Influence of young cement water on the corrosion of the International Simple Glass. npj Materials Degradation."
+    doi: "10.1038/s41529-018-0059-9"
+    url: "https://www.nature.com/articles/s41529-018-0059-9"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-17"
+updated: "2026-11-17"
+
+# 6. Other names
+synonyms: []
+translations: {}

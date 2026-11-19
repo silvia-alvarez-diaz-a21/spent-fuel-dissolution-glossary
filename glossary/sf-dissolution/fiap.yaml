@@ -1,6 +1,3 @@
-# Imported from first Glossary.xlsx by Stefanos Koutris (sheet 'Deliverable Eurad2D8.1' row 12; sheet 'Eurad2D8.1' row 64).
-# REVIEW: The definition of A_f,X was cut in the spreadsheet; check it in Ekeroth et al.
-
 # 1. Basic Information
 id: fiap
 term: Fraction of Inventory in the Aqueous Phase
@@ -33,16 +30,19 @@ related_terms:
     relation: related-to
 
 # 4. Formula and Units
-formula: "FIAP(X) = \\frac{C_X \\, AM_X \\, V_{soln}}{m_{fuel} \\, f_{HM} \\, X_{f,X}} = \\frac{A_X \\, V_{soln}}{m_{fuel} \\, f_{HM} \\, A_{f,X}}"
+# 4. Formula and Units
+formula: |
+          m_i,aq      c_i · V_aq
+FIAP_i = ───────── = ─────────────
+          m_i,SNF     m_SNF · H_i.
+
 formula_variables:
-  - {symbol: "C_X", meaning: "concentration of the radionuclide X in solution", unit: "mol/L"}
-  - {symbol: "AM_X", meaning: "atomic mass of X", unit: "g/mol"}
-  - {symbol: "V_{soln}", meaning: "volume of the solution, including the volume of the sample taken for analysis", unit: "L"}
-  - {symbol: "m_{fuel}", meaning: "mass of the fuel sample in contact with the solution", unit: "g"}
-  - {symbol: "f_{HM}", meaning: "fractional mass of heavy metal in the fuel", unit: ""}
-  - {symbol: "X_{f,X}", meaning: "specific inventory of radionuclide X in the solid fuel", unit: "g/(g HM)"}
-  - {symbol: "A_X", meaning: "specific activity of the radionuclide X in solution", unit: "Bq/L"}
-  - {symbol: "A_{f,X}", meaning: "specific activity of the radionuclide X in the solid fuel", unit: "Bq/(g HM)"}
+  - {symbol: "m_i,aq",  meaning: "mass of radionuclide i measured in the aqueous leaching solution", unit: "g or mol"}
+  - {symbol: "m_i,SNF", meaning: "total initial inventory mass of radionuclide i present in the solid fuel sample", unit: "g or mol"}
+  - {symbol: "c_i",     meaning: "concentration of radionuclide i in the aqueous solution", unit: "g/dm³ or mol/dm³"}
+  - {symbol: "V_aq",    meaning: "volume of the aqueous leaching solution", unit: "dm³"}
+  - {symbol: "m_SNF",   meaning: "total mass of the spent nuclear fuel sample used in the test", unit: "g"}
+  - {symbol: "H_i",     meaning: "mass fraction of inventory for radionuclide i in the fuel", unit: "g/g"}
 units:
   si: "1"
   db: "%"

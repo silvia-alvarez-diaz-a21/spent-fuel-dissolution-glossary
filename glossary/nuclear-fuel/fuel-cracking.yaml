@@ -1,0 +1,66 @@
+# 1. Basic Information
+id: fuel-cracking
+term: Fuel cracking
+abbreviation: ""
+symbol: ""
+category: nuclear-materials
+tags: [cracks, material-degradation, corrosion, stress, irradiation, nuclear-components]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The formation and propagation of cracks in a material due to mechanical,
+  environmental, chemical or metallurgical factors.
+
+description: >-
+  Cracking in nuclear power plant materials can result from the combined
+  effects of tensile stress, aggressive environments and material
+  susceptibility. Corrosion, temperature, contaminants and neutron
+  irradiation can contribute to crack initiation and propagation.
+
+notes: []
+
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: stress-corrosion-cracking
+    relation: narrower
+  - id: irradiation-assisted-stress-corrosion-cracking
+    relation: narrower
+  - id: corrosion
+    relation: related-to
+  - id: grain-boundary
+    relation: related-to
+  - id: material-degradation
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: article
+    citation: "Revista Nuclear España. (2025). Stress corrosion cracking in nuclear power plant components. CIEMAT."
+    doi: ""
+    url: "https://www.revistanuclear.es/en/more/stress-corrosion-cracking-in-nuclear-power-plant-components/"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-19"
+updated: "2026-11-19"
+
+# 6. Other names (optional)
+synonyms: []
+translations: {}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []
+allowed_values: []

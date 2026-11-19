@@ -16,7 +16,8 @@ description: >-
   Grains form the intact fluorite lattice where the fuel exists and holds fission products in
   solid solution. Their size can vary.
 
-notes: []
+notes: [characterized by the /grain size/, which is the average diameter of the grains in a sample, and by the grain boundary area per unit volume of the sample.
+ also, /grain growth/ explains how the grains can increase in size during sintering or irradiation, which can affect the fuel's properties and performance.]
 pitfalls: []
 
 # 3. Related Terms
