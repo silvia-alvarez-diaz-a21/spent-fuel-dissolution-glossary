@@ -1,0 +1,66 @@
+# 1. Basic Information
+id: grain-boundary-inventory
+term: Grain boundary inventory
+abbreviation: ""
+symbol: ""
+category: irradiated-fuel
+tags: [grain-boundaries, radionuclides, spent-fuel, fission-products, instant-release-fraction]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The quantity of radionuclides accumulated at the grain boundaries of
+  irradiated nuclear fuel.
+
+description: >-
+  Grain boundary inventory refers to the radionuclides located at the
+  grain boundaries of spent nuclear fuel. These radionuclides may contribute
+  to the instant release fraction when the fuel comes into contact with water
+  following waste container failure and saturation of the engineered barrier.
+
+notes: []
+
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: grain-boundary
+    relation: related-to
+  - id: radionuclide-inventory
+    relation: broader
+  - id: instant-release-fraction
+    relation: related-to
+  - id: gap-inventory
+    relation: related-to
+  - id: spent-nuclear-fuel
+    relation: applied-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: article
+    citation: "Roudil, D., Jégou, C., Broudic, V., Muzeau, B., Peuget, S. and Deschanels, X. Gap and grain boundaries inventories from pressurized water reactor spent fuels. Journal of Nuclear Materials, 2007."
+    doi: ""
+    url: "https://www.sciencedirect.com/science/article/abs/pii/S0022311507001523"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-19"
+updated: "2026-11-19"
+
+# 6. Other names (optional)
+synonyms: []
+translations: {}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []
+allowed_values: []
