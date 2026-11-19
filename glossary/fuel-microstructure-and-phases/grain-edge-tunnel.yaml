@@ -1,0 +1,69 @@
+# 1. Basic Information
+id: grain-edge-tunnel
+term: Grain-edge tunnel
+abbreviation: ""
+symbol: ""
+category: fuel-microstructure-and-phases
+tags: [grain-edge, fission-gas, gas-release, porosity, fuel-microstructure]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  An interconnected pore pathway along grain edges that allows fission gas
+  to migrate towards free surfaces and escape from the fuel.
+
+description: >-
+  Grain-edge tunnels form during Stage 3 of fission gas release when gas
+  bubbles along grain edges interconnect, creating continuous pathways
+  that extend to the fuel surface and allow gas release.
+
+notes: []
+
+pitfalls:
+  - >-
+    A grain boundary is the flat, two-dimensional interface where two crystals
+    meet, whereas a grain-edge tunnel is a one-dimensional, hollow channel
+    that forms along the line where three crystals meet.
+
+# 3. Related Terms
+related_terms:
+  - id: grain-boundary
+    relation: related-to
+  - id: grain-edge
+    relation: related-to
+  - id: fission-gas-release
+    relation: related-to
+  - id: free-surface
+    relation: related-to
+  - id: grain-boundary-bubble
+    relation: results-in
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: article
+    citation: "Tonks, M., Andersson, D., Devanathan, R., Dubourg, R., El-Azab, A., Freyss, M., Iglesias, F., Kulacsy, K., Pastore, G., Phillpot, S. R. and Welland, M. (2018). Unit mechanisms of fission gas release: Current understanding and future needs. Journal of Nuclear Materials, 504, 300–317."
+    doi: "10.1016/j.jnucmat.2018.03.016"
+    url: "https://cea.hal.science/cea-02063614/file/2018_Tonks_JNM504_GF.pdf"
+    pages: "309–311"
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-19"
+updated: "2026-11-19"
+
+# 6. Other names (optional)
+synonyms: []
+translations: {}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []
+allowed_values: []
