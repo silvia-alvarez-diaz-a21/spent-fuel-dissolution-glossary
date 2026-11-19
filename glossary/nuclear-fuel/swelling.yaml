@@ -1,0 +1,66 @@
+# 1. Basic Information
+id: swelling
+term: Swelling
+abbreviation: ""
+symbol: ""
+category: irradiated-fuel
+tags: [fuel-swelling, irradiation, fission-products, fuel-deformation, nuclear-fuel]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The increase in volume of nuclear fuel during irradiation due to the
+  accumulation of fission products and the formation of solid, liquid
+  and gaseous phases.
+
+description: >-
+  During irradiation, UO2 fuel gradually accumulates fission products
+  within its structure. Their accumulation leads to fuel swelling and
+  may also result in fission gas release.
+
+notes: []
+
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: fission-gas-release
+    relation: related-to
+  - id: fission-products
+    relation: related-to
+  - id: fuel-deformation
+    relation: related-to
+  - id: burnup
+    relation: influences
+  - id: porosity
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: "m³ (volume change)"
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: report
+    citation: "Massih, A. (1988). Irradiation Induced Swelling of Nuclear Fuel. ASEA-ATOM Report UK 88-127. Supported by the Swedish Nuclear Power Inspectorate (SKI), grant B46/84."
+    doi: ""
+    url: ""
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-19"
+updated: "2026-11-19"
+
+# 6. Other names (optional)
+synonyms: []
+translations: {}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []
+allowed_values: []
