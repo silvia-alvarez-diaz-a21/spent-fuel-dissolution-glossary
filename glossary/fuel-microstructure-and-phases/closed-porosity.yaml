@@ -1,0 +1,64 @@
+# 1. Basic Information
+id: closed-porosity
+term: Closed porosity
+abbreviation: ""
+symbol: ""
+category: fuel-microstructure-and-phases
+tags: [porosity, sintering, densification, pores, microstructure]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  Porosity consisting of isolated pores inside a material that have no
+  connection to its external surface.
+
+description: >-
+  Closed porosity develops during the final stage of sintering as pores
+  become isolated and more spherical with increasing densification.
+
+notes: []
+
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: open-porosity
+    relation: opposite-of
+  - id: porosity
+    relation: narrower
+  - id: sintering
+    relation: related-to
+  - id: densification
+    relation: related-to
+  - id: pore
+    relation: has-part
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: book
+    citation: "Leriche, A., Hampshire, S. and Cambier, F. (2017). Sintering of Ceramics. Reference Module in Materials Science and Materials Engineering."
+    doi: "10.1016/B978-0-12-803581-8.10288-7"
+    url: "https://uphf.hal.science/hal-03066533/file/Leriche2017.pdf"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-19"
+updated: "2026-11-19"
+
+# 6. Other names (optional)
+synonyms: []
+translations: {}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []
+allowed_values: []
