@@ -1,0 +1,63 @@
+# 1. Basic Information
+id: bulk-of-the-grain
+term: Bulk of the grain
+abbreviation: ""
+symbol: ""
+category: fuel-microstructure-and-phases
+tags: [grain, grain-interior, crystal-structure, microstructure]
+status: draft
+
+# 2. Scientific Content
+definition: >-
+  The internal volume of a grain, excluding its grain boundaries, where atoms
+  are arranged in a regular crystalline structure.
+
+description: >-
+  The bulk of a grain is the crystalline region where atoms maintain
+  long-range order and a specific crystallographic orientation.
+
+notes: []
+
+pitfalls: []
+
+# 3. Related Terms
+related_terms:
+  - id: grain
+    relation: part-of
+  - id: grain-boundary
+    relation: related-to
+  - id: crystalline-structure
+    relation: related-to
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: website
+    citation: "French, D. N. (1991). Grain Boundaries. National Board of Boiler and Pressure Vessel Inspectors, National Board Bulletin."
+    doi: ""
+    url: "https://www.nationalboard.org/index.aspx?pageID=164&ID=194"
+    pages: ""
+
+authors:
+  - Stefanos Koutris
+reviewers: []
+created: "2026-11-19"
+updated: "2026-11-19"
+
+# 6. Other names (optional)
+synonyms:
+  - label: Grain interior
+    type: exact
+
+translations: {}
+
+# 7. Link to the SNF database (optional)
+db_mapping: []
+allowed_values: []
