@@ -1,0 +1,55 @@
+
+# 1. Basic Information
+id: "epsilon-particles"
+term: "Epsilon particles"
+abbreviation: "ε-particles"
+symbol: "ε"
+category: "fuel-microstructure-and-phases"
+tags:
+  - UO2
+  - nuclear-fuel
+  - noble-metals
+  - fission-products
+  - fuel-microstructure
+status: draft
+
+# 2. Scientific Content
+definition: "Noble-metal-rich particles formed by the segregation of noble-metal dopants, such as Pd, Ru, Rh and Mo, from the UO2 oxide matrix."
+
+description: "These particles form because noble-metal dopants are unstable in the UO2 oxide matrix and segregate into separate particles. They are commonly referred to as ε-particles."
+
+notes: []
+pitfalls: []
+
+# 3. Related Terms
+related_terms: []
+
+# 4. Formula and Units
+formula: ""
+formula_variables: []
+units:
+  si: ""
+  db: ""
+  other: []
+
+# 5. References and Contributors
+references:
+  - type: "article"
+    citation: "Eriksen, T. E., Shoesmith, D. W., & Jonsson, M. (2012). Radiation induced dissolution of UO2 based nuclear fuel – A critical review of predictive modelling approaches. Journal of Nuclear Materials, 420(1–3), 409–423."
+    doi: "10.1016/j.jnucmat.2011.10.027"
+    url: "https://doi.org/10.1016/j.jnucmat.2011.10.027"
+    pages: ""
+
+authors:
+  - "Stefanos Koutris"
+reviewers: []
+created: "2026-11-25"
+updated: "2026-11-25"
+
+# 6. Other names
+synonyms: []
+translations: {}
+
+# 7. Link to the SNF database
+db_mapping: []
+allowed_values: []
