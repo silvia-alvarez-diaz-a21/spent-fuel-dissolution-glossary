@@ -26,16 +26,12 @@ notes: []
 pitfalls: []
 
 # 3. Related Terms
-related_terms:
-  - id: engineered-barrier-system
-    relation: has-part
-  - id: geosphere
-    relation: has-part
-  - id: bentonite
-    relation: has-part
-  - id: deep-geological-repository
-    relation: applied-to
-
+ related_terms:
+    - {id: engineered-barrier-system, relation: has-part}
+    - {id: bentonite, relation: has-part}
+    - {id: final-disposal, relation: related-to}
+    - {id: safety-case, relation: input-of}
+    - {id: performance-assessment, relation: input-of}
 # 4. Formula and Units
 formula: ""
 formula_variables: []
