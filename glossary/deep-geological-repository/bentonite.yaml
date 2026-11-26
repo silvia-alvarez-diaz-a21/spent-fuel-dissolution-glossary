@@ -26,9 +26,13 @@ notes: []
 pitfalls: []
 
 # 3. Related Terms
-related_terms:
-  - id: deep-geological-repository
-    relation: related-to
+  related_terms:
+    - {id: engineered-barrier-system, relation: part-of}
+    - {id: multiple-barrier-system, relation: part-of}
+    - {id: disposal-cell, relation: part-of}
+    - {id: water-saturated-bentonite, relation: narrower}
+    - {id: pore-water, relation: related-to}
+    - {id: young-cement-water, relation: see-also}
 
 # 4. Formula and Units
 formula: ""
