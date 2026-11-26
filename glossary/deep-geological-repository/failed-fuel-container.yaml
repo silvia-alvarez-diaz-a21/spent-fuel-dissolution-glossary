@@ -27,8 +27,12 @@ pitfalls: []
 
 # 3. Related Terms
 related_terms:
-  - id: deep-geological-repository
-    relation: related-to
+    - {id: disposal-cell, relation: part-of}
+    - {id: engineered-barrier-system, relation: part-of}
+    - {id: pore-water, relation: related-to}
+    - {id: dissolution, relation: precedes}
+    - {id: instant-release-fraction, relation: precedes}
+    - {id: post-closure-safety-assessment, relation: input-of}
 
 # 4. Formula and Units
 formula: ""
