@@ -26,13 +26,12 @@ notes: []
 pitfalls: []
 
 # 3. Related Terms
-related_terms:
-  - id: pore-water
-    relation: related-to
-  - id: cementitious-materials
-    relation: related-to
-  - id: alkaline-solution
-    relation: related-to
+  related_terms:
+    - {id: pore-water, relation: broader}
+    - {id: bentonite, relation: see-also}
+    - {id: dissolution, relation: influences}
+    - {id: solubility, relation: influences}
+    - {id: leaching, relation: related-to} 
 
 # 4. Formula and Units
 formula: ""
