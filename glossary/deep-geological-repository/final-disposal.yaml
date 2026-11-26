@@ -28,12 +28,12 @@ pitfalls: []
 
 # 3. Related Terms
 related_terms:
-  - id: spent-nuclear-fuel
-    relation: applied-to
-  - id: geological-disposal
-    relation: related-to
-  - id: predisposal
-    relation: follows
+    - {id: disposal-cell, relation: has-part}
+    - {id: engineered-barrier-system, relation: has-part}
+    - {id: multiple-barrier-system, relation: related-to}
+    - {id: safety-case, relation: related-to}
+    - {id: post-closure-safety-assessment, relation: precedes}
+
 
 # 4. Formula and Units
 formula: ""
