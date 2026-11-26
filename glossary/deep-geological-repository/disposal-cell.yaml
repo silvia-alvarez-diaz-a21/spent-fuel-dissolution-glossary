@@ -47,12 +47,11 @@ pitfalls:
 
 # 3. Related Terms
 related_terms:
-  - id: deep-geological-repository
-    relation: part-of
-  - id: bentonite
-    relation: has-part
-  - id: engineered-barrier-system
-    relation: part-of
+    - {id: bentonite, relation: has-part}
+    - {id: failed-fuel-container, relation: has-part}
+    - {id: engineered-barrier-system, relation: related-to}
+    - {id: final-disposal, relation: part-of}
+    - {id: pore-water, relation: related-to}
 
 # 4. Formula and Units
 formula: ""
