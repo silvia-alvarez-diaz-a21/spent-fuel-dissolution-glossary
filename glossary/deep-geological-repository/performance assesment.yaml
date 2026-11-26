@@ -26,15 +26,14 @@ notes: []
 pitfalls: []
 
 # 3. Related Terms
-related_terms:
-  - id: safety-assessment
-    relation: related-to
-  - id: radionuclide-transport
-    relation: related-to
-  - id: multiple-barrier-system
-    relation: applied-to
-  - id: deep-geological-repository
-    relation: applied-to
+ related_terms:
+    - {id: safety-case, relation: part-of}
+    - {id: post-closure-safety-assessment, relation: related-to}
+    - {id: engineered-barrier-system, relation: depends-on}
+    - {id: dissolution, relation: depends-on}
+    - {id: instant-release-fraction, relation: depends-on}
+    - {id: fiap, relation: depends-on}
+    - {id: solubility, relation: depends-on}
 
 # 4. Formula and Units
 formula: ""
