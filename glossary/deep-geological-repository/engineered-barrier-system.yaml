@@ -26,14 +26,13 @@ pitfalls: []
 
 # 3. Related Terms
 related_terms:
-  - id: multiple-barrier-system
-    relation: part-of
-  - id: bentonite
-    relation: includes
-  - id: backfill
-    relation: includes
-  - id: deep-geological-repository
-    relation: applied-to
+    - {id: multiple-barrier-system, relation: part-of}
+    - {id: bentonite, relation: has-part}
+    - {id: water-saturated-bentonite, relation: has-part}
+    - {id: failed-fuel-container, relation: has-part}
+    - {id: disposal-cell, relation: related-to}
+    - {id: safety-case, relation: input-of}
+    - {id: performance-assessment, relation: input-of}
 
 # 4. Formula and Units
 formula: ""
