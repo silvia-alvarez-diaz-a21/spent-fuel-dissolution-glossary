@@ -29,12 +29,13 @@ pitfalls: []
 
 # 3. Related Terms
 related_terms:
-  - id: bentonite
-    relation: related-to
-  - id: clay-minerals
-    relation: related-to
-  - id: redox-potential
-    relation: related-to
+    - {id: bentonite, relation: related-to}
+    - {id: water-saturated-bentonite, relation: related-to}
+    - {id: young-cement-water, relation: narrower}
+    - {id: dissolution, relation: influences}
+    - {id: solubility, relation: influences}
+    - {id: oxidation-reduction-and-redox-conditions, relation: influences}
+    - {id: failed-fuel-container, relation: related-to}
 
 # 4. Formula and Units
 formula: ""
