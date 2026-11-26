@@ -25,13 +25,11 @@ pitfalls: []
 
 # 3. Related Terms
 related_terms:
-  - id: bentonite
-    relation: applied-to
-  - id: pore-water
-    relation: related-to
-  - id: multiple-barrier-system
-    relation: part-of
-
+ related_terms:
+    - {id: bentonite, relation: broader}
+    - {id: engineered-barrier-system, relation: part-of}
+    - {id: pore-water, relation: related-to}
+    - {id: young-cement-water, relation: see-also}
 # 4. Formula and Units
 formula: ""
 formula_variables: []
